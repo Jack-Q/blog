@@ -1,7 +1,9 @@
 ---
+title: "Building the Blog (01): Start from Here"
+layout: post-simple
 
 ---
-> Finally, it started ... ...
+> Finally, it started \... \...
 
 I have been plannning to have a blog of mine for
 a long time. However, owing to all kinds of different 
@@ -15,7 +17,7 @@ important person who had helped me a lot and asked
 me for assist. Form then on, my project of a self-blog
 site have no progress.
 
-From this post, I decided to *finally* (really, it's true) 
+From this post, I decided to *finally* (really, it\'s true) 
 start my blog and the first series of blog posts is 
 the building process log of the blog itself. That is to do
 blog while to build the blog.
@@ -32,7 +34,7 @@ Jekyll blog engine can gengerate totally static web pages
 that only need some basic resource provided by the server,
 which means less configure on server application and less 
 efforts on remote application deployment and management.
-Besides, Jekyll's design of site management is more depend
+Besides, Jekyll\'s design of site management is more depend
 on some simple convensions between the blogger and the 
 engine instead of applying redundent restraint to blogger
 to ensuer the proper fuctionality of the program. As a
@@ -46,16 +48,16 @@ required. I pick some of the requirement I perseve.
  * front end skills
  * linux operate
  * git and GitHub (if you want to host the blog on GitHub)
- * ...
+ * \...
 
 Though it is possible to run all of the things on Windows,
 I personally still highly recommend everyone who want to 
 build a Jekyll site use Linux as their work environment.
 
-> If you don't konwn all of the things, there are still some 
+> If you don\'t konwn all of the things, there are still some 
 > existing template site for you to start your Jekyll blog.
 
-Then, let't dive into the world of Jekyll. 
+Then, let\'t dive into the world of Jekyll. 
 
 In the following posts, I will start form environment 
 installing and site structure constructing, which will 

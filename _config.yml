@@ -1,0 +1,11 @@
+# Site settings
+title: Jack Q
+email: qiaobo@outlook.com
+description: > # this means to ignore newlines until "baseurl:"
+  The blog of Jack Q.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "//Jack-Q.github.io" # the base hostname & protocol for your site
+github_username:  Jack-Q
+
+# Build settings
+markdown: kramdown

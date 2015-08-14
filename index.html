@@ -1,0 +1,67 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jack Q</title>
+        <!-- <link rel="stylesheet" href=""> -->
+        <style>
+          html, body{
+              padding:0;
+              margin: 0;
+              font-family: 'RTWS YueGothic Demo', Ubuntu, sans-serif;
+              font-size: 16px;
+              background-color: #eaecee;
+          }
+          
+          .header{
+              width: 100%;
+              padding: 2px 0;
+              box-shadow: 0 0 5px 2px #aaa;
+          }
+          
+          .home{
+              box-shadow: 0 0 10px 2px #ccc;
+              max-width:600px;
+              padding: 30px 20px;
+              margin: 20px auto;
+              background: #f5f3fa;
+          }
+          .post-content{
+              line-height:1.2em;
+          }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>
+                Jack Q
+            </h1>
+            <p>
+                This is merely a skeleton shaking and waving,
+                I'm working hard on it to improve and enrich it.
+            </p>
+        </div>
+        <div class="home">
+            <h1 class="page-heading">Posts</h1>
+            <ul class="post-list">
+                {% for post in site.posts %}
+                <li>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <h2>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                </li>
+                {% endfor %}
+            </ul>
+            <p class="rss-subscribe">
+              subscribe
+              <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
+            </p>
+        </div>
+    </body>
+</html>
