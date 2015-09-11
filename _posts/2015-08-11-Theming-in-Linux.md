@@ -1,5 +1,6 @@
 ---
 title: Theming in Linux
+comment_id: theming-in-linux
 layout: post-simple
 ---
 

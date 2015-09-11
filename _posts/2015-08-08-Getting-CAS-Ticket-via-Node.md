@@ -1,5 +1,6 @@
 ---
 title: Getting CAS Tickets via Node
+comment_id: getting-cas-tickets-via-node
 layout: post-simple
 ---
 

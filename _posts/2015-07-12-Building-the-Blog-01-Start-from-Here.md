@@ -1,7 +1,7 @@
 ---
 title: "Building the Blog (01): Start from Here"
 layout: post-simple
-
+comment_id: building-the-blog-01
 ---
 > Finally, it started \... \...
 

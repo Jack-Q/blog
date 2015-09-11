@@ -9,7 +9,8 @@
 		{{endif}}
         {{site.title}}
         </title>
-        <!-- <link rel="stylesheet" href=""> -->
+        <link rel="stylesheet" href="{{site.base_url}}/style/site.css">
+        <link rel="stylesheet" href="{{site.base_url}}/style/post.css">
         <style>
             html, body{
                 padding:0;
@@ -45,6 +46,8 @@
             <article class="post-content">
                 {{ content }}
             </article>
+            <hr />
+            {% include comment.html %}
         </div>
     </body>
 </html>

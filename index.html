@@ -7,34 +7,8 @@ layout: null
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Jack Q</title>
-        <!-- <link rel="stylesheet" href=""> -->
-        <style>
-          html, body{
-              padding:0;
-              margin: 0;
-              font-family: 'RTWS YueGothic Demo', Ubuntu, sans-serif;
-              font-size: 16px;
-              background-color: #eaecee;
-          }
-          
-          .header{
-              width: 100%;
-              padding: 2px 0;
-              box-shadow: 0 0 5px 2px #aaa;
-          }
-          
-          .home{
-              box-shadow: 0 0 10px 2px #ccc;
-              max-width:600px;
-              padding: 30px 20px;
-              margin: 20px auto;
-              background: #f5f3fa;
-          }
-          .post-content{
-              line-height:1.2em;
-          }
-
-        </style>
+        <link rel="stylesheet" href="{{site.base_url}}/style/site.css">
+        <link rel="stylesheet" href="{{site.base_url}}/style/index.css">
     </head>
     <body>
         <div class="header">
@@ -52,6 +26,7 @@ layout: null
                 {% for post in site.posts %}
                 <li>
                     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <span class="disqus-comment-count" data-disqus-identifier="post-{{post.comment_id}}"></span>
                     <h2>
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                     </h2>
@@ -63,5 +38,18 @@ layout: null
               <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
             </p>
         </div>
+        <!--  -->
+        <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '{{site.disqus_shortname}}'; 
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        </script>
     </body>
 </html>

@@ -1,5 +1,6 @@
 ---
 title: Summary for Summer Semester
+comment_id: summary-for-summer-semester
 layout: post-simple
 ---
 

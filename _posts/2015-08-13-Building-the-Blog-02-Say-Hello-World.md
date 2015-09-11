@@ -1,5 +1,6 @@
 ---
 title: "Building the Blog (02): Say Hello World"
+comment_id: building-the-blog-02
 layout: post-simple
 ---
 > Continuing \...
