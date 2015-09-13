@@ -7,8 +7,8 @@ layout: null
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Jack Q</title>
-        <link rel="stylesheet" href="{{site.base_url}}/style/site.css">
-        <link rel="stylesheet" href="{{site.base_url}}/style/index.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/style/site.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/style/index.css">
     </head>
     <body>
         <div class="header">
@@ -21,7 +21,7 @@ layout: null
             </p>
         </div>
         <div class="home">
-            <h1 class="page-heading">Posts</h1>
+            <h1 class="page-heading">Posts</h1> 
             <ul class="post-list">
                 {% for post in site.posts %}
                 <li>
@@ -38,7 +38,16 @@ layout: null
               <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
             </p>
         </div>
-        <!--  -->
+        <!-- RequireJS -->
+        <script>
+            var require = {
+                baseUrl: "{{site.baseurl}}/script"
+            };
+        </script>
+        <script data-main="main" 
+            src="{{site.baseurl}}/script/require.js" async ></script>
+        
+        <!-- DISQUS Count Script -->
         <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = '{{site.disqus_shortname}}'; 
