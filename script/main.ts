@@ -1,3 +1,5 @@
+/// <reference path="../typings/tsd.d.ts" />
+
 // Main JavaScript
 requirejs.config({
 	paths: {
@@ -15,7 +17,7 @@ requirejs(["util/logoCanvas"],function(logoCanvas){
 	// canvas.style.top = "0";
 	// document.body.appendChild(canvas);
 	// var logoAni = logoCanvas(canvas);
-	// setTimeout(function( ){
+	// setTimeout(function(){
 	// 	logoAni.play();
 	// }, 2000);
 });
