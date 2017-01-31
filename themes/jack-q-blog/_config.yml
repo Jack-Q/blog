@@ -1,0 +1,5 @@
+# jack-q-blog theme configuration
+
+# less renderer
+less:
+  compress: true

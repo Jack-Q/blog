@@ -1,10 +1,9 @@
 mixin post(post)
   h1= post.title
-  .toc(style={
-      border: 'dashed 1px #aaa',
-      pading: '20px',
-      margin: '20px'
-  })!= toc(post.content)
   .meta
-    span.date= date(post.date)
+    span.meta-date= date(post.date)
+    span.meta-categories
+      != list_categories(post.categories, {show_count: false})
+    span.meta-tags
+      != list_tags(post.tags, {show_count: false})
   != post.content

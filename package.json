@@ -15,6 +15,7 @@
     "hexo-generator-index": "^0.2.0",
     "hexo-generator-tag": "^0.2.0",
     "hexo-render-pug": "^1.2.0",
+    "hexo-renderer-less": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-server": "^0.2.0"
   }

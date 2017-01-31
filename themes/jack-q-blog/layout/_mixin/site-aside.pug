@@ -1,22 +1,28 @@
 mixin site-aside()
-  h1: a(href=url_for('/')) Home
+  .jq-blog-aside
+    h1: a(href=url_for('/')) Home
 
-  section
-    h2 Tag
-    != list_tags()
-    
-  section
-    h2 Catagory
-    != list_categories()
+    section
+      h2 Tag
+      != list_tags()
+      
+    section
+      h2 Catagory
+      != list_categories()
 
-  section
-    h2 Post
-    != list_posts()
+    section
+      h2 Post
+      != list_posts()
 
-  section
-    h2 Archives
-    != list_archives()
-  
-  section
-    h2 Tag Cloud
-    != tagcloud()
+    section
+      h2 Archives
+      != list_archives()
+
+    if page.content
+      section
+        h2 Contents
+        != toc(page.content)
+
+    section
+      h2 Tag Cloud
+      != tagcloud()
