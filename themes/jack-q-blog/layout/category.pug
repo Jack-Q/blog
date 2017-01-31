@@ -1,0 +1,17 @@
+extends _layout/default
+
+include _mixin/post-list
+include _mixin/site-aside
+
+block content
+  h1 Category: #{page.category}
+  aside(style={
+    float: "left",
+    width: "30vw"
+  })
+    +site-aside()
+  section(style={
+    "margin-left": "33vw"
+  })
+    h2 Post
+    +post-list(page.posts)

@@ -1,0 +1,10 @@
+mixin post(post)
+  h1= post.title
+  .toc(style={
+      border: 'dashed 1px #aaa',
+      pading: '20px',
+      margin: '20px'
+  })!= toc(post.content)
+  .meta
+    span.date= date(post.date)
+  != post.content

@@ -1,47 +1,33 @@
-blog of Jack Q @ GitHub.com
-===========================
+# Hexo based blog
+
+## Deploymnet and mantaninse
+
+### Add new post
 
 
-The blog of mine. A simple site.
 
->***
-> This branch is the main branch but not the main branch 
->***
+### Deploy
 
-Desctiption
-------------
-The blog content is located in the `gh-pages` branch, and 
-the current branch is only a nearly blank one with only
-some planning and projecting of the whole site.
+Deployment is involved in the `git` machinism.
 
-Currently this site is only in a stage of "templating" and
-"styling" and "scripting", meanwhile the blog post is added 
-concurrrently. So that, sometimes the layout of some page
-maybe awful or even totally a mass.
+* Preparation:
 
-Blog Content
-------------
-This blog is my personal blog hosted on GitHub. Since currently, 
-this site is only few articles accessable, preliminary content
-are listed here.
- * Front end skills and tools
- * Algorithms and puzzles solving
- * Linux and Windows software configuration and troubleshooting
- * Small project demonstrating
- * ... ...
+```bash
+npm install hexo-deployer-git --save
+```
 
-Blog Toools
------------
-This site isn't a *completely static* site, while still use some
-open-source tools or free of charge services.
+* Configuration
 
-* Jekyll
-  
-  This blog use [Jekyll][Jekyll] as a *back-end* tools to generate
-  the content.
-  [Jekyll]: http://jekyllrb.com/ (Jekyll: simple, blog-aware, static site)
+```yaml
+deploy:
+  type: git
+  repo: https://github.com/Jack-Q/blog/
+  branch: gh-pages
+  message: Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}
+```
 
-* Google Analysis
-  Google provides a free plan of its web traffic analysis tools.
+* Deploy
 
- 
+```bash
+hexo deploy
+```

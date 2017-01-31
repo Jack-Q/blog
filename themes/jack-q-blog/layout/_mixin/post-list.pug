@@ -1,0 +1,10 @@
+mixin post-list(posts)
+  each post in (posts.toArray ? posts.toArray() : posts)
+    .post(style={
+      border: "solid 1px #aaa",
+      margin: "20px"
+    })
+      h1: a(href=url_for(post.path))= post.title
+      != post.excerpt
+      // pre!=require('util').inspect(post)
+  != paginator(options)

@@ -1,0 +1,16 @@
+extend _layout/default
+
+include _mixin/post
+include _mixin/site-aside
+
+block content
+  h1= page.title
+  aside(style={
+    float: "left",
+    width: "30vw"
+  })
+    +site-aside()
+  section(style={
+    "margin-left": "33vw"
+  })
+    +post(page)
