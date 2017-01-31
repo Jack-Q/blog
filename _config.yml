@@ -64,6 +64,14 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: jack-q-blog
 
+# Feed generator
+feed:
+  type: atom # atom / rss2
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -81,3 +89,4 @@ marked:
   breaks: false
   smartLists: true
   smartypants: true
+  
