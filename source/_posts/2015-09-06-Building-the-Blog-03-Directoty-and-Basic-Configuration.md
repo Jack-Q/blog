@@ -2,6 +2,11 @@
 title: "Building the Blog (03): Directory and Basic Configuration"
 comment_id: building-the-blog-03
 layout: post-simple
+tags:
+  - blog
+  - jekyll
+categories:
+  - blog
 ---
 
 > Dive deeper into Jekyll

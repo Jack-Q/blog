@@ -2,6 +2,11 @@
 title: Getting CAS Tickets via Node
 comment_id: getting-cas-tickets-via-node
 layout: post-simple
+tags:
+  - cas
+  - network
+categories:
+  - network
 ---
 
 Nowadays, the OAuth 2.0 is the most popular stander for 

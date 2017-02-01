@@ -2,6 +2,11 @@
 title: Theming in Linux
 comment_id: theming-in-linux
 layout: post-simple
+tags:
+  - theme
+  - linux 
+categories:
+  - linux
 ---
 
 > Linux is identical for its identical.
