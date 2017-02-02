@@ -4,14 +4,7 @@ include _mixin/post-list
 include _mixin/site-aside
 
 block content
-  h1 Welcome
-  aside(style={
-    float: "left",
-    width: "30vw"
-  })
-    +site-aside()
-  section(style={
-    "margin-left": "33vw"
-  })
-    h2 Post
+  +site-aside()
+  section
+    h1 Welcome
     +post-list(page.posts)

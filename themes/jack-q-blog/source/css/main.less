@@ -2,22 +2,26 @@
 
 // Alegreya, for the article content
 @import url('https://fonts.googleapis.com/css?family=Alegreya|PT+Mono|Raleway');
+@font-sans-serif: 'Raleway', Helvetica, sans-serif;
+@font-serief: 'Alegreya', 'Roboto', sans-serif;
+@font-monospace: 'PT Mono', Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
 html {
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: @font-serief;
 }
 p {
-  font-family: 'Alegreya', 'Roboto', sans-serif;
+  font-family: @font-sans-serif;
 }
 pre, kbd, code{
-  font-family: 'PT Mono', Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
+  font-family: @font-monospace;
 }
 
 
 // global style
-html, body, ul, ol, li, dl, dt ,dd {
+html, body, ul, ol, li, dl, dt ,dd, aside, div, section {
   padding: 0;
   margin: 0;
   font-size: 18px;
+  box-sizing: border-box;
 }
 
 ol, ul, li{
@@ -30,6 +34,96 @@ ol, ul, li{
 .jq-blog-aside{
   display: block;
   height: 100%;
-  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  overflow-y: hidden;
+  overflow-x: visible;
+  top: 0;
+  left:0;
+  width: 30%;
   background: #09c;
+  .aside-left{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .aside-header{
+    position: absolute;
+    top: 0;
+    height: 40%;
+  }
+
+  .aside-center{
+    position: absolute;
+    top: 40%;
+    height: ~"calc(60% - 40px)";
+    width: 100%;
+    margin-bottom: 40px;
+    overflow: auto;
+    li{
+      display: inline-block;
+      position: relative;
+      a{
+        &:hover{
+          
+        }
+      }
+    }
+
+
+    @color-tag-count: rgb(220,20,20);
+    .tag-list-count,
+    .archive-list-count,
+    .category-list-count {
+      font-weight: 600;
+      text-shadow: 0 0 2px #aaa;
+      font-family: @font-monospace;
+      font-size: 16px;
+      text-align: center;
+      background: @color-tag-count;
+      margin: 2px;
+      z-index: 100;
+      color: #dadada;
+      min-width: 20px;
+      line-height: 20px;
+      height: 20px;
+      display: block;
+      position: absolute;
+      right: -10px;
+      bottom: 10px;
+
+      border-radius: 10px;
+      &::before{
+        content: '';
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        left: -3px;
+        border: solid 0 transparent;
+        border-top-width: 5px;
+        border-right: solid @color-tag-count 13px;
+        z-index: -1;
+      }
+    }
+  }
+  .aside-bottom{
+    position: absolute;
+    bottom: 0;
+    border-top: dashed 1px #2be;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+  }
+}
+
+// right content 
+body > section{
+  display: block;
+  width: 70%;
+  margin-left: 30%;
 }
