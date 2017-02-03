@@ -7,3 +7,18 @@ mixin post(post)
     span.meta-tags
       != list_tags(post.tags, {show_count: false})
   != post.content
+  //- Comment
+  .post-comment
+    #disqus_thread
+  .log= console.log(page)
+  script.
+    var disqus_config = function () {
+      this.page.url = "#{page.permalink}";  
+      this.page.identifier = "#{page.comment_id}";
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//jackq.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();

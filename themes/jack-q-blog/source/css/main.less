@@ -23,7 +23,11 @@ html, body, ul, ol, li, dl, dt ,dd, aside, div, section {
   font-size: 18px;
   box-sizing: border-box;
 }
-
+a{
+  text-decoration: none;
+  transition: all ease 400ms;
+  color: inherit;
+}
 ol, ul, li{
   list-style: none;
 }
@@ -65,8 +69,10 @@ ol, ul, li{
       display: inline-block;
       position: relative;
       a{
+        
         &:hover{
-          
+          color: #aabcef;
+          text-shadow: 0 0 2px #333;
         }
       }
     }
