@@ -10,7 +10,6 @@ mixin post(post)
   //- Comment
   .post-comment
     #disqus_thread
-  .log= console.log(page)
   script.
     var disqus_config = function () {
       this.page.url = "#{page.permalink}";  
