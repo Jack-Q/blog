@@ -417,6 +417,34 @@ ol, ul, li{
         transform: translateY(30px);
         opacity: 0;
       }
+      
+      // Tag list
+      .aside-tag{
+
+        .tag-list-item{
+          margin: 0 20px;
+          height: 35px;
+          a.tag-list-link {
+            display: block;
+            padding-left: 20px;
+            height: 100%;
+            line-height: 35px;
+            text-decoration: underline;
+            &::before{
+              display: block;
+              position: absolute;
+              left: 0;
+              content: '#';
+              padding: 0 5px;
+              font-size: 1.6em;
+              line-height: 35px;
+              text-shadow: 0 0 2px #ccc;
+              text-decoration: none;
+              color: #555;
+            }
+          }
+        }
+      }
     }
 
     &.active{
@@ -427,8 +455,7 @@ ol, ul, li{
       &[data-content-tab=tag] .icon-header:not(:hover) [data-content=tag],
       &[data-content-tab=category] .icon-header:not(:hover) [data-content=category],
       &[data-content-tab=archive] .icon-header:not(:hover) [data-content=archive],
-      &[data-content-tab=content] .icon-header:not(:hover) [data-content=content]
-      {
+      &[data-content-tab=content] .icon-header:not(:hover) [data-content=content]   {
         span.tooltip{
           opacity: 1;
           transform: translateY(0px);
@@ -462,7 +489,7 @@ ol, ul, li{
     }
 
 
-    @color-tag-count: rgb(220,20,20);
+    @color-tag-count: rgb(220,180,120);
     .tag-list-count,
     .archive-list-count,
     .category-list-count {
@@ -480,7 +507,7 @@ ol, ul, li{
       height: 20px;
       display: block;
       position: absolute;
-      right: -10px;
+      right: -25px;
       bottom: 10px;
 
       border-radius: 10px;
