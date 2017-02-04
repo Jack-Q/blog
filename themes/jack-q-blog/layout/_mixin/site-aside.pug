@@ -23,30 +23,41 @@ mixin site-aside()
           .name Jack Q
 
       .aside-center
-        section
-          h2 Tag
-          != list_tags()
-          
-        section
-          h2 Catagory
-          != list_categories()
+        .icon-header
+          .icon-item
+            a(href=url_for('/'))
+              i.material-icons home
+              span.tooltip home
+          .icon-item
+            span
+              i.material-icons folder_open
+              span.tooltip category
+          .icon-item
+            span
+              i.material-icons label_outline
+              span.tooltip tag
+          .icon-item
+            span
+              i.material-icons date_range
+              span.tooltip archive
+          .icon-item
+            span
+              i.material-icons toc
+              span.tooltip content
 
-        section
-          h2 Post
-          != list_posts()
+        .aside-center-content
+          section.aside-tag
+            != list_tags()
+            
+          section.aside-category
+            != list_categories()
 
-        section
-          h2 Archives
-          != list_archives()
+          section.aside-archive
+            != list_archives()
 
-        if page.content && toc(page.content)
-          section
-            h2 Contents
-            != toc(page.content)
+          if page.content && toc(page.content)
+            section.aside-content
+              != toc(page.content)
 
-        section
-          h2 Tag Cloud
-          != tagcloud()
-      
       .aside-bottom
         .aside-copy 2016 &copy; Jack Q
