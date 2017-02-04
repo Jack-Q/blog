@@ -29,21 +29,23 @@ mixin site-aside()
               i.material-icons home
               span.tooltip home
           .icon-item
-            span
-              i.material-icons folder_open
-              span.tooltip category
-          .icon-item
-            span
+            span(data-content='tag')
               i.material-icons label_outline
               span.tooltip tag
           .icon-item
-            span
+            span(data-content='category')
+              i.material-icons folder_open
+              span.tooltip category
+          .icon-item
+            span(data-content='archive')
               i.material-icons date_range
               span.tooltip archive
-          .icon-item
-            span
-              i.material-icons toc
-              span.tooltip content
+          
+          if page.content && toc(page.content)
+            .icon-item
+              span(data-content='content')
+                i.material-icons toc
+                span.tooltip content
 
         .aside-center-content
           section.aside-tag

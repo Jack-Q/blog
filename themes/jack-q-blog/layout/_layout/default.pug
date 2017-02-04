@@ -6,10 +6,11 @@ html(lang="en")
     meta(charset="UTF-8")
     title Jack Q's Blog
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
-    != css('css/main.css')
+    != css('/css/main.css')
     block stylesheet
   body
     //- Main page content
     block content
     //- Page style sheet
+    != js('/js/main.js')
     block script

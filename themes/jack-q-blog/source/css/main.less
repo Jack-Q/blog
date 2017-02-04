@@ -276,6 +276,7 @@ ol, ul, li{
     .icon{
       fill: #fff;
       width: 110px;
+      height: 120px;
       display: block;
       margin: auto;
     }
@@ -403,9 +404,50 @@ ol, ul, li{
       margin-top: 30%;
     }
 
+
     .aside-center-content{
-      display: none;
+      position: relative;
+      margin-top: 40px;
+      & > section {
+        position: absolute;
+        top: 0;
+        display: block;
+        pointer-events: none;
+        transition: all ease 400ms;
+        transform: translateY(30px);
+        opacity: 0;
+      }
     }
+
+    &.active{
+      .icon-header {
+        margin-top: 40px;
+      }
+ 
+      &[data-content-tab=tag] .icon-header:not(:hover) [data-content=tag],
+      &[data-content-tab=category] .icon-header:not(:hover) [data-content=category],
+      &[data-content-tab=archive] .icon-header:not(:hover) [data-content=archive],
+      &[data-content-tab=content] .icon-header:not(:hover) [data-content=content]
+      {
+        span.tooltip{
+          opacity: 1;
+          transform: translateY(0px);
+          color: #f99157;
+        }
+      }
+        
+      &[data-content-tab=tag] .aside-tag,
+      &[data-content-tab=category] .aside-category,
+      &[data-content-tab=archive] .aside-archive,
+      &[data-content-tab=content] .aside-content{
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
+      }
+
+    }
+
 
     li{
       display: inline-block;
