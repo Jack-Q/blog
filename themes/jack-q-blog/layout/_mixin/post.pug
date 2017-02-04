@@ -1,23 +1,25 @@
 mixin post(post)
   h1= post.title
-  .meta
+  .post-meta
     span.meta-date= date(post.date)
     span.meta-categories
       != list_categories(post.categories, {show_count: false})
     span.meta-tags
       != list_tags(post.tags, {show_count: false})
-  != post.content
-  //- Comment
-  .post-comment
-    #disqus_thread
-  script.
-    var disqus_config = function () {
-      this.page.url = "#{page.permalink}";  
-      this.page.identifier = "#{page.comment_id}";
-    };
-    (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = '//jackq.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
+  .post-content
+    != page_anchor(post.content)
+  if page.comment
+    //- Comment
+    .post-comment
+      #disqus_thread
+    script.
+      var disqus_config = function () {
+        this.page.url = "#{page.permalink}";  
+        this.page.identifier = "#{page.comment_id}";
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = '//jackq.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
