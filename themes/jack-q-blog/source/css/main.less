@@ -311,7 +311,7 @@ ol, ul, li{
 
     .icon-header{
       height: 40px;
-      margin: 40px auto 0;
+      margin: 30px auto 0;
       color: #cee;
       text-align: center;
       transition: all ease 400ms;
@@ -407,9 +407,13 @@ ol, ul, li{
 
     .aside-center-content{
       position: relative;
-      margin: 40px 20px 0;
+      margin: 40px 0 0;
+      height: 0;
+      overflow: hidden;
+      transition: all ease 400ms;
       & > section {
         width: 100%;
+        height: 100%;
         position: absolute;
         top: 0;
         display: block;
@@ -417,6 +421,8 @@ ol, ul, li{
         transition: all ease 400ms;
         transform: translateY(30px);
         opacity: 0;
+        overflow-y: auto; 
+        padding: 0 20px;
       }
       
       // Tag list
@@ -485,11 +491,26 @@ ol, ul, li{
           right: -2px;
         }
       }
+
+      // Page content
+      .toc{
+        .toc-item{
+          display: block;
+          a.toc-link{
+            display: block;
+            border-bottom: dotted 1px #2be;
+          }
+        }
+      }
     }
 
     &.active{
       .icon-header {
         margin-top: 40px;
+      }
+
+      .aside-center-content{
+        height: ~"calc(100% - 120px)";
       }
  
       &[data-content-tab=tag] .icon-header:not(:hover) [data-content=tag],
@@ -582,4 +603,25 @@ ol, ul, li{
 body > section{
   display: block;
   margin-left: 500px;
+}
+
+// page layout
+.article-anchor{
+  margin-left: 10px;
+  font-size: 22px;
+  display: inline-block;
+  opacity: 0;
+  transition: all ease 400ms;
+  &:before{
+    content: "#"
+  }
+
+  .article-heading:hover &{
+    opacity: 1;
+  }
+
+  &:hover{
+    text-decoration: underline;
+
+  }
 }
