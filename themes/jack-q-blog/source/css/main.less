@@ -407,8 +407,7 @@ ol, ul, li{
 
     .aside-center-content{
       position: relative;
-      margin-top: 40px;
-      width: 100%;
+      margin: 40px 20px 0;
       & > section {
         width: 100%;
         position: absolute;
@@ -421,10 +420,10 @@ ol, ul, li{
       }
       
       // Tag list
-      .tag-list-item{
+      .tag-list-item, .category-list-item{
         margin: 0 20px;
         height: 35px;
-        a.tag-list-link {
+        a {
           display: block;
           padding-left: 20px;
           height: 100%;
@@ -434,7 +433,6 @@ ol, ul, li{
             display: block;
             position: absolute;
             left: 0;
-            content: '#';
             padding: 0 5px;
             font-size: 1.6em;
             line-height: 35px;
@@ -443,10 +441,13 @@ ol, ul, li{
             color: #555;
           }
         }
+        .tag-list-link::before{content: '#';}
+        .category-list-link::before{content: '>';}
       }
 
+
+
       // Archive list
-      
       .archive-list{
         text-align: center;
         .archive-list-item{
