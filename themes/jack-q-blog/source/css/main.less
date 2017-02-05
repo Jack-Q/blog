@@ -501,6 +501,23 @@ ol, ul, li{
             border-bottom: dotted 1px #2be;
           }
         }
+        .toc-child{
+          padding-left: 1em;
+          position: relative;
+          &::before{
+            display: block;
+            content: '';
+            height: 0;
+            border-left: dotted 1px transparent;
+            position: absolute;
+            left: 0.5em;
+            transition: all ease 400ms;
+          } 
+          &:hover::before{
+            height: 100%;
+            border-left-color: #2be;
+          }
+        }
       }
     }
 
