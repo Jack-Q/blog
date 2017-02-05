@@ -498,7 +498,14 @@ ol, ul, li{
           display: block;
           a.toc-link{
             display: block;
-            border-bottom: dotted 1px #2be;
+            transition: all ease 400ms;
+            border-bottom: dotted 1px transparent;
+            &:hover{
+              padding-left: 0.5em;
+            }
+          }
+          &:hover>a, &.active > a{
+            border-bottom-color: #2be;
           }
         }
         .toc-child{
