@@ -55,6 +55,7 @@ mixin site-aside()
             != list_categories()
 
           section.aside-archive
+            //- wrap month and year with span tag for styling
             != list_archives({format: "MMM YYYY", transform: s=>`<span>${s.split(' ')[0]}</span><span>${s.split(' ')[1]}</span>`})
 
           if page.content && toc(page.content)
