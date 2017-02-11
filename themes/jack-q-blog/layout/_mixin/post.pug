@@ -8,7 +8,7 @@ mixin post(post)
       != list_tags(post.tags, {show_count: false})
   .post-content
     != page_anchor(post.content)
-  if page.comment
+  if page.comments
     //- Comment
     .post-comment
       #disqus_thread
