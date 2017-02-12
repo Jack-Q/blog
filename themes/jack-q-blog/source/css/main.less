@@ -892,6 +892,24 @@ section.article-content{
     margin: 10px -@page-padding;
     display: block;
   }
+
+  blockquote {
+    background: rgba(200,200,200,0.3);
+    padding: 15px 45px;
+    margin: 20px -@page-padding 20px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "“";
+      top: 10px;
+      left: 20px;
+      font-size: 145px;
+      font-weight: 900;
+      display: block;
+      color: rgba(180,180,200,0.5);
+      line-height: 100px;
+    }
+  }
 }
 
 .article-anchor{
