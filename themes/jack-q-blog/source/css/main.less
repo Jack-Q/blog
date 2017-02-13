@@ -696,6 +696,19 @@ body > section{
   background: rgba(225,220,245,0.5);
   // box-shadow: 0 0 10px 2px rgba(235,240,230,0.5);
 }
+@media screen and (max-width: 1024px){
+  .jq-blog-aside{
+    top: 0;
+    left: -500px;
+    &.toggle-on{
+      left: 0;
+    }
+  }
+  body > section{
+    margin: 0 20px;
+  }
+}
+
 
 // right content: the list layout
 section.list-content{
@@ -747,16 +760,30 @@ section.article-content{
     font-weight: 900;
     font-family: @font-sans-serif;
     letter-spacing: -2px;
+
+    @media screen and (max-width: 435px){
+      font-size: 1.6em;
+    }
   }
 }
 
 .post-meta{
   text-align: center;
-  padding: 20px 10px;
+  padding: 10px 0;
+  margin: 0 -@page-padding;
   line-height: 60px;
+  font-size: 22px;
+
+  @media screen and (max-width: 435px){
+    font-size: 16px;
+    line-height: 35px;
+  }
+  
   .meta-date, ul, li{
     display: inline-block;
     position: relative;
+    line-height: inherit;
+    font-size: inherit;
   }
   .meta-date::before {
     content: "date_range";
@@ -771,19 +798,18 @@ section.article-content{
     padding: 0;
   }
   .meta-date, .category-list-link, .tag-list-link{
-    min-width: 120px;
-    margin: 0 20px;
-    font-size: 22px;
-    line-height: 40px;
+    min-width: 5em;
+    margin: 0 10px;
     color: #aaa;
     position: relative;
-    padding: 10px 0 10px 40px;
+    padding-left: 1.8em;
     box-sizing: content-box;
     text-decoration: none;
     display: inline-block;
     height: auto;
     transition: all ease 400ms;
-  
+    line-height: inherit;
+
     &:hover{
       color: #09c;
       &::after {
@@ -791,13 +817,13 @@ section.article-content{
       }
     }
     &::before{
-      width: 40px;
-      line-height: 40px;
-      font-size: 25px;
+      width: 1.8em;
+      font-size: 1.2em;
       display: block;
       position: absolute;
+      line-height: inherit;
       padding: 0;
-      top: 10px;
+      top: 0;
       left: 0;
       color: inherit;
     }
@@ -820,6 +846,19 @@ section.article-content{
   line-height: 35px;
   letter-spacing: 1px;
   word-spacing: 0.1em;
+
+  @media screen and (max-width: 1024px){
+    font-size: 20px;
+    line-height: 31px;
+  }
+  @media screen and (max-width: 768px){
+    font-size: 18px;
+    line-height: 28px;
+  }
+  @media screen and (max-width: 435px){
+    font-size: 16px;
+    line-height: 25px;
+  }
 
   h1.article-heading, h2.article-heading {
     font-weight: 900;
@@ -886,6 +925,9 @@ section.article-content{
   }
   p {
     margin: 35px 0;
+    @media screen and (max-width: 435px){
+      margin: 25px -10px;
+    }
   }
 
   figure.highlight{
@@ -911,6 +953,8 @@ section.article-content{
     }
   }
 }
+
+
 
 .article-anchor{
   margin-left: 10px;
