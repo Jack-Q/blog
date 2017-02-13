@@ -278,6 +278,19 @@ body {
   width: 500px;
   background: #09c;
   box-shadow: 0 0 20px 3px #555;
+
+  @media screen and (max-width: 1024px) {
+    //left: -550px;
+    //&.toggle-on{
+      left: 0;
+    //}
+  }
+
+  @media screen and (max-width: 768px) {
+    left: 0;
+    width: 100%;
+  }
+
   .aside-left{
     width: 100%;
     height: 100%;
@@ -299,7 +312,8 @@ body {
       display: block;
       position: absolute;
       width: 100%;
-      height: 100%;
+      // extra 1% to prevent render gap on scaled devices
+      height: 101%;
       background: linear-gradient(to top, #09c, rgba(0,0,0,0), rgba(0,0,0,0));
       z-index: 0;
       transform-origin: bottom center;
@@ -405,8 +419,15 @@ body {
         display: inline-block;
         width: 70px;
         position: relative;
-        
         border-bottom: solid 2px transparent;
+
+        @media screen and (max-width: 435px){
+          width: 55px;
+        }
+        @media screen and (max-width: 285px){
+          width: 50px;
+        }
+
         &>a, &>span{
           display: block;
           width: 100%;
@@ -695,18 +716,14 @@ body > section{
   max-width: 1400px;
   background: rgba(225,220,245,0.5);
   // box-shadow: 0 0 10px 2px rgba(235,240,230,0.5);
-}
-@media screen and (max-width: 1024px){
-  .jq-blog-aside{
-    top: 0;
-    left: -500px;
-    &.toggle-on{
-      left: 0;
-    }
-  }
-  body > section{
+
+  @media screen and (max-width: 1024px){
     margin: 0 20px;
   }
+  @media screen and (max-width: 768px){
+    margin: 0 10px;
+  }
+
 }
 
 
@@ -777,6 +794,7 @@ section.article-content{
   @media screen and (max-width: 435px){
     font-size: 16px;
     line-height: 35px;
+    padding-top: 0;
   }
   
   .meta-date, ul, li{
@@ -925,8 +943,11 @@ section.article-content{
   }
   p {
     margin: 35px 0;
-    @media screen and (max-width: 435px){
+    @media screen and (max-width: 768px){
       margin: 25px -10px;
+    }
+    @media screen and (max-width: 435px){
+      margin: 20px -15px;
     }
   }
 

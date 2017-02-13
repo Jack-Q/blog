@@ -1,7 +1,8 @@
 ; +function ($) {
 
   // aside toggle
-  $('.icon-item span').forEach(function (i) {
+  Array.prototype.forEach.call(
+    $('.icon-item span'), function (i) {
     i.addEventListener('click', function () {
       var header = $('.aside-center').item(0);
       if (header.classList.contains('active')) {
