@@ -25,5 +25,15 @@
       })
     });
 
-  // debugger;
+  Array.prototype.forEach.call($('.toc .toc-link'), function (i) {
+    i.scrollIntoView &&
+      i.addEventListener('click', function (e) {
+        $(i.getAttribute('href')).item(0).scrollIntoView({
+          behavior: 'smooth'
+        })
+        e.preventDefault();
+        return true;
+      });
+  });
+  debugger;
 }(document.querySelectorAll.bind(document));
