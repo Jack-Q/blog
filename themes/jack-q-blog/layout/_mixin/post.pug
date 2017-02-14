@@ -9,7 +9,17 @@ mixin post(post)
   .post-content
     != page_anchor(post.content)
   .post-content-end END
-
+  .post-prev-next
+    .post-prev
+      if page.next
+        a.post-prev-link(href=url_for(page.next.path))= page.next.title
+      else
+        span.post-prev-null 
+    .post-next
+      if page.prev
+        a.post-next-link(href=url_for(page.prev.path))= page.prev.title
+      else
+        span.post-next-null 
   if page.comments
     //- Comment
     .post-comment

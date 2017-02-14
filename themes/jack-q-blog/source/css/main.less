@@ -1212,6 +1212,82 @@ section.article-content{
   }
 }
 
+// prev/next page 
+.post-prev-next{
+  font-size: 1.2em;
+  color: #999;
+  margin-bottom: 40px;
+  @media screen and (max-width: 768px){
+    font-size: 1em;
+    margin: 0 5px-@page-padding 40px;
+  }
+  @media screen and (max-width: 435px){
+    font-size: 0.8em;
+  }
+
+  .post-prev, .post-next{
+    width: 50%;
+    display: inline-block;
+    font-size: inherit;
+    @media screen and (max-width: 768px){
+      width: 100%;
+    }
+  }
+
+  .post-prev{
+    text-align: left;
+  }
+  .post-next{
+    text-align: right;
+    border-left: solid #ccc 1px;
+    @media screen and (max-width: 768px){
+      border-left: none;
+      border-top: solid #ccc 1px;
+    }
+  }
+
+  .post-prev-null, .post-prev-link, .post-next-null, .post-next-link{
+    display: block;
+    height: 2em;
+    padding-top: 25px;
+    line-height: 2em;
+    font-size: 1em;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &::before{
+      top: 5px;
+      font-weight: 900;
+      font-family: @font-sans-serif;
+      font-size: 0.8em;
+      display: block;
+      position: absolute;
+      line-height: 20px;
+      color: #aaa;
+    }
+  }
+  .post-prev-null::before{
+    content: 'NO MORE OLDER POST';
+    left: 0;
+    top: 20px;
+  }
+  .post-prev-link::before{
+    content: 'PREVIOUS POST';
+    left: 0;
+  }
+  .post-next-null::before{
+    top: 20px;
+    content: 'NO MORE NEWER POST';
+    right: 0;
+  }
+  .post-next-link::before{
+    content: 'NEXT POST';
+    right: 0;
+  }
+
+}
+
 // page comment 
 .post-comment{
   #disqus_thread{
