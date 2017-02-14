@@ -100,7 +100,7 @@ First, lets look at the official scaffold's directories. (With a "Hello World" p
 
 16 directories, 22 files
 ```
-As you can see, except from the _config.yml, all of other files are all you\'v
+As you can see, except from the \_config.yml, all of other files are all you\'v
 been familiar with, as a web developer (If not, it still doesn't matter too much).
 Another thing that seems not very common is the underscroe ( "\_" ) in the beginning of some
 files or directories. 

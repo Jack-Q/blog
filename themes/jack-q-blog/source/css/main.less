@@ -1144,6 +1144,33 @@ section.article-content{
     }
   }
 
+  a {
+    border-bottom: 1px dashed #999;
+    color: #666;
+    padding: 0 2px;
+    transition: all ease 400ms;
+    &:hover {
+      color: #888;
+      border-bottom-color: #09c;
+    }
+  }
+
+  p code {
+    background: rgba(220,220,220,0.2);
+    border: solid 1px rgba(200,200,200,0.7);
+    padding: 4px 6px;
+    border-radius: 3px;
+  }
+
+  kbd {
+    background: rgba(180,190,220,0.2);
+    border: solid 1px rgba(200,200,200,0.9);
+    padding: 0 3px;
+    font-size: 0.8em;
+    border-radius: 3px;
+    font-weight: 900;
+  }
+
   figure.highlight{
     margin: 10px -@page-padding;
     display: block;
