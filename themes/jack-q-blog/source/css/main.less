@@ -1054,6 +1054,7 @@ section.article-content{
   line-height: 35px;
   letter-spacing: 1px;
   word-spacing: 0.1em;
+  padding-bottom: 40px;
 
   @media screen and (max-width: 1024px){
     font-size: 20px;
@@ -1067,6 +1068,8 @@ section.article-content{
     font-size: 16px;
     line-height: 25px;
   }
+
+
 
   h1.article-heading, h2.article-heading {
     font-weight: 900;
@@ -1183,5 +1186,37 @@ section.article-content{
 
   &:hover{
     text-decoration: underline;
+  }
+}
+
+.post-content-end{
+  display: block;
+  font-family: @font-monospace;
+  text-align: center;
+  font-size: 14px;
+  color:#ccc;
+  font-weight: 900;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 -@page-padding 40px;
+
+  &::before, &::after{
+    display: inline-block;
+    content: '';
+    height: 5px;
+    width: 220px;
+    max-width: 30%;
+    background: rgba(200,200,200,0.5);
+    vertical-align: top;
+    margin: 22.5px 5% 0;
+  }
+}
+
+// page comment 
+.post-comment{
+  #disqus_thread{
+    text-align: center;
+    color: #ccc;
+    font-size: 1.2em;
   }
 }

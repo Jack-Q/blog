@@ -8,10 +8,12 @@ mixin post(post)
       != list_tags(post.tags, {show_count: false})
   .post-content
     != page_anchor(post.content)
+  .post-content-end END
+
   if page.comments
     //- Comment
     .post-comment
-      #disqus_thread
+      #disqus_thread Disqus is loading...
     script.
       var disqus_config = function () {
         this.page.url = "#{page.permalink}";  
