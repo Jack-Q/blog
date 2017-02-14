@@ -31,6 +31,8 @@
         $(i.getAttribute('href')).item(0).scrollIntoView({
           behavior: 'smooth'
         })
+        // Close sidebar if necessary
+        $('.jq-blog-aside').item(0).classList.remove('toggle-on');
         e.preventDefault();
         return true;
       });
