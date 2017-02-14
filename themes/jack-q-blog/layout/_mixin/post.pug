@@ -1,7 +1,7 @@
 mixin post(post)
   h1= post.title
   .post-meta
-    span.meta-date= date(post.date)
+    a.meta-date(href=url_for(`/archives/${post.date.format("YYYY")}/${post.date.format("MM")}/`))= date(post.date)
     span.meta-categories
       != list_categories(post.categories, {show_count: false})
     span.meta-tags

@@ -35,5 +35,5 @@
         return true;
       });
   });
-  debugger;
+  //debugger;
 }(document.querySelectorAll.bind(document));
