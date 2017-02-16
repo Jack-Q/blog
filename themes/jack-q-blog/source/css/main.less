@@ -1534,6 +1534,74 @@ section.list-content{
     }
   }
 
+  .post-list-pagination{
+    background: rgba(220,220,240,0.5);
+    display: flex;
+    flex-direction: column;
+    .text{
+      text-align: center;
+      margin: auto;
+      padding: 60px 0;
+      text-transform: uppercase;
+      font-size: 1.4em;
+      font-family: @font-sans-serif;
+      color: #999;
+      .cur, .first::after, .last::after{
+        color: #09c;
+      }
+      .first{
+        &::before{
+          content: 'the ';
+        }
+        &::after{
+          content: 'first';
+        }
+      }
+      .last{
+        &::before{
+          content: 'the ';
+        }
+        &::after{
+          content: 'last ';
+        }
+      }
+      .total{
+        display: inline-block;
+        &::before{
+          content: ' of ';
+        }
+        &::after{
+          content: ' pages';
+        }
+      }
+    }
+    .action{
+      border-top: dotted 1px #999;
+      display: flex;
+      a {
+        flex-grow: 1;
+        padding: 20px;
+        font-family: @font-sans-serif;
+        font-weight: 900;
+        color: #aaa;
+        text-transform: uppercase;
+         
+        & + a {
+          border-left: dotted 1px #999;
+        }
+        &.next{
+          text-align: right;
+        }
+        &.prev{
+          text-align: left;
+        }
+        &:hover{
+          color: #09c;
+        }
+      }
+    }
+  }
+
   // Content header
   & > h1 {
     display: none;

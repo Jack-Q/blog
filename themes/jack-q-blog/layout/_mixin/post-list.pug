@@ -3,7 +3,6 @@ mixin post-list(posts)
     .post-list-head
       .welcome 
         .text Welcome
-
         .desp
           ul
             li #[em #{site.posts.length} posts] in total
@@ -21,5 +20,20 @@ mixin post-list(posts)
           .date= post.date.format('YYYY-MM-DD')
           .excerpt!= strip_html(post.excerpt)
           .more 
-    .post-list-next Next page
-  // != paginator(options)
+    .post-list-pagination
+      .text  
+        if page.total > 1
+          if page.current === 1
+            span.first
+          else if page.current === page.total
+            span.last
+          else
+            span.cur= page.current
+          span.total= page.total
+        else
+          span.one
+      .action
+        if page.prev > 0
+          a.prev(href=url_for(page.prev_link)) Prev Page
+        if page.next > 0
+          a.next(href=url_for(page.next_link)) Next Page
