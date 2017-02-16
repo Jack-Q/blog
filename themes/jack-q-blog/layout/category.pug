@@ -6,5 +6,4 @@ include _mixin/site-aside
 block content
   +site-aside()
   section.list-content
-    h1 Category: #{page.category}
     +post-list(page.posts)

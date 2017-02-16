@@ -6,5 +6,4 @@ include _mixin/site-aside
 block content
   +site-aside()
   section.list-content
-    h1 Archive: #{page.year} #{page.month}
     +post-list(page.posts)
