@@ -1054,7 +1054,7 @@ section.article-content{
       height: 100%;
       width: 100%;
       content: '';
-      
+      z-index: -1;
     }
   }
 
@@ -1167,17 +1167,24 @@ section.article-content{
   display: inline-block;
   opacity: 0;
   transition: all ease 400ms;
-  color: #09c;
-  &:before{
-    content: "#"
+  .article-heading &::before{
+    content: "#";
+    display: block;
+  }
+
+  .article-heading & {
+    border-color: transparent;
   }
 
   .article-heading:hover &{
+    color: #09c;
     opacity: 1;
+    
   }
 
-  &:hover{
-    text-decoration: underline;
+  .article-heading:hover &::before{
+    color: #09c;
+    border-color: #09c;
   }
 }
 
