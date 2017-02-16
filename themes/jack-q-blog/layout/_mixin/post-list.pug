@@ -1,18 +1,27 @@
 mixin post-list(posts)
   .post-list-container
     .post-list-head
-      .welcome 
-        .text Welcome
-        .desp
-          ul
-            li #[em #{site.posts.length} posts] in total
-            li Updated at #[em #{site.posts.toArray()[0].date.format("YYYY-MM-DD")}]
-            li Powered by 
-              a(href="https://hexo.io/", target="_blank") HEXO
-            li Hosted on 
-              a(href="https://github.io/", target="_blank") GitHub.io 
+      if is_home()
+        .welcome 
+          .text Welcome
+          .desp
+            ul
+              li #[em #{site.posts.length} posts] in total
+              li Updated at #[em #{site.posts.toArray()[0].date.format("YYYY-MM-DD")}]
+              li Powered by 
+                a(href="https://hexo.io/", target="_blank") HEXO
+              li Hosted on 
+                a(href="https://github.io/", target="_blank") GitHub.io 
+      if is_archive()
+        .archive
+          .text posts on #[em #{page.year}] #[em #{page.month}]
+      if is_tag()
+        .tag
+          .text posts with tag #[em #{page.tag}]
+      if is_category()
+        .category
+          .text posts in category #[em #{page.category}]
 
-            
     each post in (posts.toArray ? posts.toArray() : posts)
       .post-list-post
         a(href=url_for(post.path))
@@ -32,8 +41,9 @@ mixin post-list(posts)
           span.total= page.total
         else
           span.one
-      .action
-        if page.prev > 0
-          a.prev(href=url_for(page.prev_link)) Prev Page
-        if page.next > 0
-          a.next(href=url_for(page.next_link)) Next Page
+      if page.next + page.prev > 0
+        .action
+          if page.prev > 0
+            a.prev(href=url_for(page.prev_link)) Prev Page
+          if page.next > 0
+            a.next(href=url_for(page.next_link)) Next Page
