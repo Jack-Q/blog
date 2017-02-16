@@ -1,11 +1,25 @@
 mixin post-list(posts)
-  ul.post-list
+  .post-list-container
+    .post-list-head
+      .welcome 
+        .text Welcome
+
+        .desp
+          ul
+            li #[em #{site.posts.length} posts] in total
+            li Updated at #[em #{site.posts.toArray()[0].date.format("YYYY-MM-DD")}]
+            li Powered by 
+              a(href="https://hexo.io/", target="_blank") HEXO
+            li Hosted on 
+              a(href="https://github.io/", target="_blank") GitHub.io 
+
+            
     each post in (posts.toArray ? posts.toArray() : posts)
-      li.post(style={
-        border: "solid 1px #aaa",
-        margin: "20px"
-      })
-        h1: a(href=url_for(post.path))= post.title
-        != post.excerpt
-        // pre!=require('util').inspect(post)
-  != paginator(options)
+      .post-list-post
+        a(href=url_for(post.path))
+          .title= post.title
+          .date= post.date.format('YYYY-MM-DD')
+          .excerpt!= strip_html(post.excerpt)
+          .more 
+    .post-list-next Next page
+  // != paginator(options)
