@@ -1375,6 +1375,8 @@ section.list-content{
     }
 
     .archive, .tag, .category, .welcome {
+      position: relative;
+      z-index: 1;
       &::after{
         font-family: "Material Icons";
         -webkit-font-smoothing: antialiased;
@@ -1386,6 +1388,7 @@ section.list-content{
         bottom: -20px;
         font-size: 180px;
         color: rgba(200,200,200,0.5);
+        z-index: -1;
       }
     }
     .archive::after{
