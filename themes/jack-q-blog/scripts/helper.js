@@ -6,8 +6,11 @@ hexo.extend.helper.register('page_anchor', function(str){
   var $ = cheerio.load(str, {decodeEntities: false});
   var headings = $('h1, h2, h3, h4, h5, h6');
 
+  // remove prepend items  
+  $('.headerlink').remove();
+  
   if (!headings.length) return str;
-
+  
   headings.each(function(){
     var id = $(this).attr('id');
 
