@@ -7,7 +7,8 @@ mixin post-list(posts)
           .desp
             ul
               li #[em #{site.posts.length} posts] in total
-              li Updated at #[em #{site.posts.toArray()[0].date.format("YYYY-MM-DD")}]
+              - let lastUpdated = site.posts.toArray().map(p=>p.updated).sort((a,b)=>-a.diff(b))[0]
+              li Updated at #[em #{lastUpdated.format("YYYY-MM-DD")}]
               li Powered by 
                 a(href="https://hexo.io/", target="_blank") HEXO
               li Hosted on 
@@ -15,7 +16,7 @@ mixin post-list(posts)
       if is_archive()
         .archive
           //- .text posts on #[em #{page.year}] #[em #{page.month}]
-          - var archive_date = moment(`${page.year}-${page.month}`, 'YYYY-MM');
+          - let archive_date = moment(`${page.year}-${page.month}`, 'YYYY-MM');
           .text posts in #[em #{archive_date.format('MMM')}], #[em #{archive_date.format('YYYY')}]
       if is_tag()
         .tag
@@ -29,6 +30,7 @@ mixin post-list(posts)
         a(href=url_for(post.path))
           .title= post.title
           .date= post.date.format('YYYY-MM-DD')
+          .updated= post.updated.format('YYYY-MM-DD')
           .excerpt!= strip_html(post.excerpt)
           .more 
     .post-list-pagination
