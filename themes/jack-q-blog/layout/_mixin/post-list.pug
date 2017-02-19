@@ -15,7 +15,6 @@ mixin post-list(posts)
                 a(href="https://github.io/", target="_blank") GitHub.io 
       if is_archive()
         .archive
-          //- .text posts on #[em #{page.year}] #[em #{page.month}]
           - let archive_date = moment(`${page.year}-${page.month}`, 'YYYY-MM');
           .text posts in #[em #{archive_date.format('MMM')}], #[em #{archive_date.format('YYYY')}]
       if is_tag()
