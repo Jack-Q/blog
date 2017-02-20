@@ -922,8 +922,8 @@ body > section.page-loader{
   z-index: 100;
   position: fixed;
   height: 100vh;
-  width: 100vw;
-  margin: 0;
+  width: ~"calc( 100vw - 500px )";
+  margin-left: 500px;
   max-width: none;
   max-height: none;
   pointer-events: none;
@@ -949,8 +949,9 @@ body > section.page-loader{
     transform: translateY(55vh);
   }
 
-  @media screen and (max-width: 768px){
-    margin-left: 500px;
+  @media screen and (max-width: 1024px){
+    width: 100vw;
+    margin: 0;
   }
 
   @keyframes loader-loading {
