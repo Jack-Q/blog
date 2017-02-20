@@ -917,6 +917,50 @@ body > section{
 
 }
 
+// right loader
+body > section.page-loader{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-left: 500px;
+  margin: 0;
+  max-width: none;
+  max-height: none;
+  opacity: 0;
+  pointer-events: none;
+  background: #fff;
+  @media screen and (max-width: 1024px){
+    padding-left: 0;
+  }
+  @keyframes loader-loading {
+    0% {
+      background-color: #fff;
+    }
+    50%{
+      background-color: #09c;
+    }
+    100%{
+      background-color: #f99157;
+    }
+  }
+  .loading-animate{
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: solid 2px #000;
+  }
+  &.loading{
+    transition: all ease 400ms;
+    opacity: 1;
+    .loading-animate{
+      animation: loader-loading 1.2s infinite alternate;
+    }
+  }
+}
 
 
 // right content: the article layout

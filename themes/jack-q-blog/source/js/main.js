@@ -1,5 +1,6 @@
 ; +function ($, sel) {
-
+  console.log("SCRIPT LOAD");
+  
   // aside item toggle
   Array.prototype.forEach.call(
     sel('.icon-item span'), function (i) {
@@ -25,26 +26,76 @@
       })
     });
 
-  Array.prototype.forEach.call(sel('.toc .toc-link'), function (i) {
-    i.addEventListener('click', function (e) {
-      // Native action 
-      // since the smooth scroll feature is only available on Firefox at this time, 
-      // this is disabled currently
-      // sel(i.getAttribute('href')).item(0).scrollIntoView({
-      //   behavior: 'smooth'
-      // })
+  
+  var bindTocLinkHandler = function () {
+    Array.prototype.forEach.call(sel('.toc .toc-link'), function (i) {
+      i.addEventListener('click', function (e) {
+        // Native action 
+        // since the smooth scroll feature is only available on Firefox at this time, 
+        // this is disabled currently
+        // sel(i.getAttribute('href')).item(0).scrollIntoView({
+        //   behavior: 'smooth'
+        // })
 
-      // jQuery Fallback
-      var el = $(i.getAttribute('href'))
-      $('html, body').animate({
-        scrollTop: el.offset().top
-      }, 400);
+        // jQuery Fallback
+        var el = $(i.getAttribute('href'))
+        $('html, body').animate({
+          scrollTop: el.offset().top
+        }, 400);
 
-      // Close sidebar if necessary
-      sel('.jq-blog-aside').item(0).classList.remove('toggle-on');
-      e.preventDefault();
-      return true;
+        // Close sidebar if necessary
+        sel('.jq-blog-aside').item(0).classList.remove('toggle-on');
+        e.preventDefault();
+        return true;
+      });
     });
-  });
+  }
+  bindTocLinkHandler();
+  
+  var smoothLinkHandler = function (ind, a) {
+    var $a = $(a);
+    var $loader = $('section.page-loader');
+    var type = $a.attr('data-smooth-type') === 'post';
+    $a.click(function (e) {
+      console.log("load " + $a.attr('href') + ' as ' + (type ? 'post' : 'list') + ' type');
+      e.preventDefault();
+      // remove current page specific content
+      $('section.article-content').remove();
+      $('.aside-content').remove();
+      $('.icon-item.toc-header').css({ display: 'none' });
+
+      // indicate page loading       
+      $loader.addClass('loading');
+
+      var ele = $('<div>');
+      // try to load the content to the div
+      ele.load($a.attr('href') + ' ', function (rep, stat, xhr) {
+        $loader.removeClass('loading');
+        if (stat === 'error') {
+          $loader.addClass('error');
+          return;
+        }
+        // load page content
+        $('body').append(ele.find('section.article-content'));
+
+        // load navigation list
+        var navigationList = ele.find('.aside-content');
+        if (navigationList.length) {
+          $('.aside-center-content').append(navigationList);
+          $('.icon-item.toc-header').css({ display: 'inline-block' });
+          // rebind toc link handler
+          bindTocLinkHandler();
+        } else {
+          $('.aside-center[data-content-tab=content]').removeClass('active')
+        }
+
+        // rebind smooth link in new page
+        $('section.article-content a[data-smooth]').each(smoothLinkHandler);
+      })
+    })
+  }
+
+  $('a[data-smooth]').each(smoothLinkHandler);
+
   //debugger;
 }(jQuery, document.querySelectorAll.bind(document));

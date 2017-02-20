@@ -66,11 +66,12 @@ mixin site-aside()
               i.material-icons date_range
               span.tooltip archive
           
-          if page.content && toc(page.content)
-            .icon-item
-              span(data-content='content')
-                i.material-icons toc
-                span.tooltip content
+          .icon-item.toc-header(style={
+            display: page.content && toc(page.content) ? 'inline-block' : 'none'
+          })
+            span(data-content='content')
+              i.material-icons toc
+              span.tooltip content
 
         .aside-center-content
           section.aside-tag

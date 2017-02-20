@@ -2,8 +2,10 @@ extends _layout/default
 
 include _mixin/post-list
 include _mixin/site-aside
+include _mixin/page-loader
 
 block content
   +site-aside()
+  +page-loader()
   section.list-content
     +post-list(page.posts)
