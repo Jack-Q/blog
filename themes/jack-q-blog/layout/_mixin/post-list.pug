@@ -26,7 +26,7 @@ mixin post-list(posts)
 
     each post in (posts.toArray ? posts.toArray() : posts)
       .post-list-post
-        a(href=url_for(post.path))
+        a(href=url_for(post.path), 'data-smooth', 'data-smooth-type'='post')
           .title= post.title
           .date= post.date.format('YYYY-MM-DD')
           .updated= post.updated.format('YYYY-MM-DD')
@@ -47,6 +47,6 @@ mixin post-list(posts)
       if page.next + page.prev > 0
         .action
           if page.prev > 0
-            a.prev(href=url_for(page.prev_link)) Prev Page
+            a.prev(href=url_for(page.prev_link), 'data-smooth', 'data-smooth-type'='list') Prev Page
           if page.next > 0
-            a.next(href=url_for(page.next_link)) Next Page
+            a.next(href=url_for(page.next_link), 'data-smooth', 'data-smooth-type'='list') Next Page
