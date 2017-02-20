@@ -58,7 +58,6 @@
   var loadPageContent = function (url, type) {
 
     var $loader = $('section.page-loader');
-    console.log("load " + url + ' as ' + (type ? 'post' : 'list') + ' type');
 
     // indicate page loading
     $loader.addClass('loading');
@@ -128,7 +127,6 @@
   $('a[data-smooth]').each(smoothLinkHandler);
   var initialPageType = $('section.article-content').length > 0;
   window.onpopstate = function (ev) {
-    console.log(JSON.stringify(ev.state));
     loadPageContent(document.location.href, ev.state? ev.state.type : initialPageType);
   };
 
