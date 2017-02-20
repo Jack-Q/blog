@@ -66,6 +66,10 @@
       $('.icon-item.toc-header').css({ display: 'none' });
       $('.aside-center[data-content-tab=content]').removeClass('active')
 
+
+      // Close sidebar if necessary
+      sel('.jq-blog-aside').item(0).classList.remove('toggle-on');
+
       // indicate page loading       
       $loader.addClass('loading');
 
