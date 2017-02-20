@@ -66,18 +66,20 @@
       // indicate page loading
       $loader.addClass('loading');
 
+      // Close sidebar if necessary
+      sel('.jq-blog-aside').item(0).classList.remove('toggle-on');
+
+      $('.aside-center[data-content-tab=content]').removeClass('active');
+      $('.icon-item.toc-header').css({ display: 'none' });
+
       setAnimationDelayed(function () { 
 
         // remove current page specific content
         $('section.article-content').remove();
         $('section.list-content').remove();
         $('.aside-content').remove();
-        $('.icon-item.toc-header').css({ display: 'none' });
-        $('.aside-center[data-content-tab=content]').removeClass('active')
 
 
-        // Close sidebar if necessary
-        sel('.jq-blog-aside').item(0).classList.remove('toggle-on');
 
         var ele = $('<div>');
         // try to load the content to the div
