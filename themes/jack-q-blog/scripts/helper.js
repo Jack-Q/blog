@@ -21,3 +21,14 @@ hexo.extend.helper.register('page_anchor', function(str){
 
   return $.html();
 });
+
+hexo.extend.helper.register('anchor_smooth', function (html, isPostPage) {
+  $ = cheerio.load(html);
+
+  $('a').attr({
+    'data-smooth': 'data-smooth',
+    'data-smooth-type': isPostPage ? 'post' : 'list'
+  })  
+
+  return $.html();
+})
