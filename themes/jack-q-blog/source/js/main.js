@@ -1,5 +1,8 @@
 ; +function ($, sel) {
   console.log("SCRIPT LOAD");
+  var setAnimationDelayed = function (func) {
+    setTimeout(func, 400);
+  }
   
   // aside item toggle
   Array.prototype.forEach.call(
@@ -59,55 +62,61 @@
     $a.click(function (e) {
       console.log("load " + $a.attr('href') + ' as ' + (type ? 'post' : 'list') + ' type');
       e.preventDefault();
-      // remove current page specific content
-      $('section.article-content').remove();
-      $('section.list-content').remove();
-      $('.aside-content').remove();
-      $('.icon-item.toc-header').css({ display: 'none' });
-      $('.aside-center[data-content-tab=content]').removeClass('active')
 
-
-      // Close sidebar if necessary
-      sel('.jq-blog-aside').item(0).classList.remove('toggle-on');
-
-      // indicate page loading       
+      // indicate page loading
       $loader.addClass('loading');
 
-      var ele = $('<div>');
-      // try to load the content to the div
-      ele.load($a.attr('href') + ' ', function (rep, stat, xhr) {
-        $loader.removeClass('loading');
-        if (stat === 'error') {
-          $loader.addClass('error');
-          return;
-        }
+      setAnimationDelayed(function () { 
 
-        // load page as post type
-        if (type) {
-          // load page content
-          $('body').append(ele.find('section.article-content'));
+        // remove current page specific content
+        $('section.article-content').remove();
+        $('section.list-content').remove();
+        $('.aside-content').remove();
+        $('.icon-item.toc-header').css({ display: 'none' });
+        $('.aside-center[data-content-tab=content]').removeClass('active')
 
-          // load navigation list
-          var navigationList = ele.find('.aside-content');
-          if (navigationList.length) {
-            $('.aside-center-content').append(navigationList);
-            $('.icon-item.toc-header').css({ display: 'inline-block' });
-            // rebind toc link handler
-            bindTocLinkHandler();
-          } else {
-            // May remove class 
+
+        // Close sidebar if necessary
+        sel('.jq-blog-aside').item(0).classList.remove('toggle-on');
+
+        var ele = $('<div>');
+        // try to load the content to the div
+        ele.load($a.attr('href') + ' ', function (rep, stat, xhr) {
+          $loader.removeClass('loading');
+          if (stat === 'error') {
+            $loader.addClass('error');
+            return;
           }
 
-          // rebind smooth link in new page
-          $('section.article-content a[data-smooth]').each(smoothLinkHandler);
-        } else {
-          // load page as list type 
-          $('body').append(ele.find('section.list-content'));
+          // load page as post type
+          if (type) {
+            // load page content
+            $('body').append(ele.find('section.article-content'));
 
-          // rebind smooth link in new page
-          $('section.list-content a[data-smooth]').each(smoothLinkHandler);
-        }
+            // load navigation list
+            var navigationList = ele.find('.aside-content');
+            if (navigationList.length) {
+              $('.aside-center-content').append(navigationList);
+              $('.icon-item.toc-header').css({ display: 'inline-block' });
+              // rebind toc link handler
+              bindTocLinkHandler();
+            } else {
+              // May remove class 
+            }
+
+            // rebind smooth link in new page
+            $('section.article-content a[data-smooth]').each(smoothLinkHandler);
+          } else {
+            // load page as list type 
+            $('body').append(ele.find('section.list-content'));
+
+            // rebind smooth link in new page
+            $('section.list-content a[data-smooth]').each(smoothLinkHandler);
+          }
+        })
+        
       })
+
     })
   }
 
