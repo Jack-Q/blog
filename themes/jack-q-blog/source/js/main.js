@@ -55,74 +55,81 @@
   }
   bindTocLinkHandler();
   
+  var loadPageContent = function (url, type) {
+
+    var $loader = $('section.page-loader');
+    console.log("load " + url + ' as ' + (type ? 'post' : 'list') + ' type');
+
+    // indicate page loading
+    $loader.addClass('loading');
+
+    // Close sidebar if necessary
+    sel('.jq-blog-aside').item(0).classList.remove('toggle-on');
+
+    $('.aside-center[data-content-tab=content]').removeClass('active');
+    $('.icon-item.toc-header').css({ display: 'none' });
+
+    setAnimationDelayed(function () {
+      
+      // remove current page specific content
+      $('section.article-content').remove();
+      $('section.list-content').remove();
+      $('.aside-content').remove();
+
+
+      var ele = $('<div>');
+      // try to load the content to the div
+      ele.load(url, function (rep, stat, xhr) {
+        $loader.removeClass('loading');
+        if (stat === 'error') {
+          $loader.addClass('error');
+          return;
+        }
+
+        // load page as post type
+        if (type) {
+          // load page content
+          $('body').append(ele.find('section.article-content'));
+
+          // load navigation list
+          var navigationList = ele.find('.aside-content');
+          if (navigationList.length) {
+            $('.aside-center-content').append(navigationList);
+            $('.icon-item.toc-header').css({ display: 'inline-block' });
+            // rebind toc link handler
+            bindTocLinkHandler();
+          } else {
+            // May remove class 
+          }
+
+          // rebind smooth link in new page
+          $('section.article-content a[data-smooth]').each(smoothLinkHandler);
+        } else {
+          // load page as list type 
+          $('body').append(ele.find('section.list-content'));
+
+          // rebind smooth link in new page
+          $('section.list-content a[data-smooth]').each(smoothLinkHandler);
+        }
+      })
+      
+    })
+  }
   var smoothLinkHandler = function (ind, a) {
     var $a = $(a);
-    var $loader = $('section.page-loader');
     var type = $a.attr('data-smooth-type') === 'post';
     $a.click(function (e) {
-      console.log("load " + $a.attr('href') + ' as ' + (type ? 'post' : 'list') + ' type');
       e.preventDefault();
-
-      // indicate page loading
-      $loader.addClass('loading');
-
-      // Close sidebar if necessary
-      sel('.jq-blog-aside').item(0).classList.remove('toggle-on');
-
-      $('.aside-center[data-content-tab=content]').removeClass('active');
-      $('.icon-item.toc-header').css({ display: 'none' });
-
-      setAnimationDelayed(function () { 
-
-        // remove current page specific content
-        $('section.article-content').remove();
-        $('section.list-content').remove();
-        $('.aside-content').remove();
-
-
-
-        var ele = $('<div>');
-        // try to load the content to the div
-        ele.load($a.attr('href') + ' ', function (rep, stat, xhr) {
-          $loader.removeClass('loading');
-          if (stat === 'error') {
-            $loader.addClass('error');
-            return;
-          }
-
-          // load page as post type
-          if (type) {
-            // load page content
-            $('body').append(ele.find('section.article-content'));
-
-            // load navigation list
-            var navigationList = ele.find('.aside-content');
-            if (navigationList.length) {
-              $('.aside-center-content').append(navigationList);
-              $('.icon-item.toc-header').css({ display: 'inline-block' });
-              // rebind toc link handler
-              bindTocLinkHandler();
-            } else {
-              // May remove class 
-            }
-
-            // rebind smooth link in new page
-            $('section.article-content a[data-smooth]').each(smoothLinkHandler);
-          } else {
-            // load page as list type 
-            $('body').append(ele.find('section.list-content'));
-
-            // rebind smooth link in new page
-            $('section.list-content a[data-smooth]').each(smoothLinkHandler);
-          }
-        })
-        
-      })
-
+      history.pushState({ type: type }, 'Jack Q\'s Blog', $a.attr('href'));
+      loadPageContent($a.attr('href'), type);
     })
   }
 
   $('a[data-smooth]').each(smoothLinkHandler);
+  var initialPageType = $('section.article-content').length > 0;
+  window.onpopstate = function (ev) {
+    console.log(JSON.stringify(ev.state));
+    loadPageContent(document.location.href, ev.state? ev.state.type : initialPageType);
+  };
 
-  //debugger;
 }(jQuery, document.querySelectorAll.bind(document));
