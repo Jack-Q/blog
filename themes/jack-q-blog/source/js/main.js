@@ -61,8 +61,10 @@
       e.preventDefault();
       // remove current page specific content
       $('section.article-content').remove();
+      $('section.list-content').remove();
       $('.aside-content').remove();
       $('.icon-item.toc-header').css({ display: 'none' });
+      $('.aside-center[data-content-tab=content]').removeClass('active')
 
       // indicate page loading       
       $loader.addClass('loading');
@@ -75,22 +77,32 @@
           $loader.addClass('error');
           return;
         }
-        // load page content
-        $('body').append(ele.find('section.article-content'));
 
-        // load navigation list
-        var navigationList = ele.find('.aside-content');
-        if (navigationList.length) {
-          $('.aside-center-content').append(navigationList);
-          $('.icon-item.toc-header').css({ display: 'inline-block' });
-          // rebind toc link handler
-          bindTocLinkHandler();
+        // load page as post type
+        if (type) {
+          // load page content
+          $('body').append(ele.find('section.article-content'));
+
+          // load navigation list
+          var navigationList = ele.find('.aside-content');
+          if (navigationList.length) {
+            $('.aside-center-content').append(navigationList);
+            $('.icon-item.toc-header').css({ display: 'inline-block' });
+            // rebind toc link handler
+            bindTocLinkHandler();
+          } else {
+            // May remove class 
+          }
+
+          // rebind smooth link in new page
+          $('section.article-content a[data-smooth]').each(smoothLinkHandler);
         } else {
-          $('.aside-center[data-content-tab=content]').removeClass('active')
-        }
+          // load page as list type 
+          $('body').append(ele.find('section.list-content'));
 
-        // rebind smooth link in new page
-        $('section.article-content a[data-smooth]').each(smoothLinkHandler);
+          // rebind smooth link in new page
+          $('section.list-content a[data-smooth]').each(smoothLinkHandler);
+        }
       })
     })
   }

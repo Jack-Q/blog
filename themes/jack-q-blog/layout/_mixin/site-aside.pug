@@ -50,7 +50,7 @@ mixin site-aside()
       .aside-center
         .icon-header
           .icon-item
-            a(href=url_for('/'))
+            a(href=url_for('/'), 'data-smooth', 'data-smooth-type'='list')
               i.material-icons home
               span.tooltip home
           .icon-item
