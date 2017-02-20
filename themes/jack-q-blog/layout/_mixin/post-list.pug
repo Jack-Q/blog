@@ -29,7 +29,7 @@ mixin post-list(posts)
         a(href=url_for(post.path), 'data-smooth', 'data-smooth-type'='post')
           .title= post.title
           .date= post.date.format('YYYY-MM-DD')
-          .updated= post.updated.format('YYYY-MM-DD')
+          //- .updated= post.updated.format('YYYY-MM-DD')
           .excerpt!= strip_html(post.excerpt)
           .more 
     .post-list-pagination
