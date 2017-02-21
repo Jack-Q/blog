@@ -104,11 +104,15 @@
           // rebind smooth link in new page
           $('section.article-content a[data-smooth]').each(smoothLinkHandler);
 
-          // reinitialize 
-          DISQUS && (function () { 
-            $('#disqus_thread').empty();
-            DISQUS.reset({ reload: true });
-          } ())
+          // reinitialize
+          try {
+            DISQUS && (function () { 
+              $('#disqus_thread').empty();
+              DISQUS.reset({ reload: true });
+            } ()) 
+          } catch (e) {
+            console.log("failed to load DISQUS");
+          }
 
         } else {
           // load page as list type 
