@@ -59,8 +59,8 @@
 
     var $loader = $('section.page-loader');
 
-    // indicate page loading
-    $loader.addClass('loading');
+    // indicate page loading, and remove possible erorr state
+    $loader.removeClass('error').addClass('loading');
 
     // Close sidebar if necessary
     sel('.jq-blog-aside').item(0).classList.remove('toggle-on');
@@ -103,6 +103,13 @@
 
           // rebind smooth link in new page
           $('section.article-content a[data-smooth]').each(smoothLinkHandler);
+
+          // reinitialize 
+          DISQUS && (function () { 
+            $('#disqus_thread').empty();
+            DISQUS.reset({ reload: true });
+          } ())
+
         } else {
           // load page as list type 
           $('body').append(ele.find('section.list-content'));
