@@ -980,6 +980,35 @@ body > section.page-loader{
     transition: all ease 400ms;
   }
 
+  .error-animate {
+    opacity: 0;
+    margin: -25px auto auto -75px;
+    height: 80px;
+    width: 150px;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 25px;
+    opacity: 0;
+    transition: all ease 400ms;
+    text-align: center;
+    color: #f2777a;
+    i {
+      font-size: 50px;
+      display: block;
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+      margin: auto;
+    }
+    .message {
+      height: 30px;
+      font-size: 16px;
+    }
+    
+  }
+
   &.loading{
     z-index: 100;
     display: block;
@@ -991,6 +1020,20 @@ body > section.page-loader{
       opacity: 1;
       animation: loader-loading 1.2s infinite alternate;
     }
+  }
+
+  &.error {
+    z-index: 100;
+    display: block;
+    &::before, &::after{
+      // opacity: 1;
+      transform: translateY(0);
+    }
+    .error-animate{
+      opacity: 1;
+      // animation: loader-error 1.2s infinite alternate;
+    }
+    
   }
 }
 
