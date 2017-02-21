@@ -130,7 +130,23 @@ Libraries & Frameworks
 
 ### `Spring Framework`
 
-`IoC`, *DI*
+`Spring Framework` is a container to manage Java object. Some keywords related to `Spring Framework` ist as follows:
+
+`IoC`, Inversion Of Control. This is a general concept descriping the phenomena that a object method which use 
+the function provided by another class has no control logic related to the lifecycle of the funciton provider object.
+
+`DI`, Dependency Injection, an approach to achieve the `IoC` function. 
+
+`AOP`, Aspect Orientred Programming. Cut the core bussiness process into multiple layers and insert different 
+process logic into different layers as steps applied to each transaction. For example, when a web server process
+an HTTP request and response to it, though the process may vary from each specific request, the following steps
+are applicable to all of them, including the request parsing step, the request logging step, the security check step, 
+the paramater abstraction step, the bussiness logic processing step, the content generating step, etc. Each step can be 
+treated as an aspect of the process and connected by the framework.
+
+Basides the core features, Spring also provides some other conponents to provides more functionalities.
+The `Spring MVC` provides Model-View-Controller pattern management like the `Structs` does. The `Spring Security`
+provides authentication features like the `Sherio` does. 
 
 ### `Hibernate ORM`
 
