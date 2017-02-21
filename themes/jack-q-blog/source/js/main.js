@@ -56,7 +56,9 @@
   bindTocLinkHandler();
   
   var loadPageContent = function (url, type) {
-
+    // Google Analysis 
+    ga && ga('send', 'pageview');
+    
     var $loader = $('section.page-loader');
 
     // indicate page loading, and remove possible erorr state

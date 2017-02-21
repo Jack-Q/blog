@@ -4,7 +4,10 @@
 
 ### Add new post
 
-
+```bash
+hexo new "${POST_NAME}"
+```
+Then change the `commend_id` field accordingly.
 
 ### Deploy
 

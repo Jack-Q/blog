@@ -64,6 +64,9 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: jack-q-blog
 
+# Google Analytics 
+googleAnalyticsId: UA-63336636-1
+
 # Feed generator
 feed:
   type: atom # atom / rss2
