@@ -19,6 +19,7 @@
     "hexo-render-pug": "^1.2.0",
     "hexo-renderer-less": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "hexo-uglify": "0.0.3"
   }
 }

@@ -92,4 +92,9 @@ marked:
   breaks: false
   smartLists: true
   smartypants: true
-  
+
+## JavaScript uglify
+uglify:
+  mangle: true
+  exclude: 
+    - "*.min.js"
