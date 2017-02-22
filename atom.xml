@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jack-q.github.io/blog/"/>
-  <updated>2017-02-21T15:31:00.420Z</updated>
+  <updated>2017-02-22T10:50:49.574Z</updated>
   <id>https://jack-q.github.io/blog/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 03</title>
+    <link href="https://jack-q.github.io/blog/2017/02/22/javaee-training-note-day-03/"/>
+    <id>https://jack-q.github.io/blog/2017/02/22/javaee-training-note-day-03/</id>
+    <published>2017-02-22T09:44:32.000Z</published>
+    <updated>2017-02-22T10:50:49.574Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Continued on the introduction to &lt;code&gt;Servlet&lt;/code&gt; and &lt;code&gt;Spring MVC&lt;/code&gt; library, the main 
+content of the third day is detailed illustration of web site using 
+&lt;code&gt;Spring MVC&lt;/code&gt;. Another main point is the &lt;code&gt;Hibernate ORM&lt;/code&gt; library which is used 
+to unify and simplify the process of database connection and data transaction.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="https://jack-q.github.io/blog/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaEE Training Note - Day 02</title>
