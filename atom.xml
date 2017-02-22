@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jack Q Blog</title>
+  
+  <link href="/blog/atom.xml" rel="self"/>
+  
+  <link href="https://jack-q.github.io/blog/"/>
+  <updated>2017-02-21T15:31:00.420Z</updated>
+  <id>https://jack-q.github.io/blog/</id>
+  
+  <author>
+    <name>Jack Q</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 02</title>
+    <link href="https://jack-q.github.io/blog/2017/02/21/javaee-training-note-day-02/"/>
+    <id>https://jack-q.github.io/blog/2017/02/21/javaee-training-note-day-02/</id>
+    <published>2017-02-21T04:57:05.000Z</published>
+    <updated>2017-02-21T15:31:00.420Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The main content of the second day is some detail about the &lt;code&gt;Spring Framework&lt;/code&gt;,
+including elibration of the core concepts in &lt;code&gt;Spring&lt;/code&gt;, how to set up the 
+framework, and XML file based configutation as well as annotation based 
+configutation. Apart from the core framework, &lt;code&gt;Spring MVC&lt;/code&gt; is also metioned.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="https://jack-q.github.io/blog/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 01</title>
+    <link href="https://jack-q.github.io/blog/2017/02/20/javaee-training-note-day-01/"/>
+    <id>https://jack-q.github.io/blog/2017/02/20/javaee-training-note-day-01/</id>
+    <published>2017-02-20T15:42:15.000Z</published>
+    <updated>2017-02-21T00:48:39.904Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The training content of the first day of this one-month training is 
+some genaral concepts of JavaEE development. It also covers some basic 
+introduction to some broadly used library/framework including 
+&lt;code&gt;Spring Framework&lt;/code&gt;, &lt;code&gt;Hibernate ORM&lt;/code&gt;, etc. Besides, some trivals of Java prgramming
+language are also recapped in today’s content.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="https://jack-q.github.io/blog/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Migrate to Hexo</title>
+    <link href="https://jack-q.github.io/blog/2017/01/31/Migrate-to-Hexo/"/>
+    <id>https://jack-q.github.io/blog/2017/01/31/Migrate-to-Hexo/</id>
+    <published>2017-01-30T16:00:00.000Z</published>
+    <updated>2017-02-16T07:29:48.492Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Migrate to &lt;a href=&quot;https://hexojs.io/&quot;&gt;Hexo&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="blog" scheme="https://jack-q.github.io/blog/categories/blog/"/>
+    
+    
+      <category term="blog" scheme="https://jack-q.github.io/blog/tags/blog/"/>
+    
+      <category term="hexo" scheme="https://jack-q.github.io/blog/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Use Glup to Make Life Easy</title>
+    <link href="https://jack-q.github.io/blog/2015/09/14/Use-Glup-to-Make-Life-Easy/"/>
+    <id>https://jack-q.github.io/blog/2015/09/14/Use-Glup-to-Make-Life-Easy/</id>
+    <published>2015-09-13T16:00:00.000Z</published>
+    <updated>2017-01-31T10:25:00.767Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;task-1, task-2, task-3, task-4, …&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Everyone who working in front end web page development will
+have some trivals repeating and repeating. Imagine that you are creating 
+a web page from scratch, you need to design the all the pages arrage the relationships
+between different pages and other websides. Then you need to implement every single
+ pages. You should figure out the common part and reusable part and put them together,
+ and use some client-side or server-side mothods to merge all different part together
+and represent a perfectly metched web page to your audience. If you achieve the goal
+via a client side method such as &lt;code&gt;frameset&lt;/code&gt; of &lt;code&gt;iframe&lt;/code&gt; tag in web page, then you can 
+hardly prevent user directly visit a fragment of a layer of your final site. In some
+other scrnarios, some one directly use the same method as you do to put your site 
+fragment into their web pages. Isn’t it annoying?&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="javascript" scheme="https://jack-q.github.io/blog/categories/javascript/"/>
+    
+    
+      <category term="javascript" scheme="https://jack-q.github.io/blog/tags/javascript/"/>
+    
+      <category term="gulp" scheme="https://jack-q.github.io/blog/tags/gulp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Use RequireJS in Your Site</title>
+    <link href="https://jack-q.github.io/blog/2015/09/12/Use-Require-Js-in-Your-Site/"/>
+    <id>https://jack-q.github.io/blog/2015/09/12/Use-Require-Js-in-Your-Site/</id>
+    <published>2015-09-11T16:00:00.000Z</published>
+    <updated>2017-02-01T05:19:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&amp;lt;script src=”/script/Script.js”&amp;gt;&amp;lt;/script&amp;gt; ? 
+&lt;br/&gt;
+require(“Script”); ?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For most of the websites that you visit everyday, the JavaScript 
+is not only a additional way to promote user experience but also a
+required method to let the site works as expectation. Nowadays, in
+such a so called “web 2.0” era, what is loaded and rendered by a
+browser is not a traditional document-like web-page but a modern
+program-like web-application. And since the HTML5 and CSS3
+( as well as other “live standands” ) became widely used in most websites
+form top of Alexa ranking to those personal blog (like this), it’s rare
+to meet a pure static site(in terms of client end). The scorces drive 
+all of world of web is in JavaScript, our hero. However, just as
+the name, “JavaScript”, indicates that it’s initial goal is only provide 
+some simple way for website to use, JavaScript is &lt;em&gt;not&lt;/em&gt; designed for 
+large scale application. The conflict between the autologous fault of the language nature 
+and the raising demand of a suitable language led to various solutions.
+Here in this post, I would like to talk about some things about
+&lt;a href=&quot;http://www.requirejs.org/&quot; title=&quot;RequireJS&amp;#39;s Official Site&quot;&gt;RequireJS&lt;/a&gt;, a JavaScript file and module loader who modulize JavaScript
+code snippits and load them asynchoronously in the standand
+browswer environment.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="javascript" scheme="https://jack-q.github.io/blog/categories/javascript/"/>
+    
+    
+      <category term="requirejs" scheme="https://jack-q.github.io/blog/tags/requirejs/"/>
+    
+      <category term="javascript" scheme="https://jack-q.github.io/blog/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Building the Blog (03): Directory and Basic Configuration</title>
+    <link href="https://jack-q.github.io/blog/2015/09/06/Building-the-Blog-03-Directoty-and-Basic-Configuration/"/>
+    <id>https://jack-q.github.io/blog/2015/09/06/Building-the-Blog-03-Directoty-and-Basic-Configuration/</id>
+    <published>2015-09-05T16:00:00.000Z</published>
+    <updated>2017-02-14T14:27:04.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Dive deeper into Jekyll&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is the third post of the &lt;a href=&quot;/series/Building-the-blog&quot;&gt;Building the Blog&lt;/a&gt; series which will cover
+some more configurations to Jekyll. &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="blog" scheme="https://jack-q.github.io/blog/categories/blog/"/>
+    
+    
+      <category term="blog" scheme="https://jack-q.github.io/blog/tags/blog/"/>
+    
+      <category term="jekyll" scheme="https://jack-q.github.io/blog/tags/jekyll/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Building the Blog (02): Say Hello World</title>
+    <link href="https://jack-q.github.io/blog/2015/08/13/Building-the-Blog-02-Say-Hello-World/"/>
+    <id>https://jack-q.github.io/blog/2015/08/13/Building-the-Blog-02-Say-Hello-World/</id>
+    <published>2015-08-12T16:00:00.000Z</published>
+    <updated>2017-02-01T05:19:18.540Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Continuing ...&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This post is the second part of the &lt;a href=&quot;/series/Building-the-Blog&quot;&gt;Building the Blog&lt;/a&gt; 
+series which focuses on setting up the environment and andding 
+the basic page as well as making the whole blog run up with the
+power of &lt;code&gt;Jekyll&lt;/code&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="blog" scheme="https://jack-q.github.io/blog/categories/blog/"/>
+    
+    
+      <category term="blog" scheme="https://jack-q.github.io/blog/tags/blog/"/>
+    
+      <category term="jekyll" scheme="https://jack-q.github.io/blog/tags/jekyll/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Theming in Linux</title>
+    <link href="https://jack-q.github.io/blog/2015/08/11/Theming-in-Linux/"/>
+    <id>https://jack-q.github.io/blog/2015/08/11/Theming-in-Linux/</id>
+    <published>2015-08-10T16:00:00.000Z</published>
+    <updated>2017-02-20T15:39:16.818Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Linux is identical for its identical.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The Linux is great system with its identical features.
+And community of linux also encourage a atmosphere of 
+personality. Having working on linux for several months,
+I have gradually understanded the purpose and meaning
+of open-source and community in the system and its 
+ecosystem. And for myself, I also want to make the everyday
+environment more custome and comfort. Then, I decided to
+have a try on theming the Linux.&lt;/p&gt;
+&lt;p&gt;What I want to do is to make some change or just some simple 
+modification to current theme of desktop. Since I use the
+&lt;a href=&quot;http://www.linuxmint.com/&quot;&gt;Linux Mint&lt;/a&gt; (Cinnamon Edition, Version 17.2, currently 
+the latest), the desktop environment is Cinnamon which is 
+forked from Gnome. With this basic information, let’s 
+try to theme the linux from scratch.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="linux" scheme="https://jack-q.github.io/blog/categories/linux/"/>
+    
+    
+      <category term="theme" scheme="https://jack-q.github.io/blog/tags/theme/"/>
+    
+      <category term="linux" scheme="https://jack-q.github.io/blog/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Getting CAS Tickets via Node</title>
+    <link href="https://jack-q.github.io/blog/2015/08/08/Getting-CAS-Ticket-via-Node/"/>
+    <id>https://jack-q.github.io/blog/2015/08/08/Getting-CAS-Ticket-via-Node/</id>
+    <published>2015-08-07T16:00:00.000Z</published>
+    <updated>2017-02-01T05:18:57.804Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Nowadays, the OAuth 2.0 is the most popular stander for 
+authorization and also widely used in the third-party 
+authentication process. Beside, there are lots of other
+protocols uesd for that purpose. Here in this post, 
+the focus is on the CAS -- Central Authentication Service.
+(Wiki:&lt;a href=&quot;https://en.wikipedia.org/wiki/Central_Authentication_Service&quot;&gt;CAS&lt;/a&gt;) as well as the same named implementation.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="network" scheme="https://jack-q.github.io/blog/categories/network/"/>
+    
+    
+      <category term="cas" scheme="https://jack-q.github.io/blog/tags/cas/"/>
+    
+      <category term="network" scheme="https://jack-q.github.io/blog/tags/network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Summary for Summer Semester</title>
+    <link href="https://jack-q.github.io/blog/2015/07/27/Summary-for-Summer-Semester/"/>
+    <id>https://jack-q.github.io/blog/2015/07/27/Summary-for-Summer-Semester/</id>
+    <published>2015-07-26T16:00:00.000Z</published>
+    <updated>2017-01-31T10:25:00.767Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Finished it, at last.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In the past two weeks, fully devotion was paid on the task
+ (May be also a project) about on the field of the front-end
+web coding. During that time, a small group of primers (in 
+the front-end web development) were working together on a small 
+site as a task, the goal of which is to clone the front-end
+part of one of the most popular sites nationwide. And finally, 
+not only have we finished the cloning of its front-end part, 
+but also have added some back-end components to it that make
+the site more dynamic. Here after the task, I want to summarize
+the gains and faults.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Building the Blog (01): Start from Here</title>
+    <link href="https://jack-q.github.io/blog/2015/07/12/Building-the-Blog-01-Start-from-Here/"/>
+    <id>https://jack-q.github.io/blog/2015/07/12/Building-the-Blog-01-Start-from-Here/</id>
+    <published>2015-07-11T16:00:00.000Z</published>
+    <updated>2017-02-01T05:18:08.443Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Finally, it started ... ...&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I have been plannning to have a blog of mine for
+a long time. However, owing to all kinds of different 
+problems, this work still stay in the status of
+&lt;em&gt;UNDERCONSINDERATION&lt;/em&gt;. Last year, I started to 
+implement one in &lt;code&gt;PHP&lt;/code&gt; by doing everything required 
+by a blog-like site. However, though that one had been
+coded for about two weeks including the process of 
+web page design, finally I was interrupted by an 
+important person who had helped me a lot and asked 
+me for assist. Form then on, my project of a self-blog
+site have no progress.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="blog" scheme="https://jack-q.github.io/blog/categories/blog/"/>
+    
+    
+      <category term="blog" scheme="https://jack-q.github.io/blog/tags/blog/"/>
+    
+      <category term="jekyll" scheme="https://jack-q.github.io/blog/tags/jekyll/"/>
+    
+  </entry>
+  
+</feed>
