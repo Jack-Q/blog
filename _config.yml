@@ -80,7 +80,7 @@ feed:
 deploy:
   type: git
   repo: git@github.com:Jack-Q/blog.git
-  branch: gh-page
+  branch: gh-pages
   message: update blog at {{ now('YYYY-MM-DD HH:mm:ss') }}
 
 ## Markdown Conversion Configuration
