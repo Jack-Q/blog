@@ -24,13 +24,14 @@ mixin post(post)
     //- Comment
     .post-comment
       #disqus_thread Disqus is loading...
-    script(id='disqus_config', data-disqus-url=page.permalink, data-disqus-identifier=page.comment_id).
+    - let permalink = `${config.url}/${page.path}`
+    script(id='disqus_config', data-disqus-url=permalink, data-disqus-identifier=page.comment_id, data-disqus-title=page.title).
       var disqus_config = function () {
         var conf = document.getElementById('disqus_config')
         this.page = this.page || {};
         this.page.url = conf.dataset['disqusUrl'];  
         this.page.identifier = conf.dataset['disqusIdentifier'];
-        
+        this.page.title = conf.dataset['disqusTitle'];
       };
     script(id='disqus_loader').
       (function() {
