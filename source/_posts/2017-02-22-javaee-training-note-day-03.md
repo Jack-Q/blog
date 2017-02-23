@@ -168,7 +168,7 @@ Spring MVC with from
 
 One of the most useful feature of `Spring MVC` is its mapping from html from to 
 Java object. Based on the previous example, this application will first add a 
-model class `` defined as follows:
+model class `HelloMessage` defined as follows:
 
 ```java 
 // Model class for test, this is merely a POJO 
