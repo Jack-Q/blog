@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jack-q.github.io/blog/"/>
-  <updated>2017-02-23T12:45:00.102Z</updated>
+  <updated>2017-02-24T12:43:13.014Z</updated>
   <id>https://jack-q.github.io/blog/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 05</title>
+    <link href="https://jack-q.github.io/blog/2017/02/24/javaee-training-note-day-05/"/>
+    <id>https://jack-q.github.io/blog/2017/02/24/javaee-training-note-day-05/</id>
+    <published>2017-02-24T00:42:37.000Z</published>
+    <updated>2017-02-24T12:43:13.014Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;A website is a user oriented application which will represent a friendly
+interface to its end user. Nowadays, the browser based webpage is still
+the most important interface represented to user. Based on the 
+current application with integrated Spring, Spring MVC and Hibernate,
+some issues related to the front end is the main topic of today’s schedule.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="https://jack-q.github.io/blog/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaEE Training Note - Day 04</title>
