@@ -595,12 +595,18 @@ header.jq-nav-header{
       width: 70px;
       position: relative;
       border-bottom: solid 2px transparent;
+      transition: all ease 400ms;
 
       @media screen and (max-width: 435px){
         width: 55px;
       }
       @media screen and (max-width: 285px){
         width: 50px;
+      }
+
+      &.hidden {
+        width: 0px;
+        overflow: hidden;
       }
 
       &>a, &>span{

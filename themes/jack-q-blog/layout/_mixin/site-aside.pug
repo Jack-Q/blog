@@ -66,8 +66,8 @@ mixin site-aside()
               i.material-icons date_range
               span.tooltip archive
           
-          .icon-item.toc-header(style={
-            display: page.content && toc(page.content) ? 'inline-block' : 'none'
+          .icon-item.toc-header(class={
+            hidden: !(page.content && toc(page.content))
           })
             span(data-content='content')
               i.material-icons toc

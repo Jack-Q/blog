@@ -68,7 +68,7 @@
     sel('.jq-blog-aside').item(0).classList.remove('toggle-on');
 
     $('.aside-center[data-content-tab=content]').removeClass('active');
-    $('.icon-item.toc-header').css({ display: 'none' });
+    $('.icon-item.toc-header').addClass('hidden');
 
     setAnimationDelayed(function () {
       
@@ -96,7 +96,7 @@
           var navigationList = ele.find('.aside-content');
           if (navigationList.length) {
             $('.aside-center-content').append(navigationList);
-            $('.icon-item.toc-header').css({ display: 'inline-block' });
+            $('.icon-item.toc-header').removeClass('hidden')
             // rebind toc link handler
             bindTocLinkHandler();
           } else {
