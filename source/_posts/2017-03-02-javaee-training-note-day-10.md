@@ -1,7 +1,7 @@
 ---
 title: JavaEE Training Note - Day 10
 date: 2017-03-02 21:13:39
-comment_id: 2017-03-02 21:13:39
+comment_id: 20170302-JEENOTE-10
 tags:
   - java
 ---

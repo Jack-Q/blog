@@ -1,7 +1,7 @@
 ---
 title: JavaEE Training Note - Day 07
 date: 2017-02-27 20:06:20
-comment_id: 2017-02-27 20:06:20
+comment_id: 20170227-JEENOTE-07
 tags:
   - java
 ---
