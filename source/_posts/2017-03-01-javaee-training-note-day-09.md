@@ -12,6 +12,8 @@ several days ago when introdcing the unit test supporting in
 Spring MVC framework. Today's point is related to the managment 
 and theory approach of the test.
 
+<!-- more -->
+
 Importance of Testing 
 ---------------------
 

@@ -9,6 +9,8 @@ Tosay's topic is related to configuration of service in remote Linux server.
 The target server is an ubuntu server 16.04. Following are some of configuration
 steps.
 
+<!-- more -->
+
 Java （Oracle JDK)
 -----------------
 

@@ -10,6 +10,8 @@ From this day, the training schedule goes to the coding stage of
 the development project. There will be no central topic of the notes,
 but a set of records of problems and technics. 
 
+<!-- more -->
+
 Spring MVC Interceptor
 ----------------------
 

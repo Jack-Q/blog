@@ -11,6 +11,8 @@ The concepts introduced today is the low level basis of the fancy and
 colorful world of the Internet. Besides the general concepts, the nginx
 server also introduced.
 
+<!-- more -->
+
 ## Web Application Architecture
 
 The most famous protocol of the Web is the the http protocol, which is a application layer 

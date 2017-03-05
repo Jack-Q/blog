@@ -11,6 +11,8 @@ the code refactoring in Java. The former is to fully empower the
 test in Java based project, while the latter is to keep a essential 
 approach about improving the quality of the source code.
 
+<!-- more -->
+
 Unit Test
 =========
 
