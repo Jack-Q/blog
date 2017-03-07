@@ -1,7 +1,7 @@
 ---
 title: JavaEE Training Note - Day 12
 date: 2017-03-04 21:43:19
-comment_id: 20170304-JEENOTE-11
+comment_id: 20170304-JEENOTE-12
 tags:
   - react
 ---

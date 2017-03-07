@@ -1,7 +1,7 @@
 ---
 title: JavaEE Training Note - Day 13
 date: 2017-03-06 10:53:12
-comment_id: 2017-03-06 10:53:12
+comment_id: 20170306-JEENOTE-13
 tags:
 ---
 
