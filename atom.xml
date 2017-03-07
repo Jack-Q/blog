@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jack-q.github.io/blog/"/>
-  <updated>2017-02-25T11:19:29.011Z</updated>
+  <updated>2017-03-07T17:29:57.330Z</updated>
   <id>https://jack-q.github.io/blog/</id>
   
   <author>
@@ -16,11 +16,177 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JavaEE Training Note - Day 14</title>
+    <link href="https://jack-q.github.io/blog/2017/03/07/javaee-training-note-day-14/"/>
+    <id>https://jack-q.github.io/blog/2017/03/07/javaee-training-note-day-14/</id>
+    <published>2017-03-07T15:05:13.000Z</published>
+    <updated>2017-03-07T17:29:57.330Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Today’s topic is continued to the day before yesterday. It is still about the ReactJS framework.
+Based on the start point created on that day, today is to create the first component and then 
+introduce the React Router library to solving the problem of routing inside the whole client 
+side application in React.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="react" scheme="https://jack-q.github.io/blog/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 13</title>
+    <link href="https://jack-q.github.io/blog/2017/03/06/javaee-training-note-day-13/"/>
+    <id>https://jack-q.github.io/blog/2017/03/06/javaee-training-note-day-13/</id>
+    <published>2017-03-06T02:53:12.000Z</published>
+    <updated>2017-03-07T16:06:26.355Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Today’s topic is some tips to the solution to the problems in 
+deveploment, varying from the frontend development to backend 
+presistence technology. &lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 12</title>
+    <link href="https://jack-q.github.io/blog/2017/03/04/javaee-training-note-day-12/"/>
+    <id>https://jack-q.github.io/blog/2017/03/04/javaee-training-note-day-12/</id>
+    <published>2017-03-04T13:43:19.000Z</published>
+    <updated>2017-03-07T16:06:42.888Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;A website (as well as other types of web applications) is gnenrally composited 
+of frontend interface and backend service provider. Traditionally, when the website 
+is the most fancy application of web, the frontend is static html pages genrated 
+by http server. However, in the recent years, the AJAX technology and mobile platform
+driven some kinds of new applications. The Single Page Application (SPA) is 
+an envolved version of the original web page which is performed like a local application
+while requires no binary installation process. Today’s topic is related to the 
+ReactJS framework, a frontend solution to manage the SPA and more.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="react" scheme="https://jack-q.github.io/blog/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 11</title>
+    <link href="https://jack-q.github.io/blog/2017/03/03/javaee-training-note-day-11/"/>
+    <id>https://jack-q.github.io/blog/2017/03/03/javaee-training-note-day-11/</id>
+    <published>2017-03-03T14:34:50.000Z</published>
+    <updated>2017-03-05T13:53:30.648Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Tosay’s topic is related to configuration of service in remote Linux server.
+The target server is an ubuntu server 16.04. Following are some of configuration
+steps.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 10</title>
+    <link href="https://jack-q.github.io/blog/2017/03/02/javaee-training-note-day-10/"/>
+    <id>https://jack-q.github.io/blog/2017/03/02/javaee-training-note-day-10/</id>
+    <published>2017-03-02T13:13:39.000Z</published>
+    <updated>2017-03-05T13:53:38.920Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;From this day, the training schedule goes to the coding stage of 
+the development project. There will be no central topic of the notes,
+but a set of records of problems and technics. &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="java" scheme="https://jack-q.github.io/blog/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 09</title>
+    <link href="https://jack-q.github.io/blog/2017/03/01/javaee-training-note-day-09/"/>
+    <id>https://jack-q.github.io/blog/2017/03/01/javaee-training-note-day-09/</id>
+    <published>2017-03-01T09:53:56.000Z</published>
+    <updated>2017-03-05T13:53:48.267Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Test is always one of the major steps in software enginering.
+which is today’s topic. Some basic concepts is introduced 
+several days ago when introdcing the unit test supporting in 
+Spring MVC framework. Today’s point is related to the managment 
+and theory approach of the test.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="java" scheme="https://jack-q.github.io/blog/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 08</title>
+    <link href="https://jack-q.github.io/blog/2017/02/28/javaee-training-note-day-08/"/>
+    <id>https://jack-q.github.io/blog/2017/02/28/javaee-training-note-day-08/</id>
+    <published>2017-02-28T12:25:27.000Z</published>
+    <updated>2017-03-05T13:54:02.839Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The topic of today is the fundamental of web application and the server.
+The concepts introduced today is the low level basis of the fancy and 
+colorful world of the Internet. Besides the general concepts, the nginx
+server also introduced.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="java" scheme="https://jack-q.github.io/blog/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 07</title>
+    <link href="https://jack-q.github.io/blog/2017/02/27/javaee-training-note-day-07/"/>
+    <id>https://jack-q.github.io/blog/2017/02/27/javaee-training-note-day-07/</id>
+    <published>2017-02-27T12:06:20.000Z</published>
+    <updated>2017-03-05T14:09:09.082Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Today’s topics are the automatic unit test in Spring MVC and 
+the code refactoring in Java. The former is to fully empower the 
+test in Java based project, while the latter is to keep a essential 
+approach about improving the quality of the source code.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="java" scheme="https://jack-q.github.io/blog/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaEE Training Note - Day 06</title>
     <link href="https://jack-q.github.io/blog/2017/02/25/javaee-training-note-day-06/"/>
     <id>https://jack-q.github.io/blog/2017/02/25/javaee-training-note-day-06/</id>
     <published>2017-02-25T01:52:43.000Z</published>
-    <updated>2017-02-25T11:19:29.011Z</updated>
+    <updated>2017-03-04T01:21:27.853Z</updated>
     
     <summary type="html">
     
@@ -41,7 +207,7 @@ contributor can hold their own branch.&lt;/p&gt;
     <link href="https://jack-q.github.io/blog/2017/02/24/javaee-training-note-day-05/"/>
     <id>https://jack-q.github.io/blog/2017/02/24/javaee-training-note-day-05/</id>
     <published>2017-02-24T00:42:37.000Z</published>
-    <updated>2017-02-24T12:43:13.014Z</updated>
+    <updated>2017-03-04T01:21:17.597Z</updated>
     
     <summary type="html">
     
@@ -335,96 +501,6 @@ try to theme the linux from scratch.&lt;/p&gt;
       <category term="theme" scheme="https://jack-q.github.io/blog/tags/theme/"/>
     
       <category term="linux" scheme="https://jack-q.github.io/blog/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Getting CAS Tickets via Node</title>
-    <link href="https://jack-q.github.io/blog/2015/08/08/Getting-CAS-Ticket-via-Node/"/>
-    <id>https://jack-q.github.io/blog/2015/08/08/Getting-CAS-Ticket-via-Node/</id>
-    <published>2015-08-07T16:00:00.000Z</published>
-    <updated>2017-02-01T05:18:57.804Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Nowadays, the OAuth 2.0 is the most popular stander for 
-authorization and also widely used in the third-party 
-authentication process. Beside, there are lots of other
-protocols uesd for that purpose. Here in this post, 
-the focus is on the CAS -- Central Authentication Service.
-(Wiki:&lt;a href=&quot;https://en.wikipedia.org/wiki/Central_Authentication_Service&quot;&gt;CAS&lt;/a&gt;) as well as the same named implementation.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="network" scheme="https://jack-q.github.io/blog/categories/network/"/>
-    
-    
-      <category term="cas" scheme="https://jack-q.github.io/blog/tags/cas/"/>
-    
-      <category term="network" scheme="https://jack-q.github.io/blog/tags/network/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Summary for Summer Semester</title>
-    <link href="https://jack-q.github.io/blog/2015/07/27/Summary-for-Summer-Semester/"/>
-    <id>https://jack-q.github.io/blog/2015/07/27/Summary-for-Summer-Semester/</id>
-    <published>2015-07-26T16:00:00.000Z</published>
-    <updated>2017-01-31T10:25:00.767Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Finished it, at last.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;In the past two weeks, fully devotion was paid on the task
- (May be also a project) about on the field of the front-end
-web coding. During that time, a small group of primers (in 
-the front-end web development) were working together on a small 
-site as a task, the goal of which is to clone the front-end
-part of one of the most popular sites nationwide. And finally, 
-not only have we finished the cloning of its front-end part, 
-but also have added some back-end components to it that make
-the site more dynamic. Here after the task, I want to summarize
-the gains and faults.&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Building the Blog (01): Start from Here</title>
-    <link href="https://jack-q.github.io/blog/2015/07/12/Building-the-Blog-01-Start-from-Here/"/>
-    <id>https://jack-q.github.io/blog/2015/07/12/Building-the-Blog-01-Start-from-Here/</id>
-    <published>2015-07-11T16:00:00.000Z</published>
-    <updated>2017-02-01T05:18:08.443Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Finally, it started ... ...&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I have been plannning to have a blog of mine for
-a long time. However, owing to all kinds of different 
-problems, this work still stay in the status of
-&lt;em&gt;UNDERCONSINDERATION&lt;/em&gt;. Last year, I started to 
-implement one in &lt;code&gt;PHP&lt;/code&gt; by doing everything required 
-by a blog-like site. However, though that one had been
-coded for about two weeks including the process of 
-web page design, finally I was interrupted by an 
-important person who had helped me a lot and asked 
-me for assist. Form then on, my project of a self-blog
-site have no progress.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="blog" scheme="https://jack-q.github.io/blog/categories/blog/"/>
-    
-    
-      <category term="blog" scheme="https://jack-q.github.io/blog/tags/blog/"/>
-    
-      <category term="jekyll" scheme="https://jack-q.github.io/blog/tags/jekyll/"/>
     
   </entry>
   
