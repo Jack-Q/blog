@@ -11,6 +11,8 @@ Based on the start point created on that day, today is to create the first compo
 introduce the React Router library to solving the problem of routing inside the whole client 
 side application in React.
 
+<!-- more -->
+
 React Component
 ---------------
 
