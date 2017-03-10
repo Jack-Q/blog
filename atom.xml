@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jack-q.github.io/blog/"/>
-  <updated>2017-03-10T01:23:45.916Z</updated>
+  <updated>2017-03-10T01:26:44.084Z</updated>
   <id>https://jack-q.github.io/blog/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://jack-q.github.io/blog/2017/03/09/javaee-training-note-day-16/"/>
     <id>https://jack-q.github.io/blog/2017/03/09/javaee-training-note-day-16/</id>
     <published>2017-03-09T00:10:35.000Z</published>
-    <updated>2017-03-10T01:23:45.916Z</updated>
+    <updated>2017-03-10T01:26:44.084Z</updated>
     
     <summary type="html">
     
@@ -31,6 +31,8 @@ some wired errors occured in the development progress of project.&lt;/p&gt;
     
     </summary>
     
+    
+      <category term="network" scheme="https://jack-q.github.io/blog/tags/network/"/>
     
   </entry>
   
@@ -400,9 +402,9 @@ fragment into their web pages. Isn’t it annoying?&lt;/p&gt;
       <category term="javascript" scheme="https://jack-q.github.io/blog/categories/javascript/"/>
     
     
-      <category term="gulp" scheme="https://jack-q.github.io/blog/tags/gulp/"/>
-    
       <category term="javascript" scheme="https://jack-q.github.io/blog/tags/javascript/"/>
+    
+      <category term="gulp" scheme="https://jack-q.github.io/blog/tags/gulp/"/>
     
   </entry>
   
@@ -444,9 +446,9 @@ browswer environment.&lt;/p&gt;
       <category term="javascript" scheme="https://jack-q.github.io/blog/categories/javascript/"/>
     
     
-      <category term="javascript" scheme="https://jack-q.github.io/blog/tags/javascript/"/>
-    
       <category term="requirejs" scheme="https://jack-q.github.io/blog/tags/requirejs/"/>
+    
+      <category term="javascript" scheme="https://jack-q.github.io/blog/tags/javascript/"/>
     
   </entry>
   
