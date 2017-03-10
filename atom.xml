@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jack-q.github.io/blog/"/>
-  <updated>2017-03-07T17:29:57.330Z</updated>
+  <updated>2017-03-10T01:23:45.916Z</updated>
   <id>https://jack-q.github.io/blog/</id>
   
   <author>
@@ -16,11 +16,49 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JavaEE Training Note - Day 16</title>
+    <link href="https://jack-q.github.io/blog/2017/03/09/javaee-training-note-day-16/"/>
+    <id>https://jack-q.github.io/blog/2017/03/09/javaee-training-note-day-16/</id>
+    <published>2017-03-09T00:10:35.000Z</published>
+    <updated>2017-03-10T01:23:45.916Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Today’s topic is about some debugging methods and toolkit used
+to solve problems. One is the &lt;code&gt;tcpdump&lt;/code&gt; and other terminal 
+tools for remote package sniffer and traffic analysis. Another is
+some wired errors occured in the development progress of project.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 15</title>
+    <link href="https://jack-q.github.io/blog/2017/03/08/javaee-training-note-day-15/"/>
+    <id>https://jack-q.github.io/blog/2017/03/08/javaee-training-note-day-15/</id>
+    <published>2017-03-08T00:32:39.000Z</published>
+    <updated>2017-03-09T01:35:06.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Today’s topic is some compainent library uesd together with ReactJS.
+The React Motion is a UX improvement library named React Motion, whi
+    
+    </summary>
+    
+    
+      <category term="react" scheme="https://jack-q.github.io/blog/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaEE Training Note - Day 14</title>
     <link href="https://jack-q.github.io/blog/2017/03/07/javaee-training-note-day-14/"/>
     <id>https://jack-q.github.io/blog/2017/03/07/javaee-training-note-day-14/</id>
     <published>2017-03-07T15:05:13.000Z</published>
-    <updated>2017-03-07T17:29:57.330Z</updated>
+    <updated>2017-03-09T00:10:50.351Z</updated>
     
     <summary type="html">
     
@@ -362,9 +400,9 @@ fragment into their web pages. Isn’t it annoying?&lt;/p&gt;
       <category term="javascript" scheme="https://jack-q.github.io/blog/categories/javascript/"/>
     
     
-      <category term="javascript" scheme="https://jack-q.github.io/blog/tags/javascript/"/>
-    
       <category term="gulp" scheme="https://jack-q.github.io/blog/tags/gulp/"/>
+    
+      <category term="javascript" scheme="https://jack-q.github.io/blog/tags/javascript/"/>
     
   </entry>
   
@@ -406,9 +444,9 @@ browswer environment.&lt;/p&gt;
       <category term="javascript" scheme="https://jack-q.github.io/blog/categories/javascript/"/>
     
     
-      <category term="requirejs" scheme="https://jack-q.github.io/blog/tags/requirejs/"/>
-    
       <category term="javascript" scheme="https://jack-q.github.io/blog/tags/javascript/"/>
+    
+      <category term="requirejs" scheme="https://jack-q.github.io/blog/tags/requirejs/"/>
     
   </entry>
   
@@ -435,72 +473,6 @@ some more configurations to Jekyll. &lt;/p&gt;
       <category term="blog" scheme="https://jack-q.github.io/blog/tags/blog/"/>
     
       <category term="jekyll" scheme="https://jack-q.github.io/blog/tags/jekyll/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Building the Blog (02): Say Hello World</title>
-    <link href="https://jack-q.github.io/blog/2015/08/13/Building-the-Blog-02-Say-Hello-World/"/>
-    <id>https://jack-q.github.io/blog/2015/08/13/Building-the-Blog-02-Say-Hello-World/</id>
-    <published>2015-08-12T16:00:00.000Z</published>
-    <updated>2017-02-01T05:19:18.540Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Continuing ...&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This post is the second part of the &lt;a href=&quot;/series/Building-the-Blog&quot;&gt;Building the Blog&lt;/a&gt; 
-series which focuses on setting up the environment and andding 
-the basic page as well as making the whole blog run up with the
-power of &lt;code&gt;Jekyll&lt;/code&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="blog" scheme="https://jack-q.github.io/blog/categories/blog/"/>
-    
-    
-      <category term="blog" scheme="https://jack-q.github.io/blog/tags/blog/"/>
-    
-      <category term="jekyll" scheme="https://jack-q.github.io/blog/tags/jekyll/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Theming in Linux</title>
-    <link href="https://jack-q.github.io/blog/2015/08/11/Theming-in-Linux/"/>
-    <id>https://jack-q.github.io/blog/2015/08/11/Theming-in-Linux/</id>
-    <published>2015-08-10T16:00:00.000Z</published>
-    <updated>2017-02-20T15:39:16.818Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Linux is identical for its identical.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The Linux is great system with its identical features.
-And community of linux also encourage a atmosphere of 
-personality. Having working on linux for several months,
-I have gradually understanded the purpose and meaning
-of open-source and community in the system and its 
-ecosystem. And for myself, I also want to make the everyday
-environment more custome and comfort. Then, I decided to
-have a try on theming the Linux.&lt;/p&gt;
-&lt;p&gt;What I want to do is to make some change or just some simple 
-modification to current theme of desktop. Since I use the
-&lt;a href=&quot;http://www.linuxmint.com/&quot;&gt;Linux Mint&lt;/a&gt; (Cinnamon Edition, Version 17.2, currently 
-the latest), the desktop environment is Cinnamon which is 
-forked from Gnome. With this basic information, let’s 
-try to theme the linux from scratch.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="linux" scheme="https://jack-q.github.io/blog/categories/linux/"/>
-    
-    
-      <category term="theme" scheme="https://jack-q.github.io/blog/tags/theme/"/>
-    
-      <category term="linux" scheme="https://jack-q.github.io/blog/tags/linux/"/>
     
   </entry>
   
