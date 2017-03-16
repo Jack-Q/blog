@@ -565,6 +565,8 @@ header.jq-nav-header{
     border-bottom: solid 2px transparent;
     position: relative;
     margin-top: 200px;
+    display: flex;
+    justify-content: center;
     
     @media screen and (max-height: 768px){
       margin-top: 120px;
@@ -591,7 +593,6 @@ header.jq-nav-header{
       }
     }
     .icon-item{
-      display: inline-block;
       width: 70px;
       position: relative;
       border-bottom: solid 2px transparent;
@@ -650,7 +651,7 @@ header.jq-nav-header{
         content: '';
         left: 50%;
         margin-left: -5px;
-        bottom: -8px;
+        bottom: -7px;
         transition: all ease 400ms;
         opacity: 0;
       }
@@ -665,7 +666,6 @@ header.jq-nav-header{
         }
         &::after{
           opacity: 1;
-          bottom: -3px;
         }
       }
     }
@@ -732,7 +732,8 @@ header.jq-nav-header{
 
       .archive-list-count{
         top: 5px;
-        right: -2px;
+        left: 75%;
+        right: auto;
       }
     }
 
@@ -873,6 +874,8 @@ header.jq-nav-header{
     display: block;
     position: absolute;
     right: -25px;
+    box-sizing: border-box;
+    padding: 0 4px;
     bottom: 10px;
 
     border-radius: 10px;

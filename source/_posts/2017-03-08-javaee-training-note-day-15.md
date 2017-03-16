@@ -10,6 +10,8 @@ Today's topic is some compainent library uesd together with ReactJS.
 The React Motion is a UX improvement library named React Motion, which 
 provides supports to transition animation.
 
+<!-- more -->
+
 React Motion
 ------------
 
