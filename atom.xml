@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jack-q.github.io/blog/"/>
-  <updated>2017-03-10T01:26:44.084Z</updated>
+  <updated>2017-03-16T06:17:42.728Z</updated>
   <id>https://jack-q.github.io/blog/</id>
   
   <author>
@@ -14,6 +14,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 18</title>
+    <link href="https://jack-q.github.io/blog/2017/03/12/javaee-training-note-day-18/"/>
+    <id>https://jack-q.github.io/blog/2017/03/12/javaee-training-note-day-18/</id>
+    <published>2017-03-12T06:16:12.000Z</published>
+    <updated>2017-03-16T06:17:42.728Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Continued to the last post about the security settings related to website or 
+web service, today’s topic is another vital security configuration for website,
+which is the HTTP traffic over security socket layer (HHTTP-SSL, HTTPS). 
+Without the companient of the HTTPS configuration, either token based approach 
+or the session based approach will become vulnerable to the package sniffers 
+in the middle of the whole transfer processes.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaEE Training Note - Day 17</title>
+    <link href="https://jack-q.github.io/blog/2017/03/10/javaee-training-note-day-17/"/>
+    <id>https://jack-q.github.io/blog/2017/03/10/javaee-training-note-day-17/</id>
+    <published>2017-03-10T06:10:58.000Z</published>
+    <updated>2017-03-16T06:15:50.130Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;After building the core functionality of the project, the next step is to 
+create an interface for the application to interact with the outter world.
+However, in an open network, there are always unintented attempts to access 
+our application without the authorization. Therefore, web application are 
+always require authentication and authorization to secure itself. In this 
+application, there are two modules used to secure different kinds of interfaces.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>JavaEE Training Note - Day 16</title>
@@ -41,12 +83,13 @@ some wired errors occured in the development progress of project.&lt;/p&gt;
     <link href="https://jack-q.github.io/blog/2017/03/08/javaee-training-note-day-15/"/>
     <id>https://jack-q.github.io/blog/2017/03/08/javaee-training-note-day-15/</id>
     <published>2017-03-08T00:32:39.000Z</published>
-    <updated>2017-03-09T01:35:06.000Z</updated>
+    <updated>2017-03-16T06:20:42.378Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;Today’s topic is some compainent library uesd together with ReactJS.
-The React Motion is a UX improvement library named React Motion, whi
+The React Motion is a UX improvement library named React Motion, which 
+provides supports to transition animation.&lt;/p&gt;
     
     </summary>
     
@@ -405,76 +448,6 @@ fragment into their web pages. Isn’t it annoying?&lt;/p&gt;
       <category term="javascript" scheme="https://jack-q.github.io/blog/tags/javascript/"/>
     
       <category term="gulp" scheme="https://jack-q.github.io/blog/tags/gulp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Use RequireJS in Your Site</title>
-    <link href="https://jack-q.github.io/blog/2015/09/12/Use-Require-Js-in-Your-Site/"/>
-    <id>https://jack-q.github.io/blog/2015/09/12/Use-Require-Js-in-Your-Site/</id>
-    <published>2015-09-11T16:00:00.000Z</published>
-    <updated>2017-02-01T05:19:30.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&amp;lt;script src=”/script/Script.js”&amp;gt;&amp;lt;/script&amp;gt; ? 
-&lt;br/&gt;
-require(“Script”); ?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;For most of the websites that you visit everyday, the JavaScript 
-is not only a additional way to promote user experience but also a
-required method to let the site works as expectation. Nowadays, in
-such a so called “web 2.0” era, what is loaded and rendered by a
-browser is not a traditional document-like web-page but a modern
-program-like web-application. And since the HTML5 and CSS3
-( as well as other “live standands” ) became widely used in most websites
-form top of Alexa ranking to those personal blog (like this), it’s rare
-to meet a pure static site(in terms of client end). The scorces drive 
-all of world of web is in JavaScript, our hero. However, just as
-the name, “JavaScript”, indicates that it’s initial goal is only provide 
-some simple way for website to use, JavaScript is &lt;em&gt;not&lt;/em&gt; designed for 
-large scale application. The conflict between the autologous fault of the language nature 
-and the raising demand of a suitable language led to various solutions.
-Here in this post, I would like to talk about some things about
-&lt;a href=&quot;http://www.requirejs.org/&quot; title=&quot;RequireJS&amp;#39;s Official Site&quot;&gt;RequireJS&lt;/a&gt;, a JavaScript file and module loader who modulize JavaScript
-code snippits and load them asynchoronously in the standand
-browswer environment.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="javascript" scheme="https://jack-q.github.io/blog/categories/javascript/"/>
-    
-    
-      <category term="requirejs" scheme="https://jack-q.github.io/blog/tags/requirejs/"/>
-    
-      <category term="javascript" scheme="https://jack-q.github.io/blog/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Building the Blog (03): Directory and Basic Configuration</title>
-    <link href="https://jack-q.github.io/blog/2015/09/06/Building-the-Blog-03-Directoty-and-Basic-Configuration/"/>
-    <id>https://jack-q.github.io/blog/2015/09/06/Building-the-Blog-03-Directoty-and-Basic-Configuration/</id>
-    <published>2015-09-05T16:00:00.000Z</published>
-    <updated>2017-02-14T14:27:04.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Dive deeper into Jekyll&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This is the third post of the &lt;a href=&quot;/series/Building-the-blog&quot;&gt;Building the Blog&lt;/a&gt; series which will cover
-some more configurations to Jekyll. &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="blog" scheme="https://jack-q.github.io/blog/categories/blog/"/>
-    
-    
-      <category term="blog" scheme="https://jack-q.github.io/blog/tags/blog/"/>
-    
-      <category term="jekyll" scheme="https://jack-q.github.io/blog/tags/jekyll/"/>
     
   </entry>
   
