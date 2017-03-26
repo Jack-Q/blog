@@ -1,15 +1,25 @@
 ---
-title: setup R environment
+title: Setup R environment
 date: 2017-03-25 13:08:52
-comment_id: 2017-03-25 13:08:52
+comment_id: 20170325-R-SETUP
 tags:
   - R
+  - installation
 ---
 
-This post is to record the configuration steps 
+This post is to record the configuration steps of the R environment, 
+which is a language as well as an eco-system for statistics and related 
+computing and graphing. With the CRAN platform for sharing and exploring
+extra package of R, the capibility of the R language is much more extented.
+
+<!-- more -->
 
 R package installation steps
 ----------------------------
+
+The target system of following steps is Ubuntu 16.04 (`xenial`). Apart from 
+its code name which apeared in second step, most of the steps can also be
+applied to other version of ubuntu. 
 
 1. Add key of CRAN repository to system apt key store
 
