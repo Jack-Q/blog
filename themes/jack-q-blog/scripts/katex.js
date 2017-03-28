@@ -21,15 +21,17 @@ hexo
 
 // page config: math_inline 
 
-// options:   format: %opt1%opt2%opt3=1212%
-//   - display: toggle display mode (display in block) (default false, that is
-// inline mode)
-//   - incode:
+// options:  
+// format: %opt1%opt2%opt3=1212%
+//   - display: toggle display mode (display in block)
+//              (default false, that is inline mode)
+//   - incode: convert latex expression in code block
+//              (default false, this will keep is as original status)
 hexo
   .extend
   .filter
   .register('after_post_render', function (data) {
-    if (!data.math_inline) {
+    if (hexo.config.math_inline ? data.math_inline === false : !data.math_inline) {
       return data;
     }
 

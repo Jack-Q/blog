@@ -66,6 +66,7 @@ theme: jack-q-blog
 
 # Google Analytics 
 googleAnalyticsId: UA-63336636-1
+math_inline: false
 
 # Feed generator
 feed:

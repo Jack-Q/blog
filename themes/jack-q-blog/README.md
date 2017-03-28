@@ -1,51 +1,57 @@
-# Theme Design
+# the theme for this blog
 
+This is the theme of this blog with a horizontal list of post (on large screen) and 
+responsive design (adoptive design).
 
+## Configuration Options
 
-## Basic Planning
-
-* Left panel
-  * Display title
-  * 
-
-* Main content (Post View)
-  For content view:
-
-  For list view:
-    load further date from JSON list and rendered at right.
-
-```bash
-Header Common
--------------
-Global navigation
-  Expandable sub-navigation
-Local navigation
-  Page header (In page navigation)
-Further note
--------------
-Extra Info
+* Google Analystic (GA) ID
+```yaml
+googleAnalyticsId: "UA-ID"
 ```
 
-  For mobile view, this section ought be hide and fallback to sidebar(this section).
+* Math Integration
 
-```bash
----- 50px ----
-Color Bars
-List
-Sub-Section
-  Expand to top, right triangle indicator
+  For usage information, refer to [Math](#math) section.
+
+```yaml
+math_inline: false
 ```
 
-* Main content (List View)
+## Math
 
-  List view shows the list of post in temporal order, by categories, by specific tag.
-  For the latter two types (the categories, tag), a special header is represented
-  in order to show the type (may be customized by detailed keys).
+Math module is an integration of KaTeX ([GitHub](https://github.com/Khan/KaTeX/)) 
+library to render LaTeX math formula into MathML or CSS controled representation.
 
-  The temporal ordered list contains the order and pagination (infinite loader is in consideration).
+Math module supports two kinds of usage, the block style and the inline style.
 
+* Block Style
 
+  The block style is the recommended approach for insert a math formula in 
+  a post. 
+  ```md
+  {% math %}
+    x = \frac{1}{y}
+  {% endmath %}
+  ```
+  By default, the math expression will be rendered in a seperated block, which 
+  is the "display" style in LaTeX. 
+  To display a expression within the document, use the `inline` option, 
+  ```md
+  {% math inline %}
+    x = \frac{1}{y}
+  {% endmath %}
+  ```
 
-* Consisitency transition
-  - Keep the left side open and change on demand
-  - Loading transition and animation ought be presented
+* Inline Style
+
+  Inline style is to insert math formula directly into document wrapped by double `$`s 
+  (that is `$$ y=2x $$`). This can be useful for post which is filled with mathematical 
+  formulas. 
+  
+  By defaule, this is desabled to prevent possible conflict with other expression. This 
+  can be toggled by either a page wide setting (front matter) or global setting.
+
+  This inline style also contains some other options applied via latex comment notaion.
+  (Such as: `$$%display% y=x^2 $$`). The option can be the following ones:
+  + `display`: render this block as display mode
