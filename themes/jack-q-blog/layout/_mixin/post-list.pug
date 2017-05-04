@@ -6,6 +6,8 @@ mixin post-list(posts)
           .text Welcome
           .desp
             ul
+              li Located at  
+                a(href="https://git.io/jackq", target="_blank") git.io/jackq
               li #[em #{site.posts.length} posts] in total
               - let lastUpdated = site.posts.toArray().map(p=>p.updated).sort((a,b)=>-a.diff(b))[0]
               li Updated at #[em #{lastUpdated.format("YYYY-MM-DD")}]
