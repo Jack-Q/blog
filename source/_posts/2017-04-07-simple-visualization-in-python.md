@@ -44,7 +44,7 @@ Generally, this file is located on Linux. Create the file if this file does not 
 index-url = https://pypi.python.org/simple
 ```
 
-A comprehensive list of the available mirror server can be retrived from the 
+A comprehensive list of the available mirror server can be retrieved from the 
 [PyPI Mirror Status](https://www.pypi-mirrors.org/) site. The replace the url 
 within the configuration entry. (Don't forget the path section `simple` of the URL).
 
@@ -62,7 +62,7 @@ PyGraphViz
 ----------
 
 [GraphViz](http://www.graphviz.org/) is a open source application for visualization of graph.
-It can genarate high quailty graph by simply specifying the verteices and edges, without worrying 
+It can generate high quality graph by simply specifying the vertices and edges, without worrying 
 about the layout of each element in the graph. 
 
 [PyGraphViz](https://github.com/pygraphviz/pygraphviz) is a python bonding of the package.

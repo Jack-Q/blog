@@ -2,11 +2,14 @@
 title: TensorFlow on Ubuntu with CUDA enabled
 date: 2017-04-11 22:58:58
 comment_id: 2017-04-11 22:58:58
-tags:
+tags: 
+    - Machine Learning
 ---
 
+
+
 First part in this post, I'd like to go through the installation of 
-TensorFlow without CUDA enabled.
+TensorFlow without CUDA enabled. 
 
 TensorFlow
 ----------

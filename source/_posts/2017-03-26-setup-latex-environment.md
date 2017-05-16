@@ -7,11 +7,11 @@ tags:
   - installation
 ---
 
-After an reinstallation of ubuntu in last month, the original installation
+After a reinstallation of ubuntu in last month, the original installation
 of texlive 2015 was gone. As the 2016 release of texlive is already available 
 to use, I decided to install the newer version on Ubuntu 16.04 LTS. This 
 post records the steps of installation as well as some other 
-configurations to several dedecated components.
+configurations to several dedicated components.
 
 
 <!-- more -->
@@ -21,7 +21,7 @@ Configure package source for backported packages
 
 The package repository of Ubuntu provides the full collection of 
 texlive. However, the package are never updated to a newer release after
-the specific Ubuntu version is relesed. To use a more recent release 
+the specific Ubuntu version is released. To use a more recent release 
 of texlive, some other sources are required.
 A [PPA](https://launchpad.net/~jonathonf/+archive/ubuntu/texlive-2016) 
 created by jonathonf is available to get the texlive 2016 installed 
@@ -50,7 +50,7 @@ Configure an environment for editing
 
 When composing document with latex, most of things are done within a 
 text editor. Some plugins to the text editor can provide various of 
-assists. My favoirate environment for editing latex is Sublime Text with 
+assists. My favorite environment for editing latex is Sublime Text with 
 the [LaTeXTools package](https://latextools.readthedocs.io/en/latest/).
 
 The installation of LaTeXTools is just the same as other Sublime Text packages.
@@ -58,11 +58,11 @@ Either copying the package file to user configuration folder or manage the
 package of plugins via Package Control is supported.
 
 To preview the generated pdf document from the source of document, the 
-recommended viewer in Linux is `evince`, which can be synchornized with 
+recommended viewer in Linux is `evince`, which can be synchronized with 
 the current position of editing cursor.
 
-To improve the compatibility of compling, a common practice is add magic comments 
-at the begining of document to specifying some requirement of this document.
+To improve the compatibility of compiling, a common practice is add magic comments 
+at the beginning of document to specifying some requirement of this document.
 The following codes provide some hints to the compiling environment about the 
 engine to use and the options for the compiling engine. These magic comments 
 should be placed at the initial of a document.
@@ -81,7 +81,7 @@ are in the format of `ttf` or `otf`. To use them within document, a simple
 approach is install the font to system and then importing them by their
 canonical name packaged with the font file.
 
-To intall font in Linux, I prefer the approach to copy them to a user specific 
+To install font in Linux, I prefer the approach to copy them to a user specific 
 folder and update the system font cache. The standard locations for system font 
 in Linux include `/usr/share/fonts`, `/usr/local/share/fonts`, and `~/.fonts`, 
 which can be configured via `/etc/fonts/fonts.conf`. For personal usage, just 

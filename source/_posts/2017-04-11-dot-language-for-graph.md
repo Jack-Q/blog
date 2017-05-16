@@ -7,3 +7,14 @@ tags:
 
 GraphViz package is 
 
+```dot
+digraph G {
+    rankdir="LR";
+    node [shape="circle"];
+    
+    0 -> 1 [ label="1" ];
+    1 -> 1 [ label="0" ];
+    
+    1 [shape="doublecircle"];
+}
+```
