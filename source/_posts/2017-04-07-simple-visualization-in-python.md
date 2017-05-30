@@ -7,7 +7,10 @@ tags:
   - visualization
 ---
 
-Visualization in 
+Visualization of data or graph can be achieved by a variety of means in Python. This post list 
+configuration for some simple visualizations. Before introduction of some visualization package,
+I'll list some procedures for configure and launch the Jupyter notebook, which is a convenient
+environment for testing Python code.
 
 <!-- more -->
 
@@ -16,14 +19,13 @@ Jupyter, the playground
 
 Jupyter, formerly the known as `iPython` (actually, the ipython becomes 
 a submoudle of the Jupyter project which provide the kernel for computing),
-is 
+is a notebook style environment for exploring some new package or new task in Python.
 
 
 ### Installation
 
 With the pip installed, jupyter can be installed easily via the following 
-command. (If the pip is not set up, you can check out 
-{% post_link setup-latex-environment a former post %}.
+command. (If the pip is not set up, you can check out the previous post.
 
 ```bash
 sudo -H pip3 install jupyter
@@ -31,7 +33,6 @@ sudo -H pip3 install jupyter
 # if the official pip server is too slow to access, refer to 
 # the next sub-section for mirror server configuration. 
 ```
-This command will install the package 
 
 ### Installation via mirror pip server
 
@@ -56,6 +57,21 @@ the location of the mirror server to `pip` command argument. Like the following 
 
 ```bash
 sudo -H pip3 install jupyter -i https://pypi.python.org/simple
+```
+
+### Start the notebook
+
+The following command will start an server at `8889` port (by default) and launch the default 
+browser to access the web interface.
+
+```bash
+jupyter notebook 
+```
+
+If you want a remote access of the web interface, use the following options to disable the launching of browser and bind TCP connection to any network interface available.
+
+```bash
+jupyter notebook --no-browser --ip=0.0.0.0
 ```
 
 PyGraphViz
