@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jack-q.github.io/blog/"/>
-  <updated>2017-03-26T16:55:08.976Z</updated>
+  <updated>2017-05-30T11:47:56.764Z</updated>
   <id>https://jack-q.github.io/blog/</id>
   
   <author>
@@ -16,19 +16,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>DOT language for graph</title>
+    <link href="https://jack-q.github.io/blog/2017/05/30/dot-language-for-graph/"/>
+    <id>https://jack-q.github.io/blog/2017/05/30/dot-language-for-graph/</id>
+    <published>2017-05-30T14:57:26.000Z</published>
+    <updated>2017-05-30T11:47:56.764Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;GraphViz package is a set of tools to describe, automatically layout and manipulate graphs, which 
+is of great significance in connection and relationship analysis and illustration.
+The core module of GraphViz is the layout and render engines which generate 
+neat and elegant visualization of graph in various common formats from 
+a descriptive small language (the graph file language or the &lt;em&gt;DOT&lt;/em&gt; language). This post will represent a brief introduction
+of the DOT language and show some applications that utilize the power of GraphViz.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="visualization" scheme="https://jack-q.github.io/blog/tags/visualization/"/>
+    
+      <category term="GraphViz" scheme="https://jack-q.github.io/blog/tags/graphviz/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Simple Visualization in Python</title>
+    <link href="https://jack-q.github.io/blog/2017/04/07/simple-visualization-in-python/"/>
+    <id>https://jack-q.github.io/blog/2017/04/07/simple-visualization-in-python/</id>
+    <published>2017-04-07T10:44:58.000Z</published>
+    <updated>2017-05-30T10:17:25.785Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Visualization of data or graph can be achieved by a variety of means in Python. This post list 
+configuration for some simple visualizations. Before introduction of some visualization package,
+I’ll list some procedures for configure and launch the Jupyter notebook, which is a convenient
+environment for testing Python code.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://jack-q.github.io/blog/tags/python/"/>
+    
+      <category term="visualization" scheme="https://jack-q.github.io/blog/tags/visualization/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Setup LaTeX environment</title>
     <link href="https://jack-q.github.io/blog/2017/03/26/setup-latex-environment/"/>
     <id>https://jack-q.github.io/blog/2017/03/26/setup-latex-environment/</id>
     <published>2017-03-26T06:38:07.000Z</published>
-    <updated>2017-03-26T16:55:08.976Z</updated>
+    <updated>2017-05-16T14:22:52.327Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;After an reinstallation of ubuntu in last month, the original installation
+      &lt;p&gt;After a reinstallation of ubuntu in last month, the original installation
 of texlive 2015 was gone. As the 2016 release of texlive is already available 
 to use, I decided to install the newer version on Ubuntu 16.04 LTS. This 
 post records the steps of installation as well as some other 
-configurations to several dedecated components.&lt;/p&gt;
+configurations to several dedicated components.&lt;/p&gt;
     
     </summary>
     
@@ -390,49 +438,6 @@ Another topic of today is integration of Hibernate into Spring MVC.&lt;/p&gt;
 content of the third day is detailed illustration of web site using 
 &lt;code&gt;Spring MVC&lt;/code&gt;. Another main point is the &lt;code&gt;Hibernate ORM&lt;/code&gt; library which is used 
 to unify and simplify the process of database connection and data transaction.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="https://jack-q.github.io/blog/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaEE Training Note - Day 02</title>
-    <link href="https://jack-q.github.io/blog/2017/02/21/javaee-training-note-day-02/"/>
-    <id>https://jack-q.github.io/blog/2017/02/21/javaee-training-note-day-02/</id>
-    <published>2017-02-21T04:57:05.000Z</published>
-    <updated>2017-02-21T15:31:00.420Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;The main content of the second day is some detail about the &lt;code&gt;Spring Framework&lt;/code&gt;,
-including elibration of the core concepts in &lt;code&gt;Spring&lt;/code&gt;, how to set up the 
-framework, and XML file based configutation as well as annotation based 
-configutation. Apart from the core framework, &lt;code&gt;Spring MVC&lt;/code&gt; is also metioned.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="https://jack-q.github.io/blog/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaEE Training Note - Day 01</title>
-    <link href="https://jack-q.github.io/blog/2017/02/20/javaee-training-note-day-01/"/>
-    <id>https://jack-q.github.io/blog/2017/02/20/javaee-training-note-day-01/</id>
-    <published>2017-02-20T15:42:15.000Z</published>
-    <updated>2017-02-21T00:48:39.904Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;The training content of the first day of this one-month training is 
-some genaral concepts of JavaEE development. It also covers some basic 
-introduction to some broadly used library/framework including 
-&lt;code&gt;Spring Framework&lt;/code&gt;, &lt;code&gt;Hibernate ORM&lt;/code&gt;, etc. Besides, some trivals of Java prgramming
-language are also recapped in today’s content.&lt;/p&gt;
     
     </summary>
     
