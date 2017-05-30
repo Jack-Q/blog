@@ -1,5 +1,4 @@
 ; +function ($, sel) {
-  console.log("SCRIPT LOAD");
   var setAnimationDelayed = function (func) {
     setTimeout(func, 400);
   }
@@ -54,6 +53,16 @@
     });
   }
   bindTocLinkHandler();
+
+  var mouseWheelScroll = function () {
+    // mouse wheel support on desktop
+    $(".post-list-container").mousewheel(function (event, delta) {
+      if ($(window).width() > 768) {
+        $(this).animate({ scrollLeft: '-=' + (delta * 80) }, 30);
+        event.preventDefault();
+      }
+    });
+  }
   
   var loadPageContent = function (url, type) {
     // Google Analysis 
@@ -122,6 +131,8 @@
 
           // rebind smooth link in new page
           $('section.list-content a[data-smooth]').each(smoothLinkHandler);
+
+          mouseWheelScroll();
         }
       })
       
@@ -138,6 +149,7 @@
   }
 
   $('a[data-smooth]').each(smoothLinkHandler);
+  mouseWheelScroll();
   var initialPageType = $('section.article-content').length > 0;
   window.onpopstate = function (ev) {
     loadPageContent(document.location.href, ev.state? ev.state.type : initialPageType);

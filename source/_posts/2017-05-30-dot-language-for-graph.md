@@ -219,238 +219,239 @@ Source(tree)
 ```
 The decision tree trained from the `iris` data set is just represented within the jupyter notebook
 
-<svg style="margin: auto; display: block; max-width: 700px;letter-spacing: 0; word-spacing: 0" viewBox="0.00 0.00 812.00 671.00">
-    <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 667)">
-    <title>Tree</title>
-    <!-- 0 -->
-    <g id="node1" class="node"><title>0</title>
-    <polygon fill="none" stroke="black" points="492.5,-663 352.5,-663 352.5,-580 492.5,-580 492.5,-663"/>
-    <text text-anchor="start" x="360.5" y="-647.8" font-family="Times,serif" font-size="14.00">petal width (cm) ≤ 0.8</text>
-    <text text-anchor="start" x="385" y="-632.8" font-family="Times,serif" font-size="14.00">gini = 0.6667</text>
-    <text text-anchor="start" x="382" y="-617.8" font-family="Times,serif" font-size="14.00">samples = 150</text>
-    <text text-anchor="start" x="367.5" y="-602.8" font-family="Times,serif" font-size="14.00">value = [50, 50, 50]</text>
-    <text text-anchor="start" x="384.5" y="-587.8" font-family="Times,serif" font-size="14.00">class = setosa</text>
-    </g>
-    <!-- 1 -->
-    <g id="node2" class="node"><title>1</title>
-    <polygon fill="none" stroke="black" points="405,-536.5 292,-536.5 292,-468.5 405,-468.5 405,-536.5"/>
-    <text text-anchor="start" x="321" y="-521.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
-    <text text-anchor="start" x="311.5" y="-506.3" font-family="Times,serif" font-size="14.00">samples = 50</text>
-    <text text-anchor="start" x="300" y="-491.3" font-family="Times,serif" font-size="14.00">value = [50, 0, 0]</text>
-    <text text-anchor="start" x="310.5" y="-476.3" font-family="Times,serif" font-size="14.00">class = setosa</text>
-    </g>
-    <!-- 0&#45;&gt;1 -->
-    <g id="edge1" class="edge"><title>0&#45;&gt;1</title>
-    <path fill="none" stroke="black" d="M396.826,-579.907C389.777,-568.763 382.121,-556.658 375.026,-545.439"/>
-    <polygon fill="black" stroke="black" points="377.781,-543.248 369.477,-536.667 371.865,-546.989 377.781,-543.248"/>
-    <text text-anchor="middle" x="363.987" y="-557.356" font-family="Times,serif" font-size="14.00">True</text>
-    </g>
-    <!-- 2 -->
-    <g id="node3" class="node"><title>2</title>
-    <polygon fill="none" stroke="black" points="570,-544 423,-544 423,-461 570,-461 570,-544"/>
-    <text text-anchor="start" x="431" y="-528.8" font-family="Times,serif" font-size="14.00">petal width (cm) ≤ 1.75</text>
-    <text text-anchor="start" x="469" y="-513.8" font-family="Times,serif" font-size="14.00">gini = 0.5</text>
-    <text text-anchor="start" x="456" y="-498.8" font-family="Times,serif" font-size="14.00">samples = 100</text>
-    <text text-anchor="start" x="445" y="-483.8" font-family="Times,serif" font-size="14.00">value = [0, 50, 50]</text>
-    <text text-anchor="start" x="448" y="-468.8" font-family="Times,serif" font-size="14.00">class = versicolor</text>
-    </g>
-    <!-- 0&#45;&gt;2 -->
-    <g id="edge2" class="edge"><title>0&#45;&gt;2</title>
-    <path fill="none" stroke="black" d="M448.174,-579.907C453.742,-571.105 459.688,-561.703 465.438,-552.612"/>
-    <polygon fill="black" stroke="black" points="468.484,-554.343 470.871,-544.021 462.568,-550.601 468.484,-554.343"/>
-    <text text-anchor="middle" x="476.362" y="-564.71" font-family="Times,serif" font-size="14.00">False</text>
-    </g>
-    <!-- 3 -->
-    <g id="node4" class="node"><title>3</title>
-    <polygon fill="none" stroke="black" points="466.5,-425 316.5,-425 316.5,-342 466.5,-342 466.5,-425"/>
-    <text text-anchor="start" x="324.5" y="-409.8" font-family="Times,serif" font-size="14.00">petal length (cm) ≤ 4.95</text>
-    <text text-anchor="start" x="357.5" y="-394.8" font-family="Times,serif" font-size="14.00">gini = 0.168</text>
-    <text text-anchor="start" x="354.5" y="-379.8" font-family="Times,serif" font-size="14.00">samples = 54</text>
-    <text text-anchor="start" x="343" y="-364.8" font-family="Times,serif" font-size="14.00">value = [0, 49, 5]</text>
-    <text text-anchor="start" x="343" y="-349.8" font-family="Times,serif" font-size="14.00">class = versicolor</text>
-    </g>
-    <!-- 2&#45;&gt;3 -->
-    <g id="edge3" class="edge"><title>2&#45;&gt;3</title>
-    <path fill="none" stroke="black" d="M460.071,-460.907C451.845,-451.742 443.037,-441.927 434.567,-432.489"/>
-    <polygon fill="black" stroke="black" points="437.149,-430.126 427.865,-425.021 431.939,-434.801 437.149,-430.126"/>
-    </g>
-    <!-- 12 -->
-    <g id="node13" class="node"><title>12</title>
-    <polygon fill="none" stroke="black" points="676.5,-425 526.5,-425 526.5,-342 676.5,-342 676.5,-425"/>
-    <text text-anchor="start" x="534.5" y="-409.8" font-family="Times,serif" font-size="14.00">petal length (cm) ≤ 4.85</text>
-    <text text-anchor="start" x="564" y="-394.8" font-family="Times,serif" font-size="14.00">gini = 0.0425</text>
-    <text text-anchor="start" x="564.5" y="-379.8" font-family="Times,serif" font-size="14.00">samples = 46</text>
-    <text text-anchor="start" x="553" y="-364.8" font-family="Times,serif" font-size="14.00">value = [0, 1, 45]</text>
-    <text text-anchor="start" x="556" y="-349.8" font-family="Times,serif" font-size="14.00">class = virginica</text>
-    </g>
-    <!-- 2&#45;&gt;12 -->
-    <g id="edge12" class="edge"><title>2&#45;&gt;12</title>
-    <path fill="none" stroke="black" d="M532.929,-460.907C541.155,-451.742 549.963,-441.927 558.433,-432.489"/>
-    <polygon fill="black" stroke="black" points="561.061,-434.801 565.135,-425.021 555.851,-430.126 561.061,-434.801"/>
-    </g>
-    <!-- 4 -->
-    <g id="node5" class="node"><title>4</title>
-    <polygon fill="none" stroke="black" points="258,-306 111,-306 111,-223 258,-223 258,-306"/>
-    <text text-anchor="start" x="119" y="-290.8" font-family="Times,serif" font-size="14.00">petal width (cm) ≤ 1.65</text>
-    <text text-anchor="start" x="147" y="-275.8" font-family="Times,serif" font-size="14.00">gini = 0.0408</text>
-    <text text-anchor="start" x="147.5" y="-260.8" font-family="Times,serif" font-size="14.00">samples = 48</text>
-    <text text-anchor="start" x="136" y="-245.8" font-family="Times,serif" font-size="14.00">value = [0, 47, 1]</text>
-    <text text-anchor="start" x="136" y="-230.8" font-family="Times,serif" font-size="14.00">class = versicolor</text>
-    </g>
-    <!-- 3&#45;&gt;4 -->
-    <g id="edge4" class="edge"><title>3&#45;&gt;4</title>
-    <path fill="none" stroke="black" d="M319.682,-341.907C302.021,-331.925 282.997,-321.172 264.957,-310.976"/>
-    <polygon fill="black" stroke="black" points="266.619,-307.894 256.191,-306.021 263.174,-313.988 266.619,-307.894"/>
-    </g>
-    <!-- 7 -->
-    <g id="node8" class="node"><title>7</title>
-    <polygon fill="none" stroke="black" points="465,-306 318,-306 318,-223 465,-223 465,-306"/>
-    <text text-anchor="start" x="326" y="-290.8" font-family="Times,serif" font-size="14.00">petal width (cm) ≤ 1.55</text>
-    <text text-anchor="start" x="354" y="-275.8" font-family="Times,serif" font-size="14.00">gini = 0.4444</text>
-    <text text-anchor="start" x="358" y="-260.8" font-family="Times,serif" font-size="14.00">samples = 6</text>
-    <text text-anchor="start" x="346.5" y="-245.8" font-family="Times,serif" font-size="14.00">value = [0, 2, 4]</text>
-    <text text-anchor="start" x="346" y="-230.8" font-family="Times,serif" font-size="14.00">class = virginica</text>
-    </g>
-    <!-- 3&#45;&gt;7 -->
-    <g id="edge7" class="edge"><title>3&#45;&gt;7</title>
-    <path fill="none" stroke="black" d="M391.5,-341.907C391.5,-333.649 391.5,-324.864 391.5,-316.302"/>
-    <polygon fill="black" stroke="black" points="395,-316.021 391.5,-306.021 388,-316.021 395,-316.021"/>
-    </g>
-    <!-- 5 -->
-    <g id="node6" class="node"><title>5</title>
-    <polygon fill="none" stroke="black" points="113,-179.5 0,-179.5 0,-111.5 113,-111.5 113,-179.5"/>
-    <text text-anchor="start" x="29" y="-164.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
-    <text text-anchor="start" x="19.5" y="-149.3" font-family="Times,serif" font-size="14.00">samples = 47</text>
-    <text text-anchor="start" x="8" y="-134.3" font-family="Times,serif" font-size="14.00">value = [0, 47, 0]</text>
-    <text text-anchor="start" x="8" y="-119.3" font-family="Times,serif" font-size="14.00">class = versicolor</text>
-    </g>
-    <!-- 4&#45;&gt;5 -->
-    <g id="edge5" class="edge"><title>4&#45;&gt;5</title>
-    <path fill="none" stroke="black" d="M140.091,-222.907C127.174,-211.101 113.079,-198.217 100.205,-186.45"/>
-    <polygon fill="black" stroke="black" points="102.528,-183.83 92.7852,-179.667 97.8049,-188.997 102.528,-183.83"/>
-    </g>
-    <!-- 6 -->
-    <g id="node7" class="node"><title>6</title>
-    <polygon fill="none" stroke="black" points="238,-179.5 131,-179.5 131,-111.5 238,-111.5 238,-179.5"/>
-    <text text-anchor="start" x="157" y="-164.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
-    <text text-anchor="start" x="151" y="-149.3" font-family="Times,serif" font-size="14.00">samples = 1</text>
-    <text text-anchor="start" x="139.5" y="-134.3" font-family="Times,serif" font-size="14.00">value = [0, 0, 1]</text>
-    <text text-anchor="start" x="139" y="-119.3" font-family="Times,serif" font-size="14.00">class = virginica</text>
-    </g>
-    <!-- 4&#45;&gt;6 -->
-    <g id="edge6" class="edge"><title>4&#45;&gt;6</title>
-    <path fill="none" stroke="black" d="M184.5,-222.907C184.5,-212.204 184.5,-200.615 184.5,-189.776"/>
-    <polygon fill="black" stroke="black" points="188,-189.667 184.5,-179.667 181,-189.667 188,-189.667"/>
-    </g>
-    <!-- 8 -->
-    <g id="node9" class="node"><title>8</title>
-    <polygon fill="none" stroke="black" points="363,-179.5 256,-179.5 256,-111.5 363,-111.5 363,-179.5"/>
-    <text text-anchor="start" x="282" y="-164.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
-    <text text-anchor="start" x="276" y="-149.3" font-family="Times,serif" font-size="14.00">samples = 3</text>
-    <text text-anchor="start" x="264.5" y="-134.3" font-family="Times,serif" font-size="14.00">value = [0, 0, 3]</text>
-    <text text-anchor="start" x="264" y="-119.3" font-family="Times,serif" font-size="14.00">class = virginica</text>
-    </g>
-    <!-- 7&#45;&gt;8 -->
-    <g id="edge8" class="edge"><title>7&#45;&gt;8</title>
-    <path fill="none" stroke="black" d="M363.051,-222.907C355.162,-211.652 346.588,-199.418 338.66,-188.106"/>
-    <polygon fill="black" stroke="black" points="341.351,-185.847 332.745,-179.667 335.618,-189.865 341.351,-185.847"/>
-    </g>
-    <!-- 9 -->
-    <g id="node10" class="node"><title>9</title>
-    <polygon fill="none" stroke="black" points="530.5,-187 380.5,-187 380.5,-104 530.5,-104 530.5,-187"/>
-    <text text-anchor="start" x="388.5" y="-171.8" font-family="Times,serif" font-size="14.00">petal length (cm) ≤ 5.45</text>
-    <text text-anchor="start" x="418" y="-156.8" font-family="Times,serif" font-size="14.00">gini = 0.4444</text>
-    <text text-anchor="start" x="422" y="-141.8" font-family="Times,serif" font-size="14.00">samples = 3</text>
-    <text text-anchor="start" x="410.5" y="-126.8" font-family="Times,serif" font-size="14.00">value = [0, 2, 1]</text>
-    <text text-anchor="start" x="407" y="-111.8" font-family="Times,serif" font-size="14.00">class = versicolor</text>
-    </g>
-    <!-- 7&#45;&gt;9 -->
-    <g id="edge9" class="edge"><title>7&#45;&gt;9</title>
-    <path fill="none" stroke="black" d="M413.704,-222.907C418.47,-214.195 423.556,-204.897 428.481,-195.893"/>
-    <polygon fill="black" stroke="black" points="431.606,-197.474 433.335,-187.021 425.465,-194.114 431.606,-197.474"/>
-    </g>
-    <!-- 10 -->
-    <g id="node11" class="node"><title>10</title>
-    <polygon fill="none" stroke="black" points="448,-68 335,-68 335,-0 448,-0 448,-68"/>
-    <text text-anchor="start" x="364" y="-52.8" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
-    <text text-anchor="start" x="358" y="-37.8" font-family="Times,serif" font-size="14.00">samples = 2</text>
-    <text text-anchor="start" x="346.5" y="-22.8" font-family="Times,serif" font-size="14.00">value = [0, 2, 0]</text>
-    <text text-anchor="start" x="343" y="-7.8" font-family="Times,serif" font-size="14.00">class = versicolor</text>
-    </g>
-    <!-- 9&#45;&gt;10 -->
-    <g id="edge10" class="edge"><title>9&#45;&gt;10</title>
-    <path fill="none" stroke="black" d="M431.669,-103.726C426.604,-95.0615 421.248,-85.8962 416.153,-77.1802"/>
-    <polygon fill="black" stroke="black" points="419.031,-75.167 410.963,-68.2996 412.987,-78.6992 419.031,-75.167"/>
-    </g>
-    <!-- 11 -->
-    <g id="node12" class="node"><title>11</title>
-    <polygon fill="none" stroke="black" points="573,-68 466,-68 466,-0 573,-0 573,-68"/>
-    <text text-anchor="start" x="492" y="-52.8" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
-    <text text-anchor="start" x="486" y="-37.8" font-family="Times,serif" font-size="14.00">samples = 1</text>
-    <text text-anchor="start" x="474.5" y="-22.8" font-family="Times,serif" font-size="14.00">value = [0, 0, 1]</text>
-    <text text-anchor="start" x="474" y="-7.8" font-family="Times,serif" font-size="14.00">class = virginica</text>
-    </g>
-    <!-- 9&#45;&gt;11 -->
-    <g id="edge11" class="edge"><title>9&#45;&gt;11</title>
-    <path fill="none" stroke="black" d="M479.331,-103.726C484.396,-95.0615 489.752,-85.8962 494.847,-77.1802"/>
-    <polygon fill="black" stroke="black" points="498.013,-78.6992 500.037,-68.2996 491.969,-75.167 498.013,-78.6992"/>
-    </g>
-    <!-- 13 -->
-    <g id="node14" class="node"><title>13</title>
-    <polygon fill="none" stroke="black" points="672.5,-306 530.5,-306 530.5,-223 672.5,-223 672.5,-306"/>
-    <text text-anchor="start" x="538.5" y="-290.8" font-family="Times,serif" font-size="14.00">sepal width (cm) ≤ 3.1</text>
-    <text text-anchor="start" x="564" y="-275.8" font-family="Times,serif" font-size="14.00">gini = 0.4444</text>
-    <text text-anchor="start" x="568" y="-260.8" font-family="Times,serif" font-size="14.00">samples = 3</text>
-    <text text-anchor="start" x="556.5" y="-245.8" font-family="Times,serif" font-size="14.00">value = [0, 1, 2]</text>
-    <text text-anchor="start" x="556" y="-230.8" font-family="Times,serif" font-size="14.00">class = virginica</text>
-    </g>
-    <!-- 12&#45;&gt;13 -->
-    <g id="edge13" class="edge"><title>12&#45;&gt;13</title>
-    <path fill="none" stroke="black" d="M601.5,-341.907C601.5,-333.649 601.5,-324.864 601.5,-316.302"/>
-    <polygon fill="black" stroke="black" points="605,-316.021 601.5,-306.021 598,-316.021 605,-316.021"/>
-    </g>
-    <!-- 16 -->
-    <g id="node17" class="node"><title>16</title>
-    <polygon fill="none" stroke="black" points="804,-298.5 691,-298.5 691,-230.5 804,-230.5 804,-298.5"/>
-    <text text-anchor="start" x="720" y="-283.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
-    <text text-anchor="start" x="710.5" y="-268.3" font-family="Times,serif" font-size="14.00">samples = 43</text>
-    <text text-anchor="start" x="699" y="-253.3" font-family="Times,serif" font-size="14.00">value = [0, 0, 43]</text>
-    <text text-anchor="start" x="702" y="-238.3" font-family="Times,serif" font-size="14.00">class = virginica</text>
-    </g>
-    <!-- 12&#45;&gt;16 -->
-    <g id="edge16" class="edge"><title>12&#45;&gt;16</title>
-    <path fill="none" stroke="black" d="M652.154,-341.907C667.025,-329.99 683.265,-316.976 698.06,-305.12"/>
-    <polygon fill="black" stroke="black" points="700.497,-307.652 706.112,-298.667 696.12,-302.189 700.497,-307.652"/>
-    </g>
-    <!-- 14 -->
-    <g id="node15" class="node"><title>14</title>
-    <polygon fill="none" stroke="black" points="655,-179.5 548,-179.5 548,-111.5 655,-111.5 655,-179.5"/>
-    <text text-anchor="start" x="574" y="-164.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
-    <text text-anchor="start" x="568" y="-149.3" font-family="Times,serif" font-size="14.00">samples = 2</text>
-    <text text-anchor="start" x="556.5" y="-134.3" font-family="Times,serif" font-size="14.00">value = [0, 0, 2]</text>
-    <text text-anchor="start" x="556" y="-119.3" font-family="Times,serif" font-size="14.00">class = virginica</text>
-    </g>
-    <!-- 13&#45;&gt;14 -->
-    <g id="edge14" class="edge"><title>13&#45;&gt;14</title>
-    <path fill="none" stroke="black" d="M601.5,-222.907C601.5,-212.204 601.5,-200.615 601.5,-189.776"/>
-    <polygon fill="black" stroke="black" points="605,-189.667 601.5,-179.667 598,-189.667 605,-189.667"/>
-    </g>
-    <!-- 15 -->
-    <g id="node16" class="node"><title>15</title>
-    <polygon fill="none" stroke="black" points="786,-179.5 673,-179.5 673,-111.5 786,-111.5 786,-179.5"/>
-    <text text-anchor="start" x="702" y="-164.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
-    <text text-anchor="start" x="696" y="-149.3" font-family="Times,serif" font-size="14.00">samples = 1</text>
-    <text text-anchor="start" x="684.5" y="-134.3" font-family="Times,serif" font-size="14.00">value = [0, 1, 0]</text>
-    <text text-anchor="start" x="681" y="-119.3" font-family="Times,serif" font-size="14.00">class = versicolor</text>
-    </g>
-    <!-- 13&#45;&gt;15 -->
-    <g id="edge15" class="edge"><title>13&#45;&gt;15</title>
-    <path fill="none" stroke="black" d="M645.909,-222.907C658.826,-211.101 672.921,-198.217 685.795,-186.45"/>
-    <polygon fill="black" stroke="black" points="688.195,-188.997 693.215,-179.667 683.472,-183.83 688.195,-188.997"/>
-    </g>
-    </g>
-</svg>
-
+<div class=image-container>
+    <svg style="margin: auto; display: block; max-width: 700px; min-width: 550px;" viewBox="0.00 0.00 812.00 671.00">
+        <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 667)">
+        <title>Tree</title>
+        <!-- 0 -->
+        <g id="node1" class="node"><title>0</title>
+        <polygon fill="none" stroke="black" points="492.5,-663 352.5,-663 352.5,-580 492.5,-580 492.5,-663"/>
+        <text text-anchor="start" x="360.5" y="-647.8" font-family="Times,serif" font-size="14.00">petal width (cm) ≤ 0.8</text>
+        <text text-anchor="start" x="385" y="-632.8" font-family="Times,serif" font-size="14.00">gini = 0.6667</text>
+        <text text-anchor="start" x="382" y="-617.8" font-family="Times,serif" font-size="14.00">samples = 150</text>
+        <text text-anchor="start" x="367.5" y="-602.8" font-family="Times,serif" font-size="14.00">value = [50, 50, 50]</text>
+        <text text-anchor="start" x="384.5" y="-587.8" font-family="Times,serif" font-size="14.00">class = setosa</text>
+        </g>
+        <!-- 1 -->
+        <g id="node2" class="node"><title>1</title>
+        <polygon fill="none" stroke="black" points="405,-536.5 292,-536.5 292,-468.5 405,-468.5 405,-536.5"/>
+        <text text-anchor="start" x="321" y="-521.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
+        <text text-anchor="start" x="311.5" y="-506.3" font-family="Times,serif" font-size="14.00">samples = 50</text>
+        <text text-anchor="start" x="300" y="-491.3" font-family="Times,serif" font-size="14.00">value = [50, 0, 0]</text>
+        <text text-anchor="start" x="310.5" y="-476.3" font-family="Times,serif" font-size="14.00">class = setosa</text>
+        </g>
+        <!-- 0&#45;&gt;1 -->
+        <g id="edge1" class="edge"><title>0&#45;&gt;1</title>
+        <path fill="none" stroke="black" d="M396.826,-579.907C389.777,-568.763 382.121,-556.658 375.026,-545.439"/>
+        <polygon fill="black" stroke="black" points="377.781,-543.248 369.477,-536.667 371.865,-546.989 377.781,-543.248"/>
+        <text text-anchor="middle" x="363.987" y="-557.356" font-family="Times,serif" font-size="14.00">True</text>
+        </g>
+        <!-- 2 -->
+        <g id="node3" class="node"><title>2</title>
+        <polygon fill="none" stroke="black" points="570,-544 423,-544 423,-461 570,-461 570,-544"/>
+        <text text-anchor="start" x="431" y="-528.8" font-family="Times,serif" font-size="14.00">petal width (cm) ≤ 1.75</text>
+        <text text-anchor="start" x="469" y="-513.8" font-family="Times,serif" font-size="14.00">gini = 0.5</text>
+        <text text-anchor="start" x="456" y="-498.8" font-family="Times,serif" font-size="14.00">samples = 100</text>
+        <text text-anchor="start" x="445" y="-483.8" font-family="Times,serif" font-size="14.00">value = [0, 50, 50]</text>
+        <text text-anchor="start" x="448" y="-468.8" font-family="Times,serif" font-size="14.00">class = versicolor</text>
+        </g>
+        <!-- 0&#45;&gt;2 -->
+        <g id="edge2" class="edge"><title>0&#45;&gt;2</title>
+        <path fill="none" stroke="black" d="M448.174,-579.907C453.742,-571.105 459.688,-561.703 465.438,-552.612"/>
+        <polygon fill="black" stroke="black" points="468.484,-554.343 470.871,-544.021 462.568,-550.601 468.484,-554.343"/>
+        <text text-anchor="middle" x="476.362" y="-564.71" font-family="Times,serif" font-size="14.00">False</text>
+        </g>
+        <!-- 3 -->
+        <g id="node4" class="node"><title>3</title>
+        <polygon fill="none" stroke="black" points="466.5,-425 316.5,-425 316.5,-342 466.5,-342 466.5,-425"/>
+        <text text-anchor="start" x="324.5" y="-409.8" font-family="Times,serif" font-size="14.00">petal length (cm) ≤ 4.95</text>
+        <text text-anchor="start" x="357.5" y="-394.8" font-family="Times,serif" font-size="14.00">gini = 0.168</text>
+        <text text-anchor="start" x="354.5" y="-379.8" font-family="Times,serif" font-size="14.00">samples = 54</text>
+        <text text-anchor="start" x="343" y="-364.8" font-family="Times,serif" font-size="14.00">value = [0, 49, 5]</text>
+        <text text-anchor="start" x="343" y="-349.8" font-family="Times,serif" font-size="14.00">class = versicolor</text>
+        </g>
+        <!-- 2&#45;&gt;3 -->
+        <g id="edge3" class="edge"><title>2&#45;&gt;3</title>
+        <path fill="none" stroke="black" d="M460.071,-460.907C451.845,-451.742 443.037,-441.927 434.567,-432.489"/>
+        <polygon fill="black" stroke="black" points="437.149,-430.126 427.865,-425.021 431.939,-434.801 437.149,-430.126"/>
+        </g>
+        <!-- 12 -->
+        <g id="node13" class="node"><title>12</title>
+        <polygon fill="none" stroke="black" points="676.5,-425 526.5,-425 526.5,-342 676.5,-342 676.5,-425"/>
+        <text text-anchor="start" x="534.5" y="-409.8" font-family="Times,serif" font-size="14.00">petal length (cm) ≤ 4.85</text>
+        <text text-anchor="start" x="564" y="-394.8" font-family="Times,serif" font-size="14.00">gini = 0.0425</text>
+        <text text-anchor="start" x="564.5" y="-379.8" font-family="Times,serif" font-size="14.00">samples = 46</text>
+        <text text-anchor="start" x="553" y="-364.8" font-family="Times,serif" font-size="14.00">value = [0, 1, 45]</text>
+        <text text-anchor="start" x="556" y="-349.8" font-family="Times,serif" font-size="14.00">class = virginica</text>
+        </g>
+        <!-- 2&#45;&gt;12 -->
+        <g id="edge12" class="edge"><title>2&#45;&gt;12</title>
+        <path fill="none" stroke="black" d="M532.929,-460.907C541.155,-451.742 549.963,-441.927 558.433,-432.489"/>
+        <polygon fill="black" stroke="black" points="561.061,-434.801 565.135,-425.021 555.851,-430.126 561.061,-434.801"/>
+        </g>
+        <!-- 4 -->
+        <g id="node5" class="node"><title>4</title>
+        <polygon fill="none" stroke="black" points="258,-306 111,-306 111,-223 258,-223 258,-306"/>
+        <text text-anchor="start" x="119" y="-290.8" font-family="Times,serif" font-size="14.00">petal width (cm) ≤ 1.65</text>
+        <text text-anchor="start" x="147" y="-275.8" font-family="Times,serif" font-size="14.00">gini = 0.0408</text>
+        <text text-anchor="start" x="147.5" y="-260.8" font-family="Times,serif" font-size="14.00">samples = 48</text>
+        <text text-anchor="start" x="136" y="-245.8" font-family="Times,serif" font-size="14.00">value = [0, 47, 1]</text>
+        <text text-anchor="start" x="136" y="-230.8" font-family="Times,serif" font-size="14.00">class = versicolor</text>
+        </g>
+        <!-- 3&#45;&gt;4 -->
+        <g id="edge4" class="edge"><title>3&#45;&gt;4</title>
+        <path fill="none" stroke="black" d="M319.682,-341.907C302.021,-331.925 282.997,-321.172 264.957,-310.976"/>
+        <polygon fill="black" stroke="black" points="266.619,-307.894 256.191,-306.021 263.174,-313.988 266.619,-307.894"/>
+        </g>
+        <!-- 7 -->
+        <g id="node8" class="node"><title>7</title>
+        <polygon fill="none" stroke="black" points="465,-306 318,-306 318,-223 465,-223 465,-306"/>
+        <text text-anchor="start" x="326" y="-290.8" font-family="Times,serif" font-size="14.00">petal width (cm) ≤ 1.55</text>
+        <text text-anchor="start" x="354" y="-275.8" font-family="Times,serif" font-size="14.00">gini = 0.4444</text>
+        <text text-anchor="start" x="358" y="-260.8" font-family="Times,serif" font-size="14.00">samples = 6</text>
+        <text text-anchor="start" x="346.5" y="-245.8" font-family="Times,serif" font-size="14.00">value = [0, 2, 4]</text>
+        <text text-anchor="start" x="346" y="-230.8" font-family="Times,serif" font-size="14.00">class = virginica</text>
+        </g>
+        <!-- 3&#45;&gt;7 -->
+        <g id="edge7" class="edge"><title>3&#45;&gt;7</title>
+        <path fill="none" stroke="black" d="M391.5,-341.907C391.5,-333.649 391.5,-324.864 391.5,-316.302"/>
+        <polygon fill="black" stroke="black" points="395,-316.021 391.5,-306.021 388,-316.021 395,-316.021"/>
+        </g>
+        <!-- 5 -->
+        <g id="node6" class="node"><title>5</title>
+        <polygon fill="none" stroke="black" points="113,-179.5 0,-179.5 0,-111.5 113,-111.5 113,-179.5"/>
+        <text text-anchor="start" x="29" y="-164.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
+        <text text-anchor="start" x="19.5" y="-149.3" font-family="Times,serif" font-size="14.00">samples = 47</text>
+        <text text-anchor="start" x="8" y="-134.3" font-family="Times,serif" font-size="14.00">value = [0, 47, 0]</text>
+        <text text-anchor="start" x="8" y="-119.3" font-family="Times,serif" font-size="14.00">class = versicolor</text>
+        </g>
+        <!-- 4&#45;&gt;5 -->
+        <g id="edge5" class="edge"><title>4&#45;&gt;5</title>
+        <path fill="none" stroke="black" d="M140.091,-222.907C127.174,-211.101 113.079,-198.217 100.205,-186.45"/>
+        <polygon fill="black" stroke="black" points="102.528,-183.83 92.7852,-179.667 97.8049,-188.997 102.528,-183.83"/>
+        </g>
+        <!-- 6 -->
+        <g id="node7" class="node"><title>6</title>
+        <polygon fill="none" stroke="black" points="238,-179.5 131,-179.5 131,-111.5 238,-111.5 238,-179.5"/>
+        <text text-anchor="start" x="157" y="-164.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
+        <text text-anchor="start" x="151" y="-149.3" font-family="Times,serif" font-size="14.00">samples = 1</text>
+        <text text-anchor="start" x="139.5" y="-134.3" font-family="Times,serif" font-size="14.00">value = [0, 0, 1]</text>
+        <text text-anchor="start" x="139" y="-119.3" font-family="Times,serif" font-size="14.00">class = virginica</text>
+        </g>
+        <!-- 4&#45;&gt;6 -->
+        <g id="edge6" class="edge"><title>4&#45;&gt;6</title>
+        <path fill="none" stroke="black" d="M184.5,-222.907C184.5,-212.204 184.5,-200.615 184.5,-189.776"/>
+        <polygon fill="black" stroke="black" points="188,-189.667 184.5,-179.667 181,-189.667 188,-189.667"/>
+        </g>
+        <!-- 8 -->
+        <g id="node9" class="node"><title>8</title>
+        <polygon fill="none" stroke="black" points="363,-179.5 256,-179.5 256,-111.5 363,-111.5 363,-179.5"/>
+        <text text-anchor="start" x="282" y="-164.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
+        <text text-anchor="start" x="276" y="-149.3" font-family="Times,serif" font-size="14.00">samples = 3</text>
+        <text text-anchor="start" x="264.5" y="-134.3" font-family="Times,serif" font-size="14.00">value = [0, 0, 3]</text>
+        <text text-anchor="start" x="264" y="-119.3" font-family="Times,serif" font-size="14.00">class = virginica</text>
+        </g>
+        <!-- 7&#45;&gt;8 -->
+        <g id="edge8" class="edge"><title>7&#45;&gt;8</title>
+        <path fill="none" stroke="black" d="M363.051,-222.907C355.162,-211.652 346.588,-199.418 338.66,-188.106"/>
+        <polygon fill="black" stroke="black" points="341.351,-185.847 332.745,-179.667 335.618,-189.865 341.351,-185.847"/>
+        </g>
+        <!-- 9 -->
+        <g id="node10" class="node"><title>9</title>
+        <polygon fill="none" stroke="black" points="530.5,-187 380.5,-187 380.5,-104 530.5,-104 530.5,-187"/>
+        <text text-anchor="start" x="388.5" y="-171.8" font-family="Times,serif" font-size="14.00">petal length (cm) ≤ 5.45</text>
+        <text text-anchor="start" x="418" y="-156.8" font-family="Times,serif" font-size="14.00">gini = 0.4444</text>
+        <text text-anchor="start" x="422" y="-141.8" font-family="Times,serif" font-size="14.00">samples = 3</text>
+        <text text-anchor="start" x="410.5" y="-126.8" font-family="Times,serif" font-size="14.00">value = [0, 2, 1]</text>
+        <text text-anchor="start" x="407" y="-111.8" font-family="Times,serif" font-size="14.00">class = versicolor</text>
+        </g>
+        <!-- 7&#45;&gt;9 -->
+        <g id="edge9" class="edge"><title>7&#45;&gt;9</title>
+        <path fill="none" stroke="black" d="M413.704,-222.907C418.47,-214.195 423.556,-204.897 428.481,-195.893"/>
+        <polygon fill="black" stroke="black" points="431.606,-197.474 433.335,-187.021 425.465,-194.114 431.606,-197.474"/>
+        </g>
+        <!-- 10 -->
+        <g id="node11" class="node"><title>10</title>
+        <polygon fill="none" stroke="black" points="448,-68 335,-68 335,-0 448,-0 448,-68"/>
+        <text text-anchor="start" x="364" y="-52.8" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
+        <text text-anchor="start" x="358" y="-37.8" font-family="Times,serif" font-size="14.00">samples = 2</text>
+        <text text-anchor="start" x="346.5" y="-22.8" font-family="Times,serif" font-size="14.00">value = [0, 2, 0]</text>
+        <text text-anchor="start" x="343" y="-7.8" font-family="Times,serif" font-size="14.00">class = versicolor</text>
+        </g>
+        <!-- 9&#45;&gt;10 -->
+        <g id="edge10" class="edge"><title>9&#45;&gt;10</title>
+        <path fill="none" stroke="black" d="M431.669,-103.726C426.604,-95.0615 421.248,-85.8962 416.153,-77.1802"/>
+        <polygon fill="black" stroke="black" points="419.031,-75.167 410.963,-68.2996 412.987,-78.6992 419.031,-75.167"/>
+        </g>
+        <!-- 11 -->
+        <g id="node12" class="node"><title>11</title>
+        <polygon fill="none" stroke="black" points="573,-68 466,-68 466,-0 573,-0 573,-68"/>
+        <text text-anchor="start" x="492" y="-52.8" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
+        <text text-anchor="start" x="486" y="-37.8" font-family="Times,serif" font-size="14.00">samples = 1</text>
+        <text text-anchor="start" x="474.5" y="-22.8" font-family="Times,serif" font-size="14.00">value = [0, 0, 1]</text>
+        <text text-anchor="start" x="474" y="-7.8" font-family="Times,serif" font-size="14.00">class = virginica</text>
+        </g>
+        <!-- 9&#45;&gt;11 -->
+        <g id="edge11" class="edge"><title>9&#45;&gt;11</title>
+        <path fill="none" stroke="black" d="M479.331,-103.726C484.396,-95.0615 489.752,-85.8962 494.847,-77.1802"/>
+        <polygon fill="black" stroke="black" points="498.013,-78.6992 500.037,-68.2996 491.969,-75.167 498.013,-78.6992"/>
+        </g>
+        <!-- 13 -->
+        <g id="node14" class="node"><title>13</title>
+        <polygon fill="none" stroke="black" points="672.5,-306 530.5,-306 530.5,-223 672.5,-223 672.5,-306"/>
+        <text text-anchor="start" x="538.5" y="-290.8" font-family="Times,serif" font-size="14.00">sepal width (cm) ≤ 3.1</text>
+        <text text-anchor="start" x="564" y="-275.8" font-family="Times,serif" font-size="14.00">gini = 0.4444</text>
+        <text text-anchor="start" x="568" y="-260.8" font-family="Times,serif" font-size="14.00">samples = 3</text>
+        <text text-anchor="start" x="556.5" y="-245.8" font-family="Times,serif" font-size="14.00">value = [0, 1, 2]</text>
+        <text text-anchor="start" x="556" y="-230.8" font-family="Times,serif" font-size="14.00">class = virginica</text>
+        </g>
+        <!-- 12&#45;&gt;13 -->
+        <g id="edge13" class="edge"><title>12&#45;&gt;13</title>
+        <path fill="none" stroke="black" d="M601.5,-341.907C601.5,-333.649 601.5,-324.864 601.5,-316.302"/>
+        <polygon fill="black" stroke="black" points="605,-316.021 601.5,-306.021 598,-316.021 605,-316.021"/>
+        </g>
+        <!-- 16 -->
+        <g id="node17" class="node"><title>16</title>
+        <polygon fill="none" stroke="black" points="804,-298.5 691,-298.5 691,-230.5 804,-230.5 804,-298.5"/>
+        <text text-anchor="start" x="720" y="-283.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
+        <text text-anchor="start" x="710.5" y="-268.3" font-family="Times,serif" font-size="14.00">samples = 43</text>
+        <text text-anchor="start" x="699" y="-253.3" font-family="Times,serif" font-size="14.00">value = [0, 0, 43]</text>
+        <text text-anchor="start" x="702" y="-238.3" font-family="Times,serif" font-size="14.00">class = virginica</text>
+        </g>
+        <!-- 12&#45;&gt;16 -->
+        <g id="edge16" class="edge"><title>12&#45;&gt;16</title>
+        <path fill="none" stroke="black" d="M652.154,-341.907C667.025,-329.99 683.265,-316.976 698.06,-305.12"/>
+        <polygon fill="black" stroke="black" points="700.497,-307.652 706.112,-298.667 696.12,-302.189 700.497,-307.652"/>
+        </g>
+        <!-- 14 -->
+        <g id="node15" class="node"><title>14</title>
+        <polygon fill="none" stroke="black" points="655,-179.5 548,-179.5 548,-111.5 655,-111.5 655,-179.5"/>
+        <text text-anchor="start" x="574" y="-164.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
+        <text text-anchor="start" x="568" y="-149.3" font-family="Times,serif" font-size="14.00">samples = 2</text>
+        <text text-anchor="start" x="556.5" y="-134.3" font-family="Times,serif" font-size="14.00">value = [0, 0, 2]</text>
+        <text text-anchor="start" x="556" y="-119.3" font-family="Times,serif" font-size="14.00">class = virginica</text>
+        </g>
+        <!-- 13&#45;&gt;14 -->
+        <g id="edge14" class="edge"><title>13&#45;&gt;14</title>
+        <path fill="none" stroke="black" d="M601.5,-222.907C601.5,-212.204 601.5,-200.615 601.5,-189.776"/>
+        <polygon fill="black" stroke="black" points="605,-189.667 601.5,-179.667 598,-189.667 605,-189.667"/>
+        </g>
+        <!-- 15 -->
+        <g id="node16" class="node"><title>15</title>
+        <polygon fill="none" stroke="black" points="786,-179.5 673,-179.5 673,-111.5 786,-111.5 786,-179.5"/>
+        <text text-anchor="start" x="702" y="-164.3" font-family="Times,serif" font-size="14.00">gini = 0.0</text>
+        <text text-anchor="start" x="696" y="-149.3" font-family="Times,serif" font-size="14.00">samples = 1</text>
+        <text text-anchor="start" x="684.5" y="-134.3" font-family="Times,serif" font-size="14.00">value = [0, 1, 0]</text>
+        <text text-anchor="start" x="681" y="-119.3" font-family="Times,serif" font-size="14.00">class = versicolor</text>
+        </g>
+        <!-- 13&#45;&gt;15 -->
+        <g id="edge15" class="edge"><title>13&#45;&gt;15</title>
+        <path fill="none" stroke="black" d="M645.909,-222.907C658.826,-211.101 672.921,-198.217 685.795,-186.45"/>
+        <polygon fill="black" stroke="black" points="688.195,-188.997 693.215,-179.667 683.472,-183.83 688.195,-188.997"/>
+        </g>
+        </g>
+    </svg>
+</div>
 
 Actually the variable is a plain string contains the source of the dot file. The source for the graph illustrated above is listed as follows (`sklearn` use `HTML` format to fill the content of graph):
 ```c
