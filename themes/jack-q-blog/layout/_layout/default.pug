@@ -7,8 +7,12 @@ html(lang="en")
     meta(name="viewport", content="width=device-width,initial-scale=1, minimum-scale=1,user-scalable=no,maximum-scale=1")
     meta(name="format-detection", content="telephone=no")
     meta(name="format-detection", content="address=no")
+    meta(property="og:title",content=page.title)
+    meta(property="og:type",content=page.posts?"list":"article")
+    meta(property="og:url",content=`${config.url}/${page.path}`)
+    //- meta(property="og:image",content="")
     title Jack Q's Blog
-    != css('/css/main.css')
+    != css('/css/main.css?v=20170531')
     block stylesheet
   body
     //- Main page content
@@ -27,6 +31,6 @@ html(lang="en")
         ga('send', 'pageview');
       }
 
-    != js('/js/jquery.min.js')
-    != js('/js/main.js')
+    != js('/js/jquery.min.js?v=20170531')
+    != js('/js/main.js?v=20170531')
     block script

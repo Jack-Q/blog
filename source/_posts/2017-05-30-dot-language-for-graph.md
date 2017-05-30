@@ -508,7 +508,7 @@ client. With assist of some compiler backends (such as emscripten), the layout e
 GraphViz can be compiled into Web Assembly format and execute directly within user browser.
 A ready-to-use library named Viz.js is available at GitHub 
 ([mdaines/viz.js](https://github.com/mdaines/viz.js)), which also provides am online demo 
-at [http://viz-js.com/](). 
+at [http://viz-js.com/](http://viz-js.com/). 
 
 The API exposed by Viz.js is quite simple and clear. It just consumes the source of a graph 
 and generates the image. However, this process maybe kinds of time-consuming, and will
