@@ -4,6 +4,10 @@
     "name": "Jack Q",
     "email": "qiaobo@outlook.com"
   },
+  "scripts": {
+    "start": "hexo s",
+    "hexo": "hexo"
+  },
   "version": "0.0.1",
   "hexo": {
     "version": "3.3.5"
