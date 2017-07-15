@@ -65,6 +65,7 @@ pagination_dir: page
 theme: jack-q-blog
 
 # Google Analytics 
+googleAnalytics: true
 googleAnalyticsId: UA-63336636-1
 math_inline: false
 

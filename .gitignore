@@ -7,3 +7,4 @@ public/
 .deploy*/
 .vscode
 local-post
+_multiconfig.yml

@@ -58,15 +58,26 @@
     // mouse wheel support on desktop
     $(".post-list-container").mousewheel(function (event, delta) {
       if ($(window).width() > 768) {
-        $(this).animate({ scrollLeft: '-=' + (delta * 80) }, 30);
+        event.stopPropagation();
         event.preventDefault();
+
+        // already scroll to left most
+        if(delta > 0 && this.scrollLeft <= 0)
+          return false;
+
+        // already scroll to right most
+        if (delta < 0 && this.scrollWidth - this.scrollLeft - this.clientWidth <= 0)
+          return false;
+
+        $(this).animate({ scrollLeft: '-=' + (delta * 60) }, 30);
+        return false;
       }
     });
   }
   
   var loadPageContent = function (url, type) {
     // Google Analysis 
-    ga && ga('send', 'pageview');
+    window.ga && window.ga('send', 'pageview');
     
     var $loader = $('section.page-loader');
 
