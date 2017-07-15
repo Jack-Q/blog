@@ -11,14 +11,14 @@ mixin post(post)
     != page_anchor(post.content)
   if config.defualt_cc_by_sa
     .post-licence(tabindex="0")
-      .post-licence-icon
+      .post-licence-icon(title="CC-BY-SA 4.0")
         i.cc.cc-cc
         i.cc.cc-by
         i.cc.cc-sa
       .post-licence-text
         .post-licence-label CC-BY-SA 4.0
         | The content of this post is licensed under a 
-        a(rel='license', href='http://creativecommons.org/licenses/by-sa/4.0/')
+        a(rel='license', href='http://creativecommons.org/licenses/by-sa/4.0/', target='_blank')
           | Creative Commons Attribution-ShareAlike 4.0 International License
         | .
   .post-content-end END

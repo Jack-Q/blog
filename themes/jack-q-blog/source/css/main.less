@@ -1479,6 +1479,7 @@ section.article-content{
   text-align: center;
   
   .post-licence-icon {
+    cursor: pointer;
     font-size: 25px;
     line-height: 25px;
     transition: all ease 400ms;
@@ -1491,14 +1492,14 @@ section.article-content{
     font-family: @font-monospace;
     text-align: center;
     color: #999;
-    font-size: 1.1em;
+    font-size: 1.05em;
     letter-spacing: -1.5px;
   }
   .post-licence-text {
     padding-bottom: 10px;
     color: #aaa;
     transition: all ease 400ms;
-    font-size: 0.8em;
+    font-size: 0.85em;
     word-spacing: 0.04em;
     opacity: 0;
     overflow: hidden;
@@ -1516,6 +1517,7 @@ section.article-content{
   &:focus {
     outline: none;
     .post-licence-icon{
+      cursor: default;
       color: #2be;
     }
     .post-licence-text {
