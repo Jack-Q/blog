@@ -6,7 +6,7 @@ tags:
   - react
 ---
 
-Today's topic is some compainent library uesd together with ReactJS.
+Today's topic is some component library used together with ReactJS.
 The React Motion is a UX improvement library named React Motion, which 
 provides supports to transition animation.
 
@@ -20,7 +20,7 @@ function to create transition effects from one state to another.
 
 ### `spring` function
 
-The unfied interpolation function is named `spring`. As it name indecates,
+The unified interpolation function is named `spring`. As it name indicates,
 the function is just to crate interpolation based on the physical behavior
 of a real world spring. The library choose spring as its model to create its 
 interpolation function is based on the fact that by applying simple physics 
@@ -31,8 +31,8 @@ appear when previous action is unfinished while a new action is applied.
 
 Even though the transition function is unified, there are still two 
 parameters to describe the physical attributes, which are stiffness and damping.
-The first one describes the power of the spring and genrally, the larger 
-stifness, the less time required for certain animation. The second one, 
+The first one describes the power of the spring and generally, the larger 
+stiffness, the less time required for certain animation. The second one, 
 damping describes the slowing down effects for a certain
 animation. The smaller the damping is, the larger time required to finish 
 a certain animation. Especially, when the stiffness is set to 0, the value will not 
@@ -45,7 +45,7 @@ component to apply then to other React components.
 ### `<Motion />`
 
 The `<Motion />` component provides simple effects to a single components.
-By wrapping a target component into the `<Motion />` compoonent, a interpolation 
+By wrapping a target component into the `<Motion />` component, a interpolation 
 value is provided to the content and can be used to apply to styles.
 A simple example is shown as follows:
 ```javascript
@@ -104,7 +104,7 @@ styles={prev => prev.map((_, i) => ({
 
 ### `<TransitionMotion />`
 
-The `<TransitionMotion />` component is a state based transtion, which gnenrally 
+The `<TransitionMotion />` component is a state based transition, which generally 
 create transition effect for a component to be mounted and to be unmounted.
 The following code shows the usage of fading in and sliding in effects.
 

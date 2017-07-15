@@ -10,6 +10,8 @@ html(lang="en")
     meta(property="og:title",content=page.title)
     meta(property="og:type",content=page.posts?"list":"article")
     meta(property="og:url",content=`${config.url}/${page.path}`)
+    meta(name="theme-color",content="#d5d5eb")
+    link(rel="manifest",href=`${config.root}manifest.json`)
     //- meta(property="og:image",content="")
     title Jack Q's Blog
     != css('/css/main.css?v=20170715')

@@ -1,0 +1,8 @@
+{
+  "short_name": "Jack Q",
+  "name": "Jack Q's Blog",
+  "start_url": "/blog/?utm_source=homescreen",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#d5d5eb"
+}
