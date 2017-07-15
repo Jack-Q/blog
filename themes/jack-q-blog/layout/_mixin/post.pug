@@ -9,6 +9,18 @@ mixin post(post)
       != anchor_smooth(list_tags(post.tags, {show_count: false}))
   .post-content
     != page_anchor(post.content)
+  if config.defualt_cc_by_sa
+    .post-licence(tabindex="0")
+      .post-licence-icon
+        i.cc.cc-cc
+        i.cc.cc-by
+        i.cc.cc-sa
+      .post-licence-text
+        .post-licence-label CC-BY-SA 4.0
+        | The content of this post is licensed under a 
+        a(rel='license', href='http://creativecommons.org/licenses/by-sa/4.0/')
+          | Creative Commons Attribution-ShareAlike 4.0 International License
+        | .
   .post-content-end END
   .post-prev-next
     .post-prev

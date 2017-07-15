@@ -36,6 +36,7 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+defualt_cc_by_sa: true
 highlight:
   enable: true
   line_number: true

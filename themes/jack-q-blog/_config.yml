@@ -1,5 +1,8 @@
 # jack-q-blog theme configuration
 
+# options
+defualt_cc_by_sa: true
+
 # less renderer
 less:
   compress: true

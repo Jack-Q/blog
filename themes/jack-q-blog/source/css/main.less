@@ -5,6 +5,7 @@
 // local font reference
 @import url('./katex.css');
 @import url('./font.css');
+@import url('./cc-font.css');
 @font-sans-serif: 'Raleway', Helvetica, sans-serif;
 @font-serif: 'Alegreya', 'Roboto', sans-serif;
 @font-monospace: 'PT Mono', Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
@@ -1469,6 +1470,58 @@ section.article-content{
     text-align: center;
     color: #ccc;
     font-size: 1.2em;
+  }
+}
+
+.post-licence {
+  color: #ccc;
+  padding: 20px 20px 10px;
+  text-align: center;
+  
+  .post-licence-icon {
+    font-size: 25px;
+    line-height: 25px;
+    transition: all ease 400ms;
+    i {
+      display: inline-block;
+      margin: 5px;
+    }
+  }
+  .post-licence-label {
+    font-family: @font-monospace;
+    text-align: center;
+    color: #999;
+    font-size: 1.1em;
+    letter-spacing: -1.5px;
+  }
+  .post-licence-text {
+    padding-bottom: 10px;
+    color: #aaa;
+    transition: all ease 400ms;
+    font-size: 0.8em;
+    word-spacing: 0.04em;
+    opacity: 0;
+    overflow: hidden;
+    max-height: 0px;
+    max-width: 400px;
+    margin: auto;
+    a {
+      border-bottom: dotted 1px #ccc;
+      transition: all ease 400ms;
+      &:hover {
+        color: #2be;
+      }
+    }
+  }
+  &:focus {
+    outline: none;
+    .post-licence-icon{
+      color: #2be;
+    }
+    .post-licence-text {
+      opacity: 1;
+      max-height: 150px;
+    }
   }
 }
 
