@@ -16,7 +16,7 @@ hexo.extend.helper.register('page_anchor', function(str){
 
     $(this)
       .addClass('article-heading')
-      .append('<a class="article-anchor" href="#' + id + '" aria-hidden="true"></a>');
+      .append('<a class="article-anchor" href="#' + id + '" data-smooth data-smooth-type="post" aria-hidden="true"></a>');
   });
 
   return $.html();

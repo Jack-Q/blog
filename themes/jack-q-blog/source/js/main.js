@@ -3,6 +3,24 @@
     setTimeout(func, 400);
   }
   
+  var pageScrollHandler = function (el) {
+    // Native action 
+    // since the smooth scroll feature is only available on Firefox at this time, 
+    // this is disabled currently
+    // sel(i.getAttribute('href')).item(0).scrollIntoView({
+    //   behavior: 'smooth'
+    // })
+
+    // jQuery Fallback
+    var $el = $(el);
+    if ($el.length === 0)
+      return;
+
+    $('html, body').animate({
+      scrollTop: $(el).offset().top
+    }, 400);
+  }
+
   // aside item toggle
   Array.prototype.forEach.call(
     sel('.icon-item span'), function (i) {
@@ -32,18 +50,12 @@
   var bindTocLinkHandler = function () {
     Array.prototype.forEach.call(sel('.toc .toc-link'), function (i) {
       i.addEventListener('click', function (e) {
-        // Native action 
-        // since the smooth scroll feature is only available on Firefox at this time, 
-        // this is disabled currently
-        // sel(i.getAttribute('href')).item(0).scrollIntoView({
-        //   behavior: 'smooth'
-        // })
 
-        // jQuery Fallback
-        var el = $(i.getAttribute('href'))
-        $('html, body').animate({
-          scrollTop: el.offset().top
-        }, 400);
+        history.pushState({
+          url: getUrl(window.location),
+          type: true /*post*/
+        }, 'Jack Q\'s Blog', window.location.href);
+        pageScrollHandler(i.getAttribute('href'))
 
         // Close sidebar if necessary
         sel('.jq-blog-aside').item(0).classList.remove('toggle-on');
@@ -76,6 +88,7 @@
   }
   
   var loadPageContent = function (url, type) {
+
     // Google Analysis 
     window.ga && window.ga('send', 'pageview');
     
@@ -126,6 +139,9 @@
           // rebind smooth link in new page
           $('section.article-content a[data-smooth]').each(smoothLinkHandler);
 
+          // scroll to target hash
+          pageScrollHandler(window.location.hash);
+
           // reinitialize
           try {
             DISQUS && (function () { 
@@ -149,20 +165,37 @@
       
     })
   }
+
+  var getUrl = function (loc) {
+    return loc.protocol + '//' + loc.host + loc.pathname + loc.search;
+  }
+
   var smoothLinkHandler = function (ind, a) {
     var $a = $(a);
     var type = $a.attr('data-smooth-type') === 'post';
     $a.click(function (e) {
       e.preventDefault();
-      history.pushState({ type: type }, 'Jack Q\'s Blog', $a.attr('href'));
-      loadPageContent($a.attr('href'), type);
+      var targetUrl = getUrl(a);
+      var oldLocation = getUrl(window.location);
+      console.log(targetUrl, oldLocation)
+      history.pushState({ url: getUrl(a), type: type }, 'Jack Q\'s Blog', $a.attr('href'));
+      if (targetUrl === oldLocation) {
+        pageScrollHandler(a.hash);
+      } else {
+        loadPageContent(targetUrl + a.hash, type);
+      }
     })
   }
 
   $('a[data-smooth]').each(smoothLinkHandler);
   mouseWheelScroll();
   var initialPageType = $('section.article-content').length > 0;
+  setTimeout(function () { pageScrollHandler(window.location.hash) }, 200);
   window.onpopstate = function (ev) {
+    if (ev.state && ev.state.url === getUrl(window.location)) {
+      pageScrollHandler(window.location.hash);
+      return;
+    }
     loadPageContent(document.location.href, ev.state? ev.state.type : initialPageType);
   };
 
