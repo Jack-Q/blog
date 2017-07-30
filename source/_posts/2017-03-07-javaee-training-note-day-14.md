@@ -88,12 +88,12 @@ Then the value returned from `React.Component` is a new component that can be us
 
 ### function based creation
 
-For o simple component without concering to he state to it as well as no other lifecycle event is related,
-the only required function is the `render` function to create represental UI. Thus, this simgle unction 
+For o simple component without concerning to he state to it as well as no other lifecycle event is related,
+the only required function is the `render` function to create representational UI. Thus, this simple function 
 can be used as a component.
 
-The function based component is simple enough that most of lifecycle hanfler is not supported. 
-A simplied version of this pattern is shown as following:
+The function based component is simple enough that most of lifecycle handler is not supported. 
+A simplified version of this pattern is shown as following:
 ```javascript
 import React from 'react';
 const FooComponent = (props) = {
@@ -104,8 +104,8 @@ const FooComponent = (props) = {
 }
 ```
 
-Comparing the lised method. the first one is the official recommended methods for large state, while 
-the javascript based declaration is moch handier.
+Comparing the listed method. the first one is the official recommended methods for large state, while 
+the javascript based declaration is much handier.
 
 React Router
 ------------
@@ -120,9 +120,9 @@ import {Router, Route, Link, hashHistory} from 'react-router';
 
 import {App, SubModule1, SubModule2} from './component';
 
-export const hsitory = hashHistory;
+export const history = hashHistory;
 
-export default class RouterComponent extends Rract.Component {
+export default class RouterComponent extends React.Component {
   render = () =>{
     return <Router history={history}>
     <Route path="/" exact component={App}>
@@ -134,7 +134,7 @@ export default class RouterComponent extends Rract.Component {
 }
 ```
 
-In thsi router component, the path are mapped to three different component. When the path 
+In this router component, the path are mapped to three different component. When the path 
 string is matched, the related component will be rendered.
 
 Then, to change the location of the current application, the `Link` component provided by the 

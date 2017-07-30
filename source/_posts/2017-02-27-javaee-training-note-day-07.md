@@ -20,9 +20,9 @@ Test is the a indispensible procedure in software engineering. Since software
 are bound to keep updating and iterating, the predefined test cases 
 are also required to be executed repeatedly and the set of test case are 
 growing all the time within the life time of a software project.
-Therefore, we always need to perfoem software test quickly and frequently.
+Therefore, we always need to perform software test quickly and frequently.
 The automatic unit test and integrated test are gradually transited to 
-code besed frameworks.
+code based frameworks.
 
 ### concepts
 
@@ -37,9 +37,9 @@ the test case as simple and quick as possible, the dependencies are also replace
 with mock objects.
 
 Another concept related to test is coverage test, which is monitoring each 
-statement of the cource code to find out whether each code is covered (statement coverage).
+statement of the source code to find out whether each code is covered (statement coverage).
 Though this level of coverage is not the symbol of the fully tested, a lower state
-of coverage is always insufficent.
+of coverage is always insufficient.
 
 ### test in Spring MVC
 
@@ -98,7 +98,7 @@ public class HomeControllerTest extends AbstractJUnit4SpringContextTests {
 }
 ```
 
-Then create the test code. Use inbulit language feature `assert` or use the
+Then create the test code. Use inbuilt language feature `assert` or use the
 more handy assert static methods provided in test framework. The following 
 simple test case is used to assert that the page with url `/home/` can be accessed
 successfully with `200 OK` status code and the rendered view is `home/index`.
@@ -119,7 +119,7 @@ Refactoring
 -----------
 
 Software quality can always be improved by refactoring the original code with 
-a more efficient or more elegent version. With the strong typing 
+a more efficient or more elegant version. With the strong typing 
 feature, a lot of refactoring or tips can be done with the assist of IDE.
 
 Some refactor consideration including the following points:
@@ -128,7 +128,7 @@ Some refactor consideration including the following points:
 * extract method: share the logic in more concrete level.
   (for a JSP page, some sharing logic can be shared via `taglib`);
 * extract variable: use the name of variable to indicate the program logic without comment;
-* less comment: use self-evident named variables and methods to reduce the ammount of 
+* less comment: use self-evident named variables and methods to reduce the amount of 
   comment, which will also reduce the possibility of mismatching and outdated comment;
 * ...
 

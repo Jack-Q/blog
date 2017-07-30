@@ -5,7 +5,7 @@ comment_id: 20170225-JEENOTE-06
 tags:
 ---
 
-Today's topic is configuration management which is mainly the source code management and versoin control.
+Today's topic is configuration management which is mainly the source code management and version control.
 One of the famous solution for source code management is the `Subversion` (abbr. svn),
 a centralized version control system. It is common in enterprise development with an always-on
 central configuration management server as an authority (the `trunk`). Another popular solution is 
@@ -16,12 +16,12 @@ contributor can hold their own branch.
 
 Subversion
 ----------
-Subversion itself is a project with long history. It is consindered as the most accepted implemention 
+Subversion itself is a project with long history. It is considered as the most accepted implementation 
 of the source code management tool with a central server. Each user development their code base in a local 
-machine and then commit to the central server. When the source code contains conflit with the center server, 
+machine and then commit to the central server. When the source code contains conflict with the center server, 
 that is the source code to be committed into the server has modification to the updated code in the server,
 the user must address the conflict and resolve is before it can be accepted. Once the developing machine 
-cannot access the center server, the source code cannot be commited.
+cannot access the center server, the source code cannot be committed.
 
 ### Command line interface 
 
@@ -52,21 +52,21 @@ Git
 Git is originally designed and developed by Linus to manage the large code base of the Linux system.
 The main difference from Subversion is the de-centralized design. Another feature is the light-weight 
 branching which leads the massive usage of branch in the Git pattern. GitHub is one of the largest 
-and socialized open source project hosting platfrom, which use git as its core and popularized the usage 
+and socialized open source project hosting platform, which use git as its core and popularized the usage 
 of git. 
 
 ### CLI
 
 Git is provided as a command line tool `git`, which is like the `svn` command. However, since the 
 Git is de-centralized, the `git` is not a client of Git but the whole program which can perform both 
-the role of client and the server. A genral usage of git is represented as following:
+the role of client and the server. A general usage of git is represented as following:
 
-* `git init`: create a Git reporitory in current directory;
+* `git init`: create a Git repository in current directory;
 * `git add <files>`: add file to Git in order to be managed by Git;
 * `git commit -m <message>`: commit the modification as a version;
-* `git push <dest> <branch>`: push the local branch to the remote reporitory;
+* `git push <dest> <branch>`: push the local branch to the remote repository;
 * `git checkout -b <branch>`: create and checkout the new branch based on current branch;
-* `git clone <reporitory>`: create an clone of a git reporitory;
+* `git clone <repository>`: create an clone of a git repository;
 * ...
 
 ### IDE integration

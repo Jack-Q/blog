@@ -7,16 +7,16 @@ tags:
 ---
 
 The main content of the second day is some detail about the `Spring Framework`,
-including elibration of the core concepts in `Spring`, how to set up the 
-framework, and XML file based configutation as well as annotation based 
-configutation. Apart from the core framework, `Spring MVC` is also metioned.
+including elaboration of the core concepts in `Spring`, how to set up the 
+framework, and XML file based configuration as well as annotation based 
+configuration. Apart from the core framework, `Spring MVC` is also mentioned.
 
 <!-- more -->
 
 Spring IoC Startup
 ------------------
 
-The core module of the Spring project is the Spring Framwork which provides 
+The core module of the Spring project is the Spring Framework which provides 
 the functionalities to manage objects as well as their dependency relationship
 in large application. Spring implemented an object container that can be configured via 
 either XML file or annotation (there is also a code based configuration).
@@ -30,19 +30,19 @@ or involved a set of concepts which are different from the manually managed obje
 * `DI`: Dependency Injection;
 * `BeanFactory`: basic container to manage lifecycle of managed objects. It providing basic support for DI;
 * `ApplicationContext`: more advanced container to manage lifecycle of managed objects. 
-  It provides more features incuding listener registration for handling certain change of application context;
+  It provides more features including listener registration for handling certain change of application context;
 
 ### Set up Spring Framework IoC
 
 Spring Framework is released and distributed in a serial of `jar` (Java ARchive) file. These file can be acquired 
 from its official site: [spring.io](https://spring.io/). With the assist of IDE, the `jar` files can be downloaded
-automacally. When all of the `jar` files are accessible in `classpath`, then the Spring `IoC` container is 
+automatically. When all of the `jar` files are accessible in `classpath`, then the Spring `IoC` container is 
 ready to use.
 
 The following code is a simple sample shows the `IoC` container of spring.
 
 ```java 
-// Interface class: convension between class consumer and privider 
+// Interface class: convention between class consumer and provider 
 package jackq.springioc.helloworld;
 
 public interface HelloMessage{
@@ -92,22 +92,22 @@ public class Main {
 ### Dependency Injection
 
 Dependency injection is used to decouple the dependency of an class consumer with the implementation of the class.
-The most simple approach to use a class is instanciate an object while this process is generally highly related 
-to the implementation of the class. When the class provider and the class consumer make a convension (a Java `interface`),
-the class consumer can use the class without knowledge about its implementation. This class shoule be instanciate in advance
+The most simple approach to use a class is instantiate an object while this process is generally highly related 
+to the implementation of the class. When the class provider and the class consumer make a conversion (a Java `interface`),
+the class consumer can use the class without knowledge about its implementation. This class should be instantiate in advance
 and inject into the consumer class to use it. This is `DI`.
 
-### Class Instanciation 
+### Class Instantiation 
 
 To create an instance of dependency class, the most basic usage is create via default or no-argument constructor. The example 
 of this process is show in previous section.
 
-### Class Instanciation with Argument
+### Class Instantiation with Argument
 
 It's common that the constructor of a class has argument. This can be specified in XML.
-The following code shows the XML configuration with constructor argumets.
+The following code shows the XML configuration with constructor arguments.
 
-Class defination preparation for this example:
+Class definition preparation for this example:
 
 ```java 
 package jackq.springdi.helloworld;
@@ -170,7 +170,7 @@ XML configuration:
 
 Most dependency classes have their own dependencies as well. Their dependency can be
 injected by construction argument or setter method (next section).
-The following code shows the constructor besed DI.
+The following code shows the constructor based DI.
 
 (Use the class definition in previous section)
 
@@ -210,7 +210,7 @@ The following code shows the constructor besed DI.
 
 To have more control to the field of class, most class filed are implemented as private field
 and access and modify them via a pair of methods named `getter` and `setter`. 
-The following code shows the setter besed DI.
+The following code shows the setter based DI.
 
 Another test class for this type of configuration:
 
@@ -265,13 +265,13 @@ XML configuration:
 </beans>
 ```
 
-### Autowiring
+### Auto-wiring
 
-`Singleton` is one of the most common design pattern in Java (as well as other object oridented programming language).
+`Singleton` is one of the most common design pattern in Java (as well as other object oriented programming language).
 It means that the program or application keeps only one single instance of a class. 
 
 If the dependency of one class is a `singleton`, there is no need to specify which instance should be injected and the 
-process can be achieved automacally. This is autowiring.
+process can be achieved automatically. This is auto-wiring.
 
 The following code is a simple sample.
 
@@ -298,11 +298,11 @@ The following code is a simple sample.
 ### Annotation based DI configuration
 
 Annotation is a language feature in Java which provides a interface to attach extra meta data to 
-a class, an interface, a mathod, a parameter, etc. The extra meta data can be accessed by program
-at exection time dynamically. Thus, the Spring `IoC` contianer can use these meta data to 
-get the configutation infomation.
+a class, an interface, a method, a parameter, etc. The extra meta data can be accessed by program
+at execution time dynamically. Thus, the Spring `IoC` container can use these meta data to 
+get the configuration information.
 
-To enable this feature in Spring, the following elemented should be added into the XML configuration file.
+To enable this feature in Spring, the following elements should be added into the XML configuration file.
 ```xml 
 <!-- namespace content defined as: "http://www.springframework.org/schema/context" -->
 <!-- this should be inserted before the definition of the first bean -->

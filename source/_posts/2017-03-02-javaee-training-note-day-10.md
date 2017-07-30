@@ -55,7 +55,7 @@ to the final result, including teh legal or copyright notes.
 
 A simple use of this feature is the `HandlerInterceptorAdapter`, which provides default implementation of 
 these methods. The demand process logic can be inserted by overriding 
-the corresponing method.
+the corresponding method.
 
 Get Url of current request
 --------------------------

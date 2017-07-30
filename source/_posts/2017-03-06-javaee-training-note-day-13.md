@@ -6,17 +6,17 @@ tags:
 ---
 
 Today's topic is some tips to the solution to the problems in 
-deveploment, varying from the frontend development to backend 
-presistence technology. 
+development, varying from the frontend development to back-end 
+persistence technology. 
 
 <!-- more -->
 
 jQuery
 ------
 
-jQuery is a frontend library which probides a unified api to 
+jQuery is a frontend library which provides a unified api to 
 hide the differences of browsers from various vendors. It 
-provides a handy and expressive approach to manitplate DOM objects.
+provides a handy and expressive approach to manipulate DOM objects.
 Besides, it also contains some utilities for common tasks in 
 frontend development.
 
@@ -53,7 +53,7 @@ $(document.getElementById('id')); // $('#id')
 ```
 
 The jQuery object is a wrapper of its inner DOM object. It can be used to 
-manipulate class names, attributes, styles, values, etc. The most signigicant 
+manipulate class names, attributes, styles, values, etc. The most significant 
 feature of its API design is the chain-style api. 
 ```javascript
 $('.val').attr('name', 'val-ele').css('position', 'absolute').text();
@@ -63,11 +63,11 @@ The invocation chain is infinite unless the return value of an function is requi
 By utilizing the dynamic feature of JavaScript, the setter and getter method can be expressed
 with same name. 
 ```javascript
-$('.val').text('foo').text(); // set fisrt, then get the value
+$('.val').text('foo').text(); // set first, then get the value
 ```
 
 ### effects and animations
-An important part of jQuery is its effects. For most of elements, it diaplay state can be changed via
+An important part of jQuery is its effects. For most of elements, it display state can be changed via
 some simple functions.
 ```javascript
 $('.foo').hide(400).show(400);
@@ -113,15 +113,15 @@ Java Exception
 As a strong typed programming language, Java contains a typed exception system
 to handle unexpected scenarios of problems. Exceptions in Java can be categorized into 
 two parts, the checked exceptions (class extends from `Exception`, 
-except `RuntionException` as well as its decendents) and the unchecked exception 
-(`RuntimeException`s, `Erros`s and other class derivated from `Throwable`).
+except `RuntimeException` as well as its decedents) and the unchecked exception 
+(`RuntimeException`s, `Errors`s and other class derivate from `Throwable`).
 
-An exception can be raised by a `throw` statement. Then, the exception will be catched by a 
+An exception can be raised by a `throw` statement. Then, the exception will be caught by a 
 `try`-`catch` block. 
 
 For large application, exception can be raised from anywhere of the application. This require 
 an effective means to manage them. A common approach is wrap the suspicious section 
-with `try`-`catch` block, then handle it or re-throwit in the catch block.
+with `try`-`catch` block, then handle it or re-throw it in the catch block.
 
 Pagination
 ----------
@@ -132,8 +132,8 @@ as well as the network, will fail to handle them and crash.
 
 The pagination is not quite complex with the following steps:
 
-1. query the total ammount of records;
-2. query data from a postion of table (offset to first row);
+1. query the total amount of records;
+2. query data from a position of table (offset to first row);
 3. limit the item to be selected;
 4. calculate the number of total pages;
 5. calculate current page number;
@@ -146,7 +146,7 @@ Join statement in SQL can be used to make cross table query. There are two types
 
 ### Outer join
 
-Just like a Descarte product operation applyed to thw two tables, the outer 
+Just like a Desecrate product operation applied to the two tables, the outer 
 join of two tables is the combination of each row of the first table and the second table.
 This operation is relative costly. 
 

@@ -18,7 +18,7 @@ Twitter Bootstrap
 ------------------
 
 Bootstrap is a lightweight frontend library focused on the layout and style 
-of webpage. It privides a well-designed grid system to simplify the 
+of webpage. It provides a well-designed grid system to simplify the 
 configuration of responsive web design. It also provides a set of 
 components for common usage. The unified styles for form controls are tested to be 
 the the same across all major browsers.
@@ -27,7 +27,7 @@ the the same across all major browsers.
 
 Bootstrap use html class list to apply styles to element. Since the class list 
 can be consisted of multiple entries, the final style of an element is the 
-componded of each CSS rule list. 
+compounded of each CSS rule list. 
 
 Another widely used pattern in Bootstrap is using class to enable effects and 
 using `data-*` attributes to configure that. Some components require some more 
@@ -36,15 +36,15 @@ steps to enable then in JavaScript.
 ### Grid System 
 
 The grid system in Bootstrap 3 is a 12-column grid. A parent element can 
-be set to `row` and then its childen can use `col-<condition>-<size>` to assign 
-their size in different screen size (to make the webpage respinsive).
+be set to `row` and then its children can use `col-<condition>-<size>` to assign 
+their size in different screen size (to make the webpage responsive).
 Then there are also some other category of classes to control the position 
 of the cells like `col-<condition>-offset-<position>` and to arrange the cells
 like `col-<condition>-<push/poll>-<size>`.
 
 ### HTML Components
 
-Predifined themes which can apply by using class name.
+Predefined themes which can apply by using class name.
 For example, a input form can be defined as:
 
 ```html
@@ -65,10 +65,10 @@ For example, a input form can be defined as:
 
 Bootstrap contains a set of component to support more functionality 
 that native browser doesn't support directly, including the model dialogs 
-(better style and control over `alert` and `prompt` function), drop dwon list,
+(better style and control over `alert` and `prompt` function), drop down list,
 the tab page, etc. 
 
-The following code is a simple model dialog. The botton controls the dialog
+The following code is a simple model dialog. The bottom controls the dialog
 by the `data-target` attribute. There is no more JavaScript required.
 ```html 
 <!-- Button trigger modal -->
@@ -107,7 +107,7 @@ of CMS can be configured by an rich text editor with a database to store the dyn
 (generally html), then display the html to webpage.
 
 Rich text editor is usually a client side component that encapsulate the `textarea` element 
-and keep it sync with a user editable html fragemnt. 
+and keep it sync with a user editable html fragment. 
 
 Another feature for CMS is picture (as well as other static files) uploading. This is done by 
 allocate a server space to store file and access then from web server. The apache commons library 
