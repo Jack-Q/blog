@@ -17,7 +17,7 @@ The following configurations are based on the following environment.
 
 <!-- more -->
 
-## Configure package source ##
+## Configure package source and install packages ##
 
 1. configure source
   
@@ -61,6 +61,8 @@ The following configurations are based on the following environment.
       sudo apt-get install ros-kinetic-ros-base
       ```
 
+      This is generally a recommendation for robot itself or computer without GUI enabled (using tty to interact with).
+
   * desktop package 
 
       Include some of common GUI packages for desktop usage, also include full package 
@@ -91,10 +93,54 @@ Notice:
 
 ## Initialize ROS Kinetic ##
 
-After package installation 
-1. 
+After package installation, `rosdep` utility should be initialized before using ROS package, which can be done by
+following commands.
 
-http://wiki.ros.org/kinetic/Installation/Ubuntu
-http://wiki.ros.org/ROS/Tutorials
-http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
-http://wiki.ros.org/ROS/Tutorials/NavigatingTheFilesystem
+```bash
+sudo rosdep init
+rosdep update
+```
+
+In more detail, `rosdep` utility assists end user to manage system dependencies required by an specific ROS package.
+When compiling a ROS package from source which requires external packages other then ROS itself, `rosdep` can be used 
+to configure system properly with dependencies installed. Currently, `rosdep` is a separated command line tool from ROS 
+core packages (though generally, it will be installed when processing meta packages listed above).
+For more information about `rosdep`, refer to [`rosdep` document site](http://docs.ros.org/independent/api/rosdep/html/).
+
+## Setting up environment ##
+
+Then, when launch ROS packages and interact with ROS node with various ROS utilities, a lot of command are 
+required. To assist user input long names of various parameters, ROS provides auto-complete feature support
+for most widely used shell (`bash`, `zsh`, etc).
+
+To config shell auto-complete for `bash`, add the following item to `~/.bashrc`.
+```bash
+source /opt/ros/kinetic/setup.bash
+```
+Or use bash script to configure this item:
+```bash
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+
+To config shell auto-complete for `zsh`, add the following item to `~/.zshrc`.
+```bash
+source /opt/ros/kinetic/setup.zsh
+```
+Or usr zsh script to configure this item:
+```bash
+echo "source /opt/ros/kinetic/setup.zsh" >> ~/.zshrc
+source ~/.zshrc
+```
+
+
+## Install additional packages ##
+
+The packages installed above are those required to run core modules. When create new modules 
+or explore modules by others provided in source code, compiling ros package is a required process.
+Thus, the following additional packages are required for configure a development environment 
+of ROS.
+
+```bash
+sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
+```
