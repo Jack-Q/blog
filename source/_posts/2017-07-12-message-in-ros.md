@@ -6,15 +6,15 @@ tags:
     - ros
 ---
 
-Messages are spreaded accross the whole system of a ROS instance,
-which are the enssence and physical base of communication and coordination 
+Messages are spread across the whole system of a ROS instance,
+which are the essence and physical base of communication and coordination 
 in ROS system. The message is a serializable and platform agnostic (in the 
-perspective of OS, programmign language, etc) specification of structured data.
+perspective of OS, programming language, etc) specification of structured data.
 
 Most of information in this post is refer to [msg page in ROS wiki](http://wiki.ros.org/msg) and [source code for ROS core module](https://github.com/ros/ros/blob/kinetic-devel/core/roslib/src/roslib/msgs.py).
 
 A directly connected concept in ROS is _Topic_, which is named bus for message exchange, which will be covered in later post. The _Service_ is also based on 
-the infrusruation of message, which will be illustrated in next post.
+the infrastructure of message, which will be illustrated in next post.
 
 <!-- more -->
 
@@ -30,7 +30,7 @@ message. Each message of an component can be one of the following types:
     * `bool`: boolean value;
     * `float*`: floating point number of various size, including `float32`, `float64` (corresponding to `double` type);
     * `string`: ASCII string;
-    * `time`: sec & nsec, two unsigned 32-bit integers
+    * `time`: sec & nsec (nanosecond), two unsigned 32-bit integers
     * `duration`: sec & nsec, two signed 32-bit integers
     The last two item can be treated as composite data type since they are actually defined as the following ([reference](https://github.com/ros/ros/blob/kinetic-devel/core/roslib/src/roslib/msgs.py#L695-L698)): 
 
@@ -48,12 +48,12 @@ message. Each message of an component can be one of the following types:
     * fixed length(`type[size]`): direct serialization;
     * variable length(`type[]`): serialized as length prefixed listing 
       (length in `uint32`).
-* Componsite type as defiend in other message file
+* Composite type as defined in other message file
 
     Message definition itself can be used as a type for other message definition, which just worked as a composite of several primitive types.
     
-    Some composite message are defiend in ROS core packages anc commonly used 
-    as convertion. The common standard message are defiend in [std_msgs](https://github.com/ros/std_msgs) which can be used for quick prototyping.
+    Some composite message are defined in ROS core packages anc commonly used 
+    as convention. The common standard message are defined in [std_msgs](https://github.com/ros/std_msgs) which can be used for quick prototyping.
     Notable item are:
 
     * `Header`: header type is an standard type to provide standard metadata for a message, which is consisted of an sequence number(`uint32`), timestamp (`time`) and an id of frame (`string`). For some historical reason, this field is wide used just as an primitive type.
@@ -62,17 +62,17 @@ message. Each message of an component can be one of the following types:
     * `ColorRGBA`: 32bit floating point number describe color format (in the order of red, green, blue, alpha)
     
     However, most of the wrapper types are simply use `data` field for its 
-    payload, which lacks of sufficient semantic for maintains. Thus out of consideration of maintaince, a dedicated message definition is requried.
-    Since most of other meesage types Some commmon used message types are defiend in [common message](https://github.com/ros/common_msgs)
+    payload, which lacks of sufficient semantic for maintains. Thus out of consideration of maintenance, a dedicated message definition is required.
+    Since most of other message types Some common used message types are defined in [common message](https://github.com/ros/common_msgs)
 
 * Constant
     
     Message definition can also contain constant definition, in the form of 
-    assignment of value to primitive vlaue. (As denoted before, the `time` and 
+    assignment of value to primitive value. (As denoted before, the `time` and 
     `duration` are special primitive value with extra structure, these types cannot be assigned as constant directly)
 
 ## Message file ##
-Message defienition are stored in message file (*.msg*) and located in `msg` 
+Message definition are stored in message file (*.msg*) and located in `msg` 
 directory inside of `src` of a ROS package.
 
 The directory structure of a simple package with an message definition is illustrated as follows:
@@ -90,7 +90,7 @@ The directory structure of a simple package with an message definition is illust
 
 ## Utilize messages ##
 To utilize messages, the definition of the message in language specific form ought to be generated and the message handling and processing are also required to be supported. These can be done by including `message_generation`
-and `message_runtime` pcakage in `package.xml` (or uncomment the illustration gneerated by default):
+and `message_runtime` package in `package.xml` (or un-comment the illustration generated by default):
 ```xml
 <package>
   <!-- ... -->
@@ -100,13 +100,13 @@ and `message_runtime` pcakage in `package.xml` (or uncomment the illustration gn
 </package>
 ```
 
-Then in build file (the `CMakeLists.txt` at the root of of an package in src package), register defined message and enable message findings, including the followig configuration items:
-1. Add message generation package to requried component
+Then in build file (the `CMakeLists.txt` at the root of of an package in src package), register defined message and enable message findings, including the following configuration items:
+1. Add message generation package to required component
   
   (this step affect the process of the whole project from this point, thus 
   latter pcakage can be processed correctly without proper configuration of this item, while which is not encouraged)
 
-  ```
+  ```cmake
   find_package(catkin REQUIRED COMPONENTS
     roscpp
     rospy
@@ -116,32 +116,38 @@ Then in build file (the `CMakeLists.txt` at the root of of an package in src pac
   ```
 
 2. expose message in current package
-  ```
+
+  ```cmake
   add_message_files(
     FILES
     Num.msg
   )
   ```
+
 3. import messages from packages
-  ```
+
+  ```cmake
   generate_messages(
     DEPENDENCIES
     std_msgs
   )
   ```
+
 4. declare dependencies to build tool
-  ```
+
+  ```cmake
   catkin_package(
     CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
   )
   ```
 
 The content of the package is a listing of the entries in the this message.
-Each entry is specified in seperated line, while blank line and hash started 
-lines are ignored. Each entry is declared by `type` and `name` seperated by whitespace. For the constant, a `value` filed led by `=` is attached to the 
-end of entry decalration.
+Each entry is specified in separated line, while blank line and hash started 
+lines are ignored. Each entry is declared by `type` and `name` separated by whitespace. For the constant, a `value` filed led by `=` is attached to the 
+end of entry declaration.
 
 The following is a simple message file:
+
 ```
 # header entry, using Header type from std_msgs
 Header header
@@ -155,6 +161,6 @@ errors and generate language specific headers/sources in `devel` directory.
 
 Generated files including headers for C (in `devel/include`), python lib (in `devel/lib/python2.7/dist-packages/`), CMake configurations (in `devel/share/<package-name>/`), LISP code (in `devel/share/common-lisp`), Node.js code (in `devel/share/gennodejs`)
 
-These generated files can be used to leverage IDE supports to messages (as well as services, actions, etc) and support other conventional toools to 
-support ros package development. These introspection information can also be used to assist package shell completement, for example, `rosmsg show <package-name>/<message-name>`. (For shell completement feature, an sync of
-package information is requried before these actions, which is using `source devel/setup.zsh` command).
+These generated files can be used to leverage IDE supports to messages (as well as services, actions, etc) and support other conventional tools to 
+support ros package development. These introspection information can also be used to assist package shell complement, for example, `rosmsg show <package-name>/<message-name>`. (For shell complement feature, an sync of
+package information is required before these actions, which is using `source devel/setup.zsh` command).

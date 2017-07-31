@@ -5,23 +5,34 @@ responsive design (adoptive design).
 
 ## Configuration Options
 
-* Google Analystic (GA) ID
-```yaml
-googleAnalyticsId: "UA-ID"
-```
+* Google Analytic (GA) ID
+
+  ```yaml
+  googleAnalyticsId: "UA-ID"
+  ```
 
 * Math Integration
 
   For usage information, refer to [Math](#math) section.
 
-```yaml
-math_inline: false
-```
+  ```yaml
+  math_inline: false
+  ```
+
+* CC-BY-SA Licence note
+
+  This theme contains build-in support for CC-BY-SA 4.0 Licence notice, which is enabled by default.
+  Disable this feature is CC-BY-SA 4.0 is not suitable to you.
+
+  ```yaml
+  default_cc_by_sa: true
+  ```
+
 
 ## Math
 
 Math module is an integration of KaTeX ([GitHub](https://github.com/Khan/KaTeX/)) 
-library to render LaTeX math formula into MathML or CSS controled representation.
+library to render LaTeX math formula into MathML or CSS controlled representation.
 
 Math module supports two kinds of usage, the block style and the inline style.
 
@@ -34,7 +45,7 @@ Math module supports two kinds of usage, the block style and the inline style.
     x = \frac{1}{y}
   {% endmath %}
   ```
-  By default, the math expression will be rendered in a seperated block, which 
+  By default, the math expression will be rendered in a separated block, which 
   is the "display" style in LaTeX. 
   To display a expression within the document, use the `inline` option, 
   ```md
@@ -49,9 +60,10 @@ Math module supports two kinds of usage, the block style and the inline style.
   (that is `$$ y=2x $$`). This can be useful for post which is filled with mathematical 
   formulas. 
   
-  By defaule, this is desabled to prevent possible conflict with other expression. This 
-  can be toggled by either a page wide setting (front matter) or global setting.
+  By default, this is disabled to prevent possible conflict with other expression. This 
+  can be toggled by either a page wide setting (front matter) or global setting 
+  (not recommended).
 
-  This inline style also contains some other options applied via latex comment notaion.
+  This inline style also contains some other options applied via latex comment notation.
   (Such as: `$$%display% y=x^2 $$`). The option can be the following ones:
   + `display`: render this block as display mode

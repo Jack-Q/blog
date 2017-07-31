@@ -1,7 +1,7 @@
 ---
 title: PDF manipulations in Linux
-date: 2017-05-31 00:33:42
-comment_id: 2017-05-31 00:33:42
+date: 2017-06-03 00:33:42
+comment_id: 20170603-PDFLINUX
 tags:
 ---
 

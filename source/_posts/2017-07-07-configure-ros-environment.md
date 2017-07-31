@@ -83,11 +83,15 @@ The following configurations are based on the following environment.
       be patient to wait for the installation steps.)
 
 
+  The following content of this post is based on a full installation of ROS packages (using meta-package `ros-kinetic-desktop-full`).
+
 Notice:
-* ensure various kinds of sources are of Ubuntu source are configured, including `restricted`, `universe` and `multiverse` (which are selected by default)
-* other mirrors are listed at [Mirrors](http://wiki.ros.org/ROS/Installation/UbuntuMirrors)
+* ensure various kinds of sources are of Ubuntu source are configured, including `restricted`, `universe` and `multiverse` (which are selected by default);
+* other mirrors are listed at [Ubuntu Mirrors](http://wiki.ros.org/ROS/Installation/UbuntuMirrors) page of ROS wiki.
 
 ## Initialize ROS Kinetic ##
+
+After package installation 
 1. 
 
 http://wiki.ros.org/kinetic/Installation/Ubuntu

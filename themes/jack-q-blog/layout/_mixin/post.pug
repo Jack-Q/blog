@@ -9,7 +9,7 @@ mixin post(post)
       != anchor_smooth(list_tags(post.tags, {show_count: false}))
   .post-content
     != page_anchor(post.content)
-  if config.defualt_cc_by_sa
+  if config.default_cc_by_sa
     .post-licence(tabindex="0")
       .post-licence-icon(title="CC-BY-SA 4.0")
         i.cc.cc-cc

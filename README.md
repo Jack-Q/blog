@@ -1,6 +1,6 @@
 # Hexo based blog
 
-## Deploymnet and mantaninse
+## Deployment and maintains
 
 ### Add new post
 
