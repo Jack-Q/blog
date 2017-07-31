@@ -13,10 +13,11 @@ dedicated
 
 
 <!-- more -->
+
 ## Basic phenomena  ##
 
-```
-
+```c++
+#include <vector>
 ```
 
 
@@ -32,7 +33,9 @@ When compiling a C++ file with invocation of these
 
 ## Inconsistency behavior with `algorithm`
 
-```
+```c++
+#include <vector>
+#include <algorithm>
 ```
 
 ## More resources ##
