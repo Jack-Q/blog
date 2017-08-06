@@ -35,6 +35,7 @@ Enter key-phrase, user name, email.
 
 ### Configure Git to Use GPG
 
+In this post, GPG is used to be configured for Git.
 
 #### Add configuration
 Add configuration to global scope or locally.
