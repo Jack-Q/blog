@@ -18,7 +18,7 @@ Most of information in this post is refer to [Services page in ROS wiki](http://
 <!-- more -->
 
 ## `.srv` file ##
-`.srv` file declares an exposed service of a package. Service files are declared within `srv` folder, and following the same composing rule as the message file, with an extra seperator for seperation of request and respoonse.
+`.srv` file declares an exposed service of a package. Service files are declared within `srv` folder, and following the same composing rule as the message file, with an extra seperator for separation of request and response.
 
 For example
 ```
@@ -26,7 +26,7 @@ For example
 int64 a
 int64 b
 ---
-# respoonse
+# response
 int64 sum
 ```
 

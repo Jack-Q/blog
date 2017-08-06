@@ -129,3 +129,6 @@ export MANPATH="$NPM_PACKAGES/share/man:\$(manpath)"
 EOF
 
 ```
+
+Besides, official site of NPM also contains a guide for this at [fix NPM permission](https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory)
+page, which can be referenced.
