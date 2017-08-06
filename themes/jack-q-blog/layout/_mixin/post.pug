@@ -1,5 +1,8 @@
 mixin post(post)
+  //- Title
   h1(itemprop="name")= post.title
+
+  //- Meta data
   .post-meta
     a.meta-date(href=url_for(`/archives/${post.date.format("YYYY")}/${post.date.format("MM")}/`), 'data-smooth', 'data-smooth-type'='list')
       span(itemprop="datePublished" content=date(post.date))= date(post.date)
@@ -7,8 +10,12 @@ mixin post(post)
       != anchor_smooth(list_categories(post.categories, {show_count: false}))
     span.meta-tags
       != anchor_smooth(list_tags(post.tags, {show_count: false}))
+  
+  //- Page content
   .post-content
     != page_anchor(post.content)
+
+  //- CC-BY-SA Licence
   if config.default_cc_by_sa
     .post-licence(tabindex="0")
       .post-licence-icon(title="CC-BY-SA 4.0")
@@ -21,7 +28,11 @@ mixin post(post)
         a(rel='license', href='http://creativecommons.org/licenses/by-sa/4.0/', target='_blank')
           | Creative Commons Attribution-ShareAlike 4.0 International License
         | .
+
+  //- End of post tag
   .post-content-end END
+
+  //- Previous/next post navigation
   .post-prev-next
     .post-prev
       if page.next
@@ -33,13 +44,27 @@ mixin post(post)
         a.post-next-link(href=url_for(page.prev.path), 'data-smooth', 'data-smooth-type'='post')= page.prev.title
       else
         span.post-next-null 
-  if page.comments
-    //- Comment
+
+  //- Comment
+  if page.no_comments || config.no_comments
+    .post-comment
+      #disqus_thread
+        if page.no_comments === true
+          | Comment thread is disabled for this post.
+        else if page.no_comments
+          = page.no_comments
+        else if config.no_comments === true
+          | Comment thread is disabled for this site.
+        else
+          = config.no_comments
+    script(id='disqus_config').
+      window.disqus_config = undefined;
+  else if page.comments
     .post-comment
       #disqus_thread Disqus is loading...
     - let permalink = `${config.url}/${page.path}`
     script(id='disqus_config', data-disqus-url=permalink, data-disqus-identifier=page.comment_id, data-disqus-title=page.title).
-      var disqus_config = function () {
+      window.disqus_config = function () {
         var conf = document.getElementById('disqus_config')
         this.page = this.page || {};
         this.page.url = conf.dataset['disqusUrl'];  

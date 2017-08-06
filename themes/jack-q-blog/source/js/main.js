@@ -144,12 +144,14 @@
 
           // reinitialize
           try {
-            DISQUS && (function () { 
-              $('#disqus_thread').empty();
-              DISQUS.reset({ reload: true });
+            window.DISQUS && (function () {
+              if (window.disqus_config) {
+                $('#disqus_thread').empty();
+                window.DISQUS.reset({ reload: true });
+              }
             } ()) 
           } catch (e) {
-            console.log("failed to load DISQUS");
+            console.error("failed to load DISQUS");
           }
 
         } else {
@@ -177,7 +179,6 @@
       e.preventDefault();
       var targetUrl = getUrl(a);
       var oldLocation = getUrl(window.location);
-      console.log(targetUrl, oldLocation)
       history.pushState({ url: getUrl(a), type: type }, 'Jack Q\'s Blog', $a.attr('href'));
       if (targetUrl === oldLocation) {
         pageScrollHandler(a.hash);

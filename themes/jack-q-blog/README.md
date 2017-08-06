@@ -28,6 +28,35 @@ responsive design (adoptive design).
   default_cc_by_sa: true
   ```
 
+* Comment Section
+  
+  This is used to control the detail of loaded comment. Each page can state explicitly about the 
+  comment. The comment is processed by the following process.
+  
+  - Disable comment
+    
+    Add configuration to front matter of s single page to disable the comment of current post.
+    This has the highest priority in the whole process.
+
+    ```yaml
+    # disable comment and use default message
+    no_comments: true
+
+    # disable comment and use a customized message 
+    no_comments: Comment thread for this post is disabled for some reasons.
+    ```
+
+  - Enable comment
+    
+    To enable comment, a global/page level `comments` toggle should be enabled.
+    Besides, a page level `comment_id` should be configured for each page.
+
+    ```yaml
+    comments: true
+    # unique for each post
+    comment_id: 20170806-COMMENT
+    ```
+
 
 ## Math
 

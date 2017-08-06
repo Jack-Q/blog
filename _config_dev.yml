@@ -5,3 +5,6 @@
 # Google Analytics 
 googleAnalytics: false
 googleAnalyticsId: ""
+
+# Comment
+no_comments: Comment is disabled in development mode.
