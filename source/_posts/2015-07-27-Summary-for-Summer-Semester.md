@@ -1,5 +1,6 @@
 ---
 title: Summary for Summer Semester
+date: 2015-07-27 08:00:00
 comment_id: summary-for-summer-semester
 layout: post-simple
 ---

@@ -1,6 +1,7 @@
 ---
 title: Theming in Linux
 comment_id: theming-in-linux
+date: 2015-08-11 08:00:00
 layout: post-simple
 tags:
   - theme

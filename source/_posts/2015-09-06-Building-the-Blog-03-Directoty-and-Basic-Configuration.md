@@ -1,6 +1,7 @@
 ---
 title: "Building the Blog (03): Directory and Basic Configuration"
 comment_id: building-the-blog-03
+date: 2015-09-06 08:00:00
 layout: post-simple
 tags:
   - blog

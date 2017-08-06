@@ -1,5 +1,6 @@
 ---
-title: Migrate to Hexo 
+title: Migrate to Hexo
+date: 2017-01-31 08:00:00
 comment_id: 20170131-MIG_TO_HEXO
 tags:
   - blog

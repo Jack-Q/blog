@@ -1,6 +1,7 @@
 ---
 title: "Use Glup to Make Life Easy"
 comment_id: use-glup-to-make-life-easy
+date: 2015-09-14 08:00:00
 layout: post-simple
 tags:
   - gulp

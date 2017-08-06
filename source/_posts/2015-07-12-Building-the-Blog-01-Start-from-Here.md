@@ -1,5 +1,6 @@
 ---
 title: "Building the Blog (01): Start from Here"
+date: 2015-07-12 08:00:00
 layout: post-simple
 comment_id: building-the-blog-01
 tags:

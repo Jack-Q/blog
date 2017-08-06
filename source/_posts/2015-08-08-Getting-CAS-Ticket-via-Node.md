@@ -1,5 +1,6 @@
 ---
 title: Getting CAS Tickets via Node
+date: 2015-08-38 08:00:00
 comment_id: getting-cas-tickets-via-node
 layout: post-simple
 tags:

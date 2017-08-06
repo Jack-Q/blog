@@ -1,6 +1,7 @@
 ---
 title: "Building the Blog (02): Say Hello World"
 comment_id: building-the-blog-02
+date: 2015-08-13 08:00:00
 layout: post-simple
 tags:
   - blog

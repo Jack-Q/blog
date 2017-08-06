@@ -1,6 +1,7 @@
 ---
 title: "Use RequireJS in Your Site"
 comment_id: use-require-js
+date: 2015-09-12 08:00:00
 layout: post-simple
 tags:
   - requirejs
