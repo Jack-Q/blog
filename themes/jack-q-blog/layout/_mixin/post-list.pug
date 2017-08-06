@@ -18,7 +18,10 @@ mixin post-list(posts)
       if is_archive()
         .archive
           - let archive_date = moment(`${page.year}-${page.month}`, 'YYYY-MM');
-          .text posts in #[em #{archive_date.format('MMM')}], #[em #{archive_date.format('YYYY')}]
+          if page.month
+            .text posts in #[em #{archive_date.format('MMM')}], #[em #{archive_date.format('YYYY')}]
+          else
+            .text posts in #[em #{archive_date.format('YYYY')}]
       if is_tag()
         .tag
           .text posts with tag #[em #{page.tag}]
