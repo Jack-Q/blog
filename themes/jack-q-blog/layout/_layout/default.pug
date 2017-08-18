@@ -1,5 +1,5 @@
 //- This layout is the defualt layout
-
+- assets_version="20170818"
 doctype html
 html(lang="en")
   head
@@ -7,14 +7,14 @@ html(lang="en")
     meta(name="viewport", content="width=device-width,initial-scale=1, minimum-scale=1,user-scalable=no,maximum-scale=1")
     meta(name="format-detection", content="telephone=no")
     meta(name="format-detection", content="address=no")
-    meta(property="og:title",content=page.title)
-    meta(property="og:type",content=page.posts?"list":"article")
-    meta(property="og:url",content=`${config.url}/${page.path}`)
-    meta(name="theme-color",content="#d5d5eb")
-    link(rel="manifest",href=`${config.root}manifest.json`)
+    meta(property="og:title", content=page.title)
+    meta(property="og:type", content=page.posts?"list":"article")
+    meta(property="og:url", content=`${config.url}/${page.path}`)
+    meta(name="theme-color", content="#d5d5eb")
+    link(rel="manifest", href=`${config.root}manifest.json`)
     //- meta(property="og:image",content="")
     title Jack Q's Blog
-    != css('/css/main.css?v=20170816')
+    != css(`/css/main.css?v=${assets_version}`)
     block stylesheet
   body
     //- Main page content
@@ -34,6 +34,6 @@ html(lang="en")
         }
 
     //- Page script
-    != js('/js/jquery.min.js?v=20170806')
-    != js('/js/main.js?v=20170806')
+    != js(`/js/jquery.min.js?v=${assets_version}`)
+    != js(`/js/main.js?v=${assets_version}`)
     block script

@@ -9,6 +9,13 @@ description:
 author: Jack Q
 language: en
 timezone:
+author_profile:
+  github: Jack-Q
+  facebook: JackQ2010
+  twitter: Jack_Q_2010
+  email: qiaobo@outlook.com
+  # Stackoverflow Account ID, something like '6589119'
+  stackoverflow: false
 
 # URL
 url: https://jack-q.github.io/blog
