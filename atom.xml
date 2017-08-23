@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://jack-q.github.io/blog/"/>
-  <updated>2017-05-30T12:23:25.333Z</updated>
+  <updated>2017-08-23T03:00:07.294Z</updated>
   <id>https://jack-q.github.io/blog/</id>
   
   <author>
@@ -14,6 +14,156 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sign Git Commit with GPG</title>
+    <link href="https://jack-q.github.io/blog/2017/08/06/sign-git-commit-with-gpg/"/>
+    <id>https://jack-q.github.io/blog/2017/08/06/sign-git-commit-with-gpg/</id>
+    <published>2017-08-06T02:39:05.000Z</published>
+    <updated>2017-08-23T03:00:07.294Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;GPG, Gnu Privacy Guard, is a popular and wide used encryption tool
+compatible to PGP (Pretty Good Privacy) tool. By using widely-accepted 
+asymmetric encryption methods, GPG becomes an handy utility for
+signing digital information with a personal or organizational credential
+or securing private or sensitive message with high level encryption.&lt;/p&gt;
+&lt;p&gt;This post is to integrate GPG with Git for more reliable and controllable source code management.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="https://jack-q.github.io/blog/tags/git/"/>
+    
+      <category term="gpg" scheme="https://jack-q.github.io/blog/tags/gpg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Install Global npm Package For Current User Without Privilege</title>
+    <link href="https://jack-q.github.io/blog/2017/07/30/install-global-npm-package-for-current-user-without-privilege/"/>
+    <id>https://jack-q.github.io/blog/2017/07/30/install-global-npm-package-for-current-user-without-privilege/</id>
+    <published>2017-07-30T02:35:00.000Z</published>
+    <updated>2017-08-03T02:41:56.967Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;NPM is the most used package manager for node.js and JavaScript ecosystems.
+By using the global packages mechanism, a node.js package can be easily integrated 
+into system shell and just works like a native command line utility (or even an 
+desktop GUI program). However, by default, the global packages are installed as shared 
+global packages across users and requires root privilege for maintenance, which may be
+unavailable for general user and also expose potential conflict of packages between 
+users. This post will cover simple configuration for npm global package for current 
+user only.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="javascript" scheme="https://jack-q.github.io/blog/categories/javascript/"/>
+    
+    
+      <category term="javascript" scheme="https://jack-q.github.io/blog/tags/javascript/"/>
+    
+      <category term="npm" scheme="https://jack-q.github.io/blog/tags/npm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vector of bool in C++</title>
+    <link href="https://jack-q.github.io/blog/2017/07/12/vector-of-bool-in-c/"/>
+    <id>https://jack-q.github.io/blog/2017/07/12/vector-of-bool-in-c/</id>
+    <published>2017-07-12T11:28:19.000Z</published>
+    <updated>2017-08-19T07:46:13.746Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;C++ is an evolvement of C with shared design principles of performance first, 
+yet with consideration of convenience at the perspective of programmer. 
+However, the former generally requires to implement the most suitable and 
+dedicated data structure (that is to optimize) for common cases. The specialization
+results in inconsistency. This post is mainly about the &lt;code&gt;vector&lt;/code&gt; of &lt;code&gt;bool&lt;/code&gt;, which is 
+a specialization of &lt;code&gt;vector&lt;/code&gt; according to the standard template library (STL) of C++.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="https://jack-q.github.io/blog/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Service in ROS</title>
+    <link href="https://jack-q.github.io/blog/2017/07/12/service-in-ros/"/>
+    <id>https://jack-q.github.io/blog/2017/07/12/service-in-ros/</id>
+    <published>2017-07-12T07:33:34.000Z</published>
+    <updated>2017-08-23T03:04:26.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Followed by previous post covering message in ROS, this one introduce service in ROS.&lt;/p&gt;
+&lt;p&gt;Service is another information exchange mechanism provided in ROS which 
+provides RPC (remote procedure call) style request-response pattern.
+The service is defined by &lt;code&gt;.srv&lt;/code&gt; file, which can be treated as a combination
+of two message representing service request and service reply, respectively.&lt;/p&gt;
+&lt;p&gt;Most of information in this post is refer to &lt;a href=&quot;http://wiki.ros.org/Services&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Services page in ROS wiki&lt;/a&gt;, &lt;a href=&quot;http://wiki.ros.org/srv&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;srv page in ROS wiki&lt;/a&gt; and &lt;a href=&quot;https://github.com/ros/ros/blob/kinetic-devel/core/roslib/src/roslib/srvs.py&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;source code for ROS core module&lt;/a&gt;. &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="ros" scheme="https://jack-q.github.io/blog/tags/ros/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Message in ROS</title>
+    <link href="https://jack-q.github.io/blog/2017/07/12/message-in-ros/"/>
+    <id>https://jack-q.github.io/blog/2017/07/12/message-in-ros/</id>
+    <published>2017-07-12T02:06:00.000Z</published>
+    <updated>2017-07-31T03:35:28.331Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Messages are spread across the whole system of a ROS instance,
+which are the essence and physical base of communication and coordination 
+in ROS system. The message is a serializable and platform agnostic (in the 
+perspective of OS, programming language, etc) specification of structured data.&lt;/p&gt;
+&lt;p&gt;Most of information in this post is refer to &lt;a href=&quot;http://wiki.ros.org/msg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;msg page in ROS wiki&lt;/a&gt; and &lt;a href=&quot;https://github.com/ros/ros/blob/kinetic-devel/core/roslib/src/roslib/msgs.py&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;source code for ROS core module&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A directly connected concept in ROS is &lt;em&gt;Topic&lt;/em&gt;, which is named bus for message exchange, which will be covered in later post. The &lt;em&gt;Service&lt;/em&gt; is also based on 
+the infrastructure of message, which will be illustrated in next post.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="ros" scheme="https://jack-q.github.io/blog/tags/ros/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Configure ROS Environment</title>
+    <link href="https://jack-q.github.io/blog/2017/07/07/configure-ros-environment/"/>
+    <id>https://jack-q.github.io/blog/2017/07/07/configure-ros-environment/</id>
+    <published>2017-07-06T16:33:42.000Z</published>
+    <updated>2017-07-31T06:21:24.220Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ROS, the robot operation system, is a flexible environment for writing robot software.
+It is not a traditional operating system but a software development framework including
+a collection of tools, libraries, and conventions to manage and reduce the complexity 
+of robotic systems.&lt;/p&gt;
+&lt;p&gt;The following configurations are based on the following environment.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;base: raw Ubuntu 16.04.2 amd64&lt;/li&gt;
+&lt;li&gt;ROS release: Kinetic (to be installed)&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="ros" scheme="https://jack-q.github.io/blog/tags/ros/"/>
+    
+  </entry>
   
   <entry>
     <title>DOT language for graph</title>
@@ -34,9 +184,9 @@ of the DOT language and show some applications that utilize the power of GraphVi
     </summary>
     
     
-      <category term="visualization" scheme="https://jack-q.github.io/blog/tags/visualization/"/>
-    
       <category term="GraphViz" scheme="https://jack-q.github.io/blog/tags/graphviz/"/>
+    
+      <category term="visualization" scheme="https://jack-q.github.io/blog/tags/visualization/"/>
     
   </entry>
   
@@ -57,9 +207,9 @@ environment for testing Python code.&lt;/p&gt;
     </summary>
     
     
-      <category term="python" scheme="https://jack-q.github.io/blog/tags/python/"/>
-    
       <category term="visualization" scheme="https://jack-q.github.io/blog/tags/visualization/"/>
+    
+      <category term="python" scheme="https://jack-q.github.io/blog/tags/python/"/>
     
   </entry>
   
@@ -68,7 +218,7 @@ environment for testing Python code.&lt;/p&gt;
     <link href="https://jack-q.github.io/blog/2017/03/26/setup-latex-environment/"/>
     <id>https://jack-q.github.io/blog/2017/03/26/setup-latex-environment/</id>
     <published>2017-03-26T06:38:07.000Z</published>
-    <updated>2017-05-16T14:22:52.327Z</updated>
+    <updated>2017-05-16T14:22:52.328Z</updated>
     
     <summary type="html">
     
@@ -115,14 +265,14 @@ extra package of R, the capibility of the R language is much more extented.&lt;/
     <link href="https://jack-q.github.io/blog/2017/03/12/javaee-training-note-day-18/"/>
     <id>https://jack-q.github.io/blog/2017/03/12/javaee-training-note-day-18/</id>
     <published>2017-03-12T06:16:12.000Z</published>
-    <updated>2017-03-16T06:17:42.728Z</updated>
+    <updated>2017-07-30T03:26:54.603Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;Continued to the last post about the security settings related to website or 
 web service, today’s topic is another vital security configuration for website,
-which is the HTTP traffic over security socket layer (HHTTP-SSL, HTTPS). 
-Without the companient of the HTTPS configuration, either token based approach 
+which is the HTTP traffic over security socket layer (HTTP-SSL, HTTPS). 
+Without the companies of the HTTPS configuration, either token based approach 
 or the session based approach will become vulnerable to the package sniffers 
 in the middle of the whole transfer processes.&lt;/p&gt;
     
@@ -157,14 +307,14 @@ application, there are two modules used to secure different kinds of interfaces.
     <link href="https://jack-q.github.io/blog/2017/03/09/javaee-training-note-day-16/"/>
     <id>https://jack-q.github.io/blog/2017/03/09/javaee-training-note-day-16/</id>
     <published>2017-03-09T00:10:35.000Z</published>
-    <updated>2017-03-10T01:26:44.084Z</updated>
+    <updated>2017-07-30T03:27:48.065Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;Today’s topic is about some debugging methods and toolkit used
 to solve problems. One is the &lt;code&gt;tcpdump&lt;/code&gt; and other terminal 
 tools for remote package sniffer and traffic analysis. Another is
-some wired errors occured in the development progress of project.&lt;/p&gt;
+some wired errors occurred in the development progress of project.&lt;/p&gt;
     
     </summary>
     
@@ -178,11 +328,11 @@ some wired errors occured in the development progress of project.&lt;/p&gt;
     <link href="https://jack-q.github.io/blog/2017/03/08/javaee-training-note-day-15/"/>
     <id>https://jack-q.github.io/blog/2017/03/08/javaee-training-note-day-15/</id>
     <published>2017-03-08T00:32:39.000Z</published>
-    <updated>2017-03-16T06:20:42.378Z</updated>
+    <updated>2017-07-15T14:48:42.286Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Today’s topic is some compainent library uesd together with ReactJS.
+      &lt;p&gt;Today’s topic is some component library used together with ReactJS.
 The React Motion is a UX improvement library named React Motion, which 
 provides supports to transition animation.&lt;/p&gt;
     
@@ -198,7 +348,7 @@ provides supports to transition animation.&lt;/p&gt;
     <link href="https://jack-q.github.io/blog/2017/03/07/javaee-training-note-day-14/"/>
     <id>https://jack-q.github.io/blog/2017/03/07/javaee-training-note-day-14/</id>
     <published>2017-03-07T15:05:13.000Z</published>
-    <updated>2017-03-09T00:10:50.351Z</updated>
+    <updated>2017-07-30T03:29:45.105Z</updated>
     
     <summary type="html">
     
@@ -219,13 +369,13 @@ side application in React.&lt;/p&gt;
     <link href="https://jack-q.github.io/blog/2017/03/06/javaee-training-note-day-13/"/>
     <id>https://jack-q.github.io/blog/2017/03/06/javaee-training-note-day-13/</id>
     <published>2017-03-06T02:53:12.000Z</published>
-    <updated>2017-03-07T16:06:26.355Z</updated>
+    <updated>2017-07-30T03:31:47.845Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;Today’s topic is some tips to the solution to the problems in 
-deveploment, varying from the frontend development to backend 
-presistence technology. &lt;/p&gt;
+development, varying from the frontend development to back-end 
+persistence technology. &lt;/p&gt;
     
     </summary>
     
@@ -237,7 +387,7 @@ presistence technology. &lt;/p&gt;
     <link href="https://jack-q.github.io/blog/2017/03/04/javaee-training-note-day-12/"/>
     <id>https://jack-q.github.io/blog/2017/03/04/javaee-training-note-day-12/</id>
     <published>2017-03-04T13:43:19.000Z</published>
-    <updated>2017-03-07T16:06:42.888Z</updated>
+    <updated>2017-03-07T16:06:42.889Z</updated>
     
     <summary type="html">
     
@@ -262,7 +412,7 @@ ReactJS framework, a frontend solution to manage the SPA and more.&lt;/p&gt;
     <link href="https://jack-q.github.io/blog/2017/03/03/javaee-training-note-day-11/"/>
     <id>https://jack-q.github.io/blog/2017/03/03/javaee-training-note-day-11/</id>
     <published>2017-03-03T14:34:50.000Z</published>
-    <updated>2017-03-05T13:53:30.648Z</updated>
+    <updated>2017-03-05T13:53:30.649Z</updated>
     
     <summary type="html">
     
@@ -280,7 +430,7 @@ steps.&lt;/p&gt;
     <link href="https://jack-q.github.io/blog/2017/03/02/javaee-training-note-day-10/"/>
     <id>https://jack-q.github.io/blog/2017/03/02/javaee-training-note-day-10/</id>
     <published>2017-03-02T13:13:39.000Z</published>
-    <updated>2017-03-05T13:53:38.920Z</updated>
+    <updated>2017-07-30T03:25:11.800Z</updated>
     
     <summary type="html">
     
@@ -300,149 +450,20 @@ but a set of records of problems and technics. &lt;/p&gt;
     <link href="https://jack-q.github.io/blog/2017/03/01/javaee-training-note-day-09/"/>
     <id>https://jack-q.github.io/blog/2017/03/01/javaee-training-note-day-09/</id>
     <published>2017-03-01T09:53:56.000Z</published>
-    <updated>2017-03-05T13:53:48.267Z</updated>
+    <updated>2017-07-30T03:32:44.663Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Test is always one of the major steps in software enginering.
+      &lt;p&gt;Test is always one of the major steps in software engineering.
 which is today’s topic. Some basic concepts is introduced 
-several days ago when introdcing the unit test supporting in 
-Spring MVC framework. Today’s point is related to the managment 
+several days ago when introducing the unit test supporting in 
+Spring MVC framework. Today’s point is related to the management 
 and theory approach of the test.&lt;/p&gt;
     
     </summary>
     
     
       <category term="java" scheme="https://jack-q.github.io/blog/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaEE Training Note - Day 08</title>
-    <link href="https://jack-q.github.io/blog/2017/02/28/javaee-training-note-day-08/"/>
-    <id>https://jack-q.github.io/blog/2017/02/28/javaee-training-note-day-08/</id>
-    <published>2017-02-28T12:25:27.000Z</published>
-    <updated>2017-03-05T13:54:02.839Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;The topic of today is the fundamental of web application and the server.
-The concepts introduced today is the low level basis of the fancy and 
-colorful world of the Internet. Besides the general concepts, the nginx
-server also introduced.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="java" scheme="https://jack-q.github.io/blog/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaEE Training Note - Day 07</title>
-    <link href="https://jack-q.github.io/blog/2017/02/27/javaee-training-note-day-07/"/>
-    <id>https://jack-q.github.io/blog/2017/02/27/javaee-training-note-day-07/</id>
-    <published>2017-02-27T12:06:20.000Z</published>
-    <updated>2017-03-05T14:09:09.082Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Today’s topics are the automatic unit test in Spring MVC and 
-the code refactoring in Java. The former is to fully empower the 
-test in Java based project, while the latter is to keep a essential 
-approach about improving the quality of the source code.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="java" scheme="https://jack-q.github.io/blog/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaEE Training Note - Day 06</title>
-    <link href="https://jack-q.github.io/blog/2017/02/25/javaee-training-note-day-06/"/>
-    <id>https://jack-q.github.io/blog/2017/02/25/javaee-training-note-day-06/</id>
-    <published>2017-02-25T01:52:43.000Z</published>
-    <updated>2017-03-04T01:21:27.853Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Today’s topic is configuration management which is mainly the source code management and versoin control.
-One of the famous solution for source code management is the &lt;code&gt;Subversion&lt;/code&gt; (abbr. svn),
-a centralized version control system. It is common in enterprise development with an always-on
-central configuration management server as an authority (the &lt;code&gt;trunk&lt;/code&gt;). Another popular solution is 
-&lt;code&gt;git&lt;/code&gt;, a de-centralized version control system. It is common in open source project development and each 
-contributor can hold their own branch.&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>JavaEE Training Note - Day 05</title>
-    <link href="https://jack-q.github.io/blog/2017/02/24/javaee-training-note-day-05/"/>
-    <id>https://jack-q.github.io/blog/2017/02/24/javaee-training-note-day-05/</id>
-    <published>2017-02-24T00:42:37.000Z</published>
-    <updated>2017-03-04T01:21:17.597Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;A website is a user oriented application which will represent a friendly
-interface to its end user. Nowadays, the browser based webpage is still
-the most important interface represented to user. Based on the 
-current application with integrated Spring, Spring MVC and Hibernate,
-some issues related to the front end is the main topic of today’s schedule.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="https://jack-q.github.io/blog/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaEE Training Note - Day 04</title>
-    <link href="https://jack-q.github.io/blog/2017/02/23/javaee-training-note-day-04/"/>
-    <id>https://jack-q.github.io/blog/2017/02/23/javaee-training-note-day-04/</id>
-    <published>2017-02-23T01:12:20.000Z</published>
-    <updated>2017-02-23T12:45:00.102Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Today’s first topic is the bi-directional communication with
-WebSocket using Spring Framework. By using the &lt;code&gt;SockJS&lt;/code&gt; library as well as support on 
-server side, some other techniques including the XHR polling and
-XHR streaming are provided as fallbacks. The STOMP is a sub-protocol 
-under the WebSocket protocol, which use Pub/Sub pattern to manage messages.
-Another topic of today is integration of Hibernate into Spring MVC.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="https://jack-q.github.io/blog/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaEE Training Note - Day 03</title>
-    <link href="https://jack-q.github.io/blog/2017/02/22/javaee-training-note-day-03/"/>
-    <id>https://jack-q.github.io/blog/2017/02/22/javaee-training-note-day-03/</id>
-    <published>2017-02-22T09:44:32.000Z</published>
-    <updated>2017-02-22T15:39:46.334Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Continued on the introduction to &lt;code&gt;Servlet&lt;/code&gt; and &lt;code&gt;Spring MVC&lt;/code&gt; library, the main 
-content of the third day is detailed illustration of web site using 
-&lt;code&gt;Spring MVC&lt;/code&gt;. Another main point is the &lt;code&gt;Hibernate ORM&lt;/code&gt; library which is used 
-to unify and simplify the process of database connection and data transaction.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="https://jack-q.github.io/blog/tags/java/"/>
     
   </entry>
   
