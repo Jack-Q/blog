@@ -31,4 +31,7 @@ int64 sum
 ```
 
 ## utilize service ##
-To utilize service, add corresponding declaration to header to build files.
+
+To utilize service, add corresponding declaration to build files.
+Then `catkin` will generate source code in all supported languages.
+Import the generated code into your code base to provide service.
