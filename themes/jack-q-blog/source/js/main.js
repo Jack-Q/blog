@@ -67,21 +67,37 @@
   bindTocLinkHandler();
 
   var mouseWheelScroll = function () {
+    var ele = document.querySelector(".post-list-container");
     // mouse wheel support on desktop
-    $(".post-list-container").mousewheel(function (event, delta) {
+    var offset = ele.scrollLeft;
+    var update = true;
+    setTimeout(function () {
+      if (update) offset = ele.scrollLeft;
+      else update = true;
+    }, 1000);
+    $(ele).mousewheel(function (event, delta) {
       if ($(window).width() > 768) {
+        // var delta = event.deltaY;
         event.stopPropagation();
         event.preventDefault();
 
         // already scroll to left most
-        if(delta > 0 && this.scrollLeft <= 0)
+        if(delta > 0 && offset <= 0)
           return false;
 
         // already scroll to right most
-        if (delta < 0 && this.scrollWidth - this.scrollLeft - this.clientWidth <= 0)
+        if (delta < 0 && this.scrollWidth - offset - this.clientWidth <= 0)
           return false;
 
-        $(this).animate({ scrollLeft: '-=' + (delta * 60) }, 30);
+        offset = offset - delta * 2;
+        if (offset < 0) {
+          offset = 0;
+        }
+        if (offset > this.scrollWidth - this.clientWidth) {
+          offset = this.scrollWidth - this.clientWidth;
+        }
+        this.scrollLeft = offset;
+        update = false;
         return false;
       }
     });

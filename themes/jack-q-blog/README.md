@@ -1,7 +1,7 @@
 # the theme for this blog
 
 This is the theme of this blog with a horizontal list of post (on large screen) and 
-responsive design (adoptive design).
+responsive design (adaptive design).
 
 ## Configuration Options
 
