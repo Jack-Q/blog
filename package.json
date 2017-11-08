@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "cheerio": "^0.22.0",
-    "hexo": "^3.3.9",
+    "hexo": "^3.4.0",
     "hexo-deployer-git": "^0.3.1",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-category": "^0.1.3",
