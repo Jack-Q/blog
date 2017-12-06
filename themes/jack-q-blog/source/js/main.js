@@ -69,6 +69,7 @@
   var mouseWheelScroll = function () {
     var ele = document.querySelector(".post-list-container");
     // mouse wheel support on desktop
+    if (!ele) return;
     var offset = ele.scrollLeft;
     var update = true;
     setTimeout(function () {
@@ -205,8 +206,8 @@
   }
 
   $('a[data-smooth]').each(smoothLinkHandler);
-  mouseWheelScroll();
   var initialPageType = $('section.article-content').length > 0;
+  mouseWheelScroll();
   setTimeout(function () { pageScrollHandler(window.location.hash) }, 200);
   window.onpopstate = function (ev) {
     if (ev.state && ev.state.url === getUrl(window.location)) {

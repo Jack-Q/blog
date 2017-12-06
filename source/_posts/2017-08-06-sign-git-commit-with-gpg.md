@@ -20,7 +20,7 @@ This post is to integrate GPG with Git for more reliable and controllable source
 
 ## Prepare GPG Key
 
-GPG use a set of 
+<!-- GPG use a set of  -->
 
 ### Check environment
 
