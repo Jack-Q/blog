@@ -86,7 +86,7 @@ mixin site-aside()
 
           if page.content && toc(page.content)
             section.aside-content
-              != toc(page.content, {list_number: false})
+              != toc(clear_anchor(page.content), {list_number: false})
 
       .aside-bottom
         .aside-contact

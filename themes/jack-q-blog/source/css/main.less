@@ -599,6 +599,7 @@ header.jq-nav-header{
       position: relative;
       border-bottom: solid 2px transparent;
       transition: all ease 400ms;
+      cursor: pointer;
 
       @media screen and (max-width: 435px){
         width: 55px;
@@ -914,6 +915,10 @@ header.jq-nav-header{
     display: flex;
     margin: 0 20px;
 
+    @media screen and (max-width: 320px) {
+      margin: 0 0 0 10px;
+    }
+
     .aside-contact-item {
       width: 40px;
       transition: all ease 400ms;
@@ -937,6 +942,10 @@ header.jq-nav-header{
 
   .aside-copy {
     margin: 0 20px;
+    @media screen and (max-width: 320px) {
+      font-size: 0.8em;
+      margin: 0 10px 0 0;
+    }
   }
 }
 

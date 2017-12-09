@@ -1,5 +1,12 @@
 const cheerio = require('cheerio');
 
+hexo.extend.helper.register('clear_anchor', function(str){
+  var $ = cheerio.load(str, {decodeEntities: false});
+  var headings = $('h1, h2, h3, h4, h5, h6');
+  $('.headerlink').remove();
+  return $.html();
+})
+
 // code snippet from 
 // https://github.com/hexojs/site/blob/master/scripts/helpers.js
 hexo.extend.helper.register('page_anchor', function(str){
