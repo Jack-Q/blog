@@ -1,8 +1,8 @@
-@import url('katex.css');
-@import url('font.css');
-@import url('cc-font.css');
+@import url("katex.css");
+@import url("font.css");
+@import url("cc-font.css");
 html {
-  font-family: 'Alegreya', 'Roboto', sans-serif;
+  font-family: "Alegreya", "Roboto", sans-serif;
 }
 h1,
 h2,
@@ -10,19 +10,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
 }
 p {
-  font-family: 'Alegreya', 'Roboto', sans-serif;
+  font-family: "Alegreya", "Roboto", sans-serif;
 }
 pre,
 kbd,
 code {
   tab-size: 4;
-  font-family: 'PT Mono', Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
+  font-family: "PT Mono", Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
 }
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -41,7 +41,7 @@ code {
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
-  font-feature-settings: 'liga';
+  font-feature-settings: "liga";
 }
 .highlight {
   background: #2d2d2d;
@@ -254,11 +254,11 @@ li {
 }
 .tag-list-item .tag-list-link::before,
 .category-list-item .tag-list-link::before {
-  content: '#';
+  content: "#";
 }
 .tag-list-item .category-list-link::before,
 .category-list-item .category-list-link::before {
-  content: '>';
+  content: ">";
 }
 body {
   background-color: #fff;
@@ -378,10 +378,8 @@ header.jq-nav-header .nav-bar-toggle span {
   width: 30px;
   left: 5px;
   border-radius: 1px;
-  transition: all ease 400ms, 
-        top ease 400ms 500ms, 
-        transform ease 400ms 500ms,
-        opacity ease 400ms 500ms;
+  transition: all ease 400ms, top ease 400ms 500ms,
+        transform ease 400ms 500ms, opacity ease 400ms 500ms;
   opacity: 1;
 }
 header.jq-nav-header .nav-bar-toggle:hover span {
@@ -433,12 +431,12 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
   height: 40%;
   width: 100%;
   text-align: center;
-  background-image: url('../img/aside-header.jpg');
+  background-image: url("../img/aside-header.jpg");
   background-size: cover;
   background-position: center;
 }
 .aside-header::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 100%;
@@ -474,7 +472,7 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
   box-shadow: 0 0 30px 6px rgba(80, 80, 80, 0.6);
 }
 .aside-header .wrapper::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   z-index: -1;
@@ -482,7 +480,7 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
   opacity: 0.4;
   width: 100%;
   height: 100%;
-  background-image: url('../img/aside-header.jpg');
+  background-image: url("../img/aside-header.jpg");
   background-position: center;
   background-size: cover;
   filter: blur(10px);
@@ -500,7 +498,7 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
   line-height: 39px;
   font-size: 30px;
   font-weight: 100;
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
   word-spacing: 0.6em;
   color: #deffff;
   text-shadow: 0 0 2px #333;
@@ -569,7 +567,7 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
   }
 }
 .aside-center .icon-header::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   background: #2be;
@@ -614,6 +612,7 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
   z-index: 10;
 }
 .aside-center .icon-header .icon-item i {
+  color: #cee;
   display: block;
   line-height: 40px;
   font-size: 35px;
@@ -644,7 +643,7 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
   border-right-color: transparent;
   background: #09c;
   display: block;
-  content: '';
+  content: "";
   left: 50%;
   margin-left: -5px;
   bottom: -7px;
@@ -713,7 +712,7 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
   font-size: 0.7em;
   height: 20px;
   line-height: 20px;
-  font-family: 'PT Mono', Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
+  font-family: "PT Mono", Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
 }
 .aside-center .aside-center-content .archive-list .archive-list-count {
   top: 5px;
@@ -743,7 +742,7 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
   position: absolute;
   bottom: 0;
   border-bottom: dotted 1px #2be;
-  content: '';
+  content: "";
   width: 0;
   left: 0;
   transition: all ease 600ms;
@@ -764,7 +763,7 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
 }
 .aside-center .aside-center-content .toc .toc-child::before {
   display: block;
-  content: '';
+  content: "";
   height: 0;
   border-left: dotted 1px #2be;
   position: absolute;
@@ -803,18 +802,18 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
     height: calc(100% - 65px);
   }
 }
-.aside-center.active[data-content-tab=tag] .icon-header:not(:hover) [data-content=tag] span.tooltip,
-.aside-center.active[data-content-tab=category] .icon-header:not(:hover) [data-content=category] span.tooltip,
-.aside-center.active[data-content-tab=archive] .icon-header:not(:hover) [data-content=archive] span.tooltip,
-.aside-center.active[data-content-tab=content] .icon-header:not(:hover) [data-content=content] span.tooltip {
+.aside-center.active[data-content-tab="tag"] .icon-header:not(:hover) [data-content="tag"] span.tooltip,
+.aside-center.active[data-content-tab="category"] .icon-header:not(:hover) [data-content="category"] span.tooltip,
+.aside-center.active[data-content-tab="archive"] .icon-header:not(:hover) [data-content="archive"] span.tooltip,
+.aside-center.active[data-content-tab="content"] .icon-header:not(:hover) [data-content="content"] span.tooltip {
   opacity: 1;
   transform: translateY(0px);
   color: #f99157;
 }
-.aside-center.active[data-content-tab=tag] .aside-tag,
-.aside-center.active[data-content-tab=category] .aside-category,
-.aside-center.active[data-content-tab=archive] .aside-archive,
-.aside-center.active[data-content-tab=content] .aside-content {
+.aside-center.active[data-content-tab="tag"] .aside-tag,
+.aside-center.active[data-content-tab="category"] .aside-category,
+.aside-center.active[data-content-tab="archive"] .aside-archive,
+.aside-center.active[data-content-tab="content"] .aside-content {
   display: block;
   opacity: 1;
   transform: translateY(0);
@@ -833,7 +832,7 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
 .aside-center .category-list-count {
   font-weight: 600;
   text-shadow: 0 0 2px #aaa;
-  font-family: 'PT Mono', Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
+  font-family: "PT Mono", Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
   font-size: 16px;
   text-align: center;
   background: #dcb478;
@@ -854,7 +853,7 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
 .aside-center .tag-list-count::before,
 .aside-center .archive-list-count::before,
 .aside-center .category-list-count::before {
-  content: '';
+  content: "";
   display: block;
   box-sizing: border-box;
   position: absolute;
@@ -874,10 +873,16 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
   width: 100%;
   text-align: center;
   font-size: 16px;
-  color: #555;
+  color: #353535;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.aside-bottom a {
+  transition: all ease 400ms;
+}
+.aside-bottom a:hover {
+  color: #ccc;
 }
 .aside-bottom .aside-contact {
   display: flex;
@@ -890,10 +895,6 @@ header.jq-nav-header .nav-bar-toggle .toggle-line-3 {
 }
 .aside-bottom .aside-contact .aside-contact-item {
   width: 40px;
-  transition: all ease 400ms;
-}
-.aside-bottom .aside-contact .aside-contact-item:hover {
-  color: #ccc;
 }
 .aside-bottom .aside-contact svg {
   fill: none;
@@ -948,7 +949,7 @@ body > section.page-loader {
 body > section.page-loader::before,
 body > section.page-loader::after {
   pointer-events: none;
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   height: 50vh;
@@ -1051,7 +1052,7 @@ section.article-content h1 {
   text-align: center;
   color: #555;
   font-weight: 900;
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
   letter-spacing: -2px;
 }
 @media screen and (max-width: 435px) {
@@ -1087,7 +1088,7 @@ section.article-content h1 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
+  font-feature-settings: "liga";
 }
 .post-meta .tag-list-item,
 .post-meta .category-list-item {
@@ -1136,7 +1137,7 @@ section.article-content h1 {
 .post-meta .category-list-link::after,
 .post-meta .tag-list-link::after {
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   left: 0;
   bottom: 10px;
@@ -1189,7 +1190,7 @@ section.article-content h1 {
   border-bottom: dotted 1px #ccc;
   height: 100%;
   width: 100%;
-  content: '';
+  content: "";
   z-index: -1;
 }
 .post-content h3.article-heading {
@@ -1359,7 +1360,7 @@ section.article-content h1 {
 }
 .post-content-end {
   display: block;
-  font-family: 'PT Mono', Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
+  font-family: "PT Mono", Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
   text-align: center;
   font-size: 14px;
   color: #ccc;
@@ -1371,7 +1372,7 @@ section.article-content h1 {
 .post-content-end::before,
 .post-content-end::after {
   display: inline-block;
-  content: '';
+  content: "";
   height: 5px;
   width: 220px;
   max-width: 30%;
@@ -1440,7 +1441,7 @@ section.article-content h1 {
 .post-prev-next .post-next-link::before {
   top: 5px;
   font-weight: 900;
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
   font-size: 0.8em;
   display: block;
   position: absolute;
@@ -1448,21 +1449,21 @@ section.article-content h1 {
   color: #aaa;
 }
 .post-prev-next .post-prev-null::before {
-  content: 'NO MORE OLDER POST';
+  content: "NO OLDER POST";
   left: 0;
   top: 20px;
 }
 .post-prev-next .post-prev-link::before {
-  content: 'PREVIOUS POST';
+  content: "PREVIOUS POST";
   left: 0;
 }
 .post-prev-next .post-next-null::before {
   top: 20px;
-  content: 'NO MORE NEWER POST';
+  content: "NO NEWER POST";
   right: 0;
 }
 .post-prev-next .post-next-link::before {
-  content: 'NEXT POST';
+  content: "NEXT POST";
   right: 0;
 }
 .post-comment #disqus_thread {
@@ -1486,7 +1487,7 @@ section.article-content h1 {
   margin: 5px;
 }
 .post-licence .post-licence-label {
-  font-family: 'PT Mono', Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
+  font-family: "PT Mono", Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
   text-align: center;
   color: #999;
   font-size: 1.05em;
@@ -1612,7 +1613,7 @@ section.list-content div.post-list-head .welcome::after {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
+  font-feature-settings: "liga";
   position: absolute;
   right: -20px;
   bottom: -20px;
@@ -1638,7 +1639,7 @@ section.list-content div.post-list-head .text {
   padding: 60px 0;
   text-transform: uppercase;
   font-size: 1.4em;
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
   color: #999;
 }
 section.list-content div.post-list-head .text .cur,
@@ -1647,7 +1648,7 @@ section.list-content div.post-list-head .text .last::after {
   color: #09c;
 }
 section.list-content .welcome .text {
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
   font-size: 35px;
   color: #999;
   padding: 20px;
@@ -1670,7 +1671,7 @@ section.list-content .welcome .desp {
 section.list-content .welcome .desp::before {
   display: block;
   position: absolute;
-  content: '';
+  content: "";
   width: 15px;
   height: 5px;
   left: 5px;
@@ -1718,7 +1719,7 @@ section.list-content .welcome .desp ul {
 section.list-content .welcome .desp li {
   display: block;
   height: 55px;
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
   line-height: 55px;
   font-size: 1.1em;
   font-weight: 100;
@@ -1766,7 +1767,7 @@ section.list-content .post-list-post > a div {
 }
 section.list-content .post-list-post .title {
   font-size: 1.4em;
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
   font-weight: 900;
   letter-spacing: -0.05em;
   color: #999;
@@ -1806,7 +1807,7 @@ section.list-content .post-list-post .more {
   bottom: 0;
   left: 0;
   font-size: 1.5em;
-  font-family: 'PT Mono', Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
+  font-family: "PT Mono", Monaco, Consolas, Ubuntu Mono, Courier New, Courier, monospace;
   padding: 30px;
   height: 50%;
   min-height: 150px;
@@ -1816,7 +1817,7 @@ section.list-content .post-list-post .more {
   text-align: right;
 }
 section.list-content .post-list-post .more::after {
-  content: 'READ MORE';
+  content: "READ MORE";
   display: block;
   position: absolute;
   right: 20px;
@@ -1834,7 +1835,7 @@ section.list-content .post-list-pagination .text {
   padding: 60px 0;
   text-transform: uppercase;
   font-size: 1.4em;
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
   color: #999;
 }
 section.list-content .post-list-pagination .text .cur,
@@ -1843,25 +1844,25 @@ section.list-content .post-list-pagination .text .last::after {
   color: #09c;
 }
 section.list-content .post-list-pagination .text .first::before {
-  content: 'the ';
+  content: "the ";
 }
 section.list-content .post-list-pagination .text .first::after {
-  content: ' first ';
+  content: " first ";
 }
 section.list-content .post-list-pagination .text .last::before {
-  content: 'the ';
+  content: "the ";
 }
 section.list-content .post-list-pagination .text .last::after {
-  content: 'last ';
+  content: "last ";
 }
 section.list-content .post-list-pagination .text .total {
   display: inline-block;
 }
 section.list-content .post-list-pagination .text .total::before {
-  content: ' of ';
+  content: " of ";
 }
 section.list-content .post-list-pagination .text .total::after {
-  content: ' pages';
+  content: " pages";
 }
 section.list-content .post-list-pagination .text .one::after {
   content: "the only page";
@@ -1873,7 +1874,7 @@ section.list-content .post-list-pagination .action {
 section.list-content .post-list-pagination .action a {
   flex-grow: 1;
   padding: 20px;
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
   font-weight: 900;
   color: #aaa;
   text-transform: uppercase;

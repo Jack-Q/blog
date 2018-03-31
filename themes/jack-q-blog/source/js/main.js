@@ -90,7 +90,7 @@
         if (delta < 0 && this.scrollWidth - offset - this.clientWidth <= 0)
           return false;
 
-        offset = offset - delta * 2;
+        offset = offset - delta * 20;
         if (offset < 0) {
           offset = 0;
         }

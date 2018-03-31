@@ -116,4 +116,5 @@ mixin site-aside()
               svg.aside-stackoverflow(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24")
                 <path d="M3 15V23H21V15M6.2 18.5H16.8M6.67 13.7L17.13 15.86M8.33 8.81L17.92 13.32M11.38 4.23L19.58 11.1M15.06 0.74L21.42 9.25z"></polyline>
 
-        .aside-copy #{new Date().getFullYear()} &copy; Jack Q
+        .aside-copy 
+          a(href="https://jack-q.github.io/", title="Home page") #{new Date().getFullYear()} &copy; Jack Q
