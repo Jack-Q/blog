@@ -57,7 +57,6 @@ responsive design (adaptive design).
     comment_id: 20170806-COMMENT
     ```
 
-
 ## Math
 
 Math module is an integration of KaTeX ([GitHub](https://github.com/Khan/KaTeX/)) 
@@ -96,3 +95,9 @@ Math module supports two kinds of usage, the block style and the inline style.
   This inline style also contains some other options applied via latex comment notation.
   (Such as: `$$%display% y=x^2 $$`). The option can be the following ones:
   + `display`: render this block as display mode
+
+## Planned features
+
+* [ ] Optimize horizontal scroll
+* [ ] Link to feed (`/atom.xml`)
+* [ ] Home nav icon no-op tooltip

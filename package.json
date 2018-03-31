@@ -13,7 +13,9 @@
   "scripts": {
     "start": "hexo --config _config.yml,_config_dev.yml s",
     "build": "hexo generate",
-    "hexo": "hexo"
+    "hexo": "hexo",
+    "deploy": "hexo --config _config.yml deploy",
+    "new": "hexo new"
   },
   "version": "0.1.0",
   "hexo": {
