@@ -2,7 +2,3 @@
 
 # options
 default_cc_by_sa: true
-
-# less renderer
-less:
-  compress: true
